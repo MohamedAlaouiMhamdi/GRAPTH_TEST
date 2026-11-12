@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Interactive graph of the works, feedback taxonomy, robots and open problems reviewed in the survey on interactive reinforcement learning from human and foundation-model feedback.">
+<title>IRL Survey Graph</title>
+<link rel="stylesheet" href="vendor/fonts/fonts.css">
+<style>
+/* Layout: a graph-database browser. Filter rail left, graph canvas centre, properties panel right; a table tab mirrors the visible works. */
+:root {
+  --bg: #eef1f3;
+  --surface: #ffffff;
+  --canvas: #f7f8f9;
+  --ink: #172026;
+  --muted: #5c6870;
+  --rule: #d6dce0;
+  --rule-strong: #b6c0c6;
+  --accent: #0f6f8a;
+  --accent-soft: #e0eef2;
+  --edge: #9aa6ad;
+  --edge-strong: #2f3a40;
+  --node-text: #10181c;
+  --c-human: #e3a35c;
+  --c-fm: #7d8fe0;
+  --c-teacher: #56636b;
+  --c-level: #4fb3a6;
+  --c-type: #3a8f86;
+  --c-form: #9ad3c9;
+  --c-channel: #ef8fb0;
+  --c-chclass: #d4588a;
+  --c-kind: #f3b8c9;
+  --c-model: #b08ae0;
+  --c-input: #c9b4ef;
+  --c-regime: #ddd0f5;
+  --c-integ: #8cc56a;
+  --c-modeling: #c3e2ab;
+  --c-env: #b9b56a;
+  --c-task: #e8d39c;
+  --c-robot: #e5675a;
+  --c-challenge: #2f5f8f;
+  --c-detail: #9db7d3;
+  --c-survey: #a9b1b6;
+  --c-line: #b48a6a;
+  --c-excl: #cfd4d7;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1417; --surface: #161d21; --canvas: #12181b; --ink: #e2e9ec; --muted: #98a6ad; --rule: #263136; --rule-strong: #364449;
+    --accent: #5cc0da; --accent-soft: #17303a; --edge: #4f5d64; --edge-strong: #c9d4d9; --node-text: #0d1316; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1417; --surface: #161d21; --canvas: #12181b; --ink: #e2e9ec; --muted: #98a6ad; --rule: #263136; --rule-strong: #364449;
+  --accent: #5cc0da; --accent-soft: #17303a; --edge: #4f5d64; --edge-strong: #c9d4d9; --node-text: #0d1316; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 14px; line-height: 1.45;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 16px; }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+button, input, select { font: inherit; color: inherit; }
+.app { max-width: 1600px; margin: 0 auto; display: grid; gap: 10px; grid-template-rows: auto auto 1fr; height: 100%; }
+header.top { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 18px; padding-top: 14px; }
+header.top h1 { font-size: 1.3rem; margin: 0; font-weight: 600; letter-spacing: -0.01em; }
+header.top p { margin: 0; color: var(--muted); font-size: 0.85rem; flex: 1 1 360px; }
+.counts { font-family: var(--font-data); font-size: 0.78rem; color: var(--muted); }
+.counts b { color: var(--ink); font-weight: 500; }
+
+.toolbar { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 8px 10px; }
+.toolbar label { font-size: 0.78rem; color: var(--muted); display: flex; gap: 6px; align-items: center; }
+.toolbar input[type="search"], .toolbar select { border: 1px solid var(--rule-strong); border-radius: 6px; background: var(--canvas); padding: 5px 8px; min-width: 0; }
+#q { width: 240px; max-width: 100%; }
+.seg { display: inline-flex; border: 1px solid var(--rule-strong); border-radius: 6px; overflow: hidden; }
+.seg button { border: 0; background: transparent; padding: 5px 11px; cursor: pointer; color: var(--muted); font-size: 0.82rem; }
+.seg button + button { border-left: 1px solid var(--rule-strong); }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--surface); }
+.btn { border: 1px solid var(--rule-strong); background: var(--canvas); border-radius: 6px; padding: 5px 10px; cursor: pointer; font-size: 0.82rem; }
+.btn:hover { border-color: var(--accent); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.spacer { flex: 1; }
+
+.main { display: grid; grid-template-columns: 250px minmax(0, 1fr) 330px; gap: 10px; min-height: 560px; }
+@media (max-width: 1100px) { .main { grid-template-columns: 230px minmax(0, 1fr); } .panel { grid-column: 1 / -1; } }
+@media (max-width: 760px) { .main { grid-template-columns: minmax(0, 1fr); } .rail { order: 2; } .panel { order: 3; } }
+.box { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; min-width: 0; }
+.rail { padding: 10px; display: grid; gap: 14px; align-content: start; overflow-y: auto; max-height: calc(100vh - 150px); }
+@media (max-width: 760px) { .rail { max-height: none; } }
+.rail h2 { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--muted); margin: 0 0 6px; }
+.types { display: grid; gap: 3px; }
+.tchip { display: grid; grid-template-columns: 14px 1fr auto; gap: 8px; align-items: center; border: 1px solid transparent; background: none; border-radius: 6px; padding: 3px 6px; cursor: pointer; text-align: left; font-size: 0.82rem; }
+.tchip:hover { border-color: var(--rule-strong); }
+.tchip .dot { width: 12px; height: 12px; border-radius: 50%; border: 1px solid rgba(0,0,0,.15); }
+.tchip .n { font-family: var(--font-data); font-size: 0.74rem; color: var(--muted); }
+.tchip[aria-pressed="false"] { opacity: .45; }
+.tchip[aria-pressed="false"] .dot { background: transparent !important; }
+.chips { display: flex; flex-wrap: wrap; gap: 5px; }
+.chip { border: 1px solid var(--rule-strong); background: var(--canvas); border-radius: 999px; padding: 2px 9px; cursor: pointer; font-size: 0.78rem; }
+.chip[aria-pressed="true"] { background: var(--accent); border-color: var(--accent); color: var(--surface); }
+.check { display: flex; gap: 6px; align-items: center; font-size: 0.82rem; }
+.note { font-size: 0.76rem; color: var(--muted); margin: 0; }
+.legend-edges { display: grid; gap: 4px; font-size: 0.76rem; color: var(--muted); }
+.legend-edges span { display: flex; align-items: center; gap: 8px; }
+.legend-edges i { display: inline-block; width: 26px; border-top: 2px solid var(--edge-strong); }
+.legend-edges i.dash { border-top-style: dashed; }
+.legend-edges i.dot { border-top-style: dotted; }
+
+.stage { position: relative; min-height: 560px; overflow: hidden; display: grid; grid-template-rows: auto 1fr; }
+.tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--rule); padding: 0 8px; }
+.tabs a { text-decoration: none; color: var(--muted); padding: 8px 10px; font-size: 0.8rem; font-weight: 500; border-bottom: 2px solid transparent; }
+.tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
+#cy { background: var(--canvas); min-height: 520px; }
+.overlay { position: absolute; right: 10px; bottom: 10px; display: flex; gap: 6px; }
+.tablewrap { overflow: auto; max-height: calc(100vh - 200px); }
+table.works { border-collapse: collapse; width: 100%; font-size: 0.8rem; min-width: 760px; }
+table.works th, table.works td { border-bottom: 1px solid var(--rule); padding: 6px 8px; text-align: left; vertical-align: top; }
+table.works th { position: sticky; top: 0; background: var(--surface); font-weight: 600; }
+table.works tbody tr { cursor: pointer; }
+table.works tbody tr:hover { background: var(--accent-soft); }
+
+.panel { padding: 12px; overflow-y: auto; max-height: calc(100vh - 150px); display: grid; gap: 10px; align-content: start; }
+@media (max-width: 1100px) { .panel { max-height: none; } }
+.ptype { display: inline-flex; gap: 6px; align-items: center; font-size: 0.74rem; font-weight: 600; padding: 2px 8px; border-radius: 999px; color: var(--node-text); }
+.panel h3 { margin: 0; font-size: 1.02rem; text-wrap: balance; }
+.panel .sub { color: var(--muted); font-size: 0.82rem; margin: 0; }
+dl.props { display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 10px; margin: 0; font-size: 0.8rem; }
+dl.props dt { color: var(--muted); font-family: var(--font-data); font-size: 0.74rem; padding-top: 1px; }
+dl.props dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+.open { font-style: italic; border-left: 3px solid var(--accent); padding-left: 8px; margin: 0; font-size: 0.85rem; }
+.nbrs { display: grid; gap: 8px; }
+.nbrs h4 { margin: 0 0 3px; font-family: var(--font-data); font-size: 0.72rem; font-weight: 500; color: var(--muted); }
+.nbr { display: inline-flex; align-items: center; gap: 5px; border: 1px solid var(--rule); background: var(--canvas); border-radius: 4px; padding: 1px 6px; margin: 0 4px 4px 0; cursor: pointer; font-size: 0.78rem; }
+.nbr .dot { width: 9px; height: 9px; border-radius: 50%; }
+.nbr.hidden-n { border-style: dashed; color: var(--muted); }
+.actions { display: flex; flex-wrap: wrap; gap: 6px; }
+.empty { color: var(--muted); font-size: 0.85rem; }
+.empty ul { padding-left: 18px; margin: 6px 0 0; }
+.pathout { font-size: 0.8rem; }
+footer { color: var(--muted); font-size: 0.74rem; padding-top: 4px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div class="app">
+  <header class="top">
+    <h1>IRL Survey Graph</h1>
+    <p>Works, feedback taxonomy, robots and open problems of the survey on interactive reinforcement learning from human and foundation-model feedback. Human and foundation-model works stay separate.</p>
+    <div class="counts" id="counts"></div>
+  </header>
+
+  <div class="toolbar" role="toolbar" aria-label="Graph controls">
+    <label for="q">Search <input type="search" id="q" list="qlist" placeholder="TAMER, Haru, GPT-4…" autocomplete="off"></label>
+    <datalist id="qlist"></datalist>
+    <div class="seg" role="group" aria-label="Teacher">
+      <button type="button" data-teacher="all" aria-pressed="true">All works</button>
+      <button type="button" data-teacher="human" aria-pressed="false">Human feedback</button>
+      <button type="button" data-teacher="fm" aria-pressed="false">Foundation-model feedback</button>
+    </div>
+    <label for="view">View
+      <select id="view">
+        <option value="overview">Overview</option>
+        <option value="implicit">Implicit feedback: which levels?</option>
+        <option value="robots">Works on physical robots</option>
+        <option value="fm-robots">Foundation-model works and robots</option>
+        <option value="integration">Where feedback enters the learner</option>
+        <option value="lineage">Which works build on which</option>
+        <option value="human-problems">Open problems: human feedback</option>
+        <option value="fm-problems">Open problems: foundation-model feedback</option>
+        <option value="models">Foundation models used as teachers</option>
+        <option value="tasks">Tasks and benchmarks</option>
+      </select>
+    </label>
+    <span class="spacer"></span>
+    <label for="pa">Path <input type="search" id="pa" list="wlist" placeholder="from work" autocomplete="off" style="width:140px"></label>
+    <input type="search" id="pb" list="wlist" placeholder="to work" autocomplete="off" aria-label="Path to work" style="width:140px">
+    <datalist id="wlist"></datalist>
+    <button type="button" class="btn" id="findpath">Find path</button>
+  </div>
+
+  <div class="main">
+    <aside class="box rail" aria-label="Filters">
+      <section><h2>Node types</h2><div class="types" id="types"></div></section>
+      <section><h2>Level</h2><div class="chips" id="f-level"></div></section>
+      <section><h2>Human channel</h2><div class="chips" id="f-class"></div></section>
+      <section><h2>Hardware</h2>
+        <label class="check"><input type="checkbox" id="f-robot"> Only works with a physical robot</label>
+        <label class="check"><input type="checkbox" id="f-online"> Robot learned online</label>
+      </section>
+      <section><h2>Links</h2>
+        <label class="check"><input type="checkbox" id="f-rowscope" checked> Show facts shared by a table row</label>
+        <label class="check"><input type="checkbox" id="f-elabels"> Show relation names</label>
+        <div class="legend-edges" style="margin-top:8px">
+          <span><i></i>stated for this work</span>
+          <span><i class="dash"></i>listed in a shared table row</span>
+          <span><i class="dot"></i>robot used offline or after training</span>
+        </div>
+      </section>
+      <button type="button" class="btn" id="reset">Reset all filters</button>
+    </aside>
+
+    <section class="box stage">
+      <nav class="tabs" aria-label="Views">
+        <a href="#graph" id="tab-graph" aria-current="page">Graph</a>
+        <a href="#table" id="tab-table">Table of visible works</a>
+      </nav>
+      <div id="graphpane" style="position:relative;display:grid">
+        <div id="cy" role="img" aria-label="Graph of the surveyed works and their links; the table tab lists the same works"></div>
+        <div class="overlay">
+          <button type="button" class="btn" id="fit">Fit</button>
+          <button type="button" class="btn" id="relayout">Re-arrange</button>
+        </div>
+      </div>
+      <div id="tablepane" class="tablewrap" hidden></div>
+    </section>
+
+    <aside class="box panel" id="panel" aria-live="polite"></aside>
+  </div>
+  <footer>Draft. Built from Tables I–II and Section IX of the survey <i>Interactive Reinforcement Learning: A Unified Survey of Human and Foundation-Model Feedback</i>. Links from a table row shared by several works are dashed: the fact may belong to only some of them. Paper links open a Google Scholar search.<br>Download the data: <a href="data/graph.json">graph.json</a> · <a href="data/nodes.csv">nodes.csv</a> · <a href="data/edges.csv">edges.csv</a> · <a href="data/import.cypher">import.cypher</a> (Neo4j) · <a href="data/graph.graphml">graph.graphml</a></footer>
+</div>
+
+<script src="vendor/cytoscape.min.js"></script>
+<script type="application/json" id="graph-data">__GRAPH__</script>
+<script>
+(function () {
+  const RAW = JSON.parse(document.getElementById('graph-data').textContent);
+  const TYPES = [
+    ['Work', 'Work', '--c-human'], ['TeacherType', 'Teacher type', '--c-teacher'], ['FeedbackLevel', 'Feedback level', '--c-level'],
+    ['FeedbackType', 'Feedback type', '--c-type'], ['FeedbackForm', 'Feedback form', '--c-form'], ['ChannelClass', 'Explicit / implicit', '--c-chclass'],
+    ['Channel', 'Human channel', '--c-channel'], ['TeacherKind', 'Who teaches', '--c-kind'], ['FoundationModel', 'Foundation model', '--c-model'],
+    ['FMInput', 'Model input', '--c-input'], ['FeedbackRegime', 'Online / offline labels', '--c-regime'], ['IntegrationMethod', 'Integration method', '--c-integ'],
+    ['FeedbackModeling', 'Model-free / model-based', '--c-modeling'], ['EnvRewardUse', 'Environment reward', '--c-env'], ['Task', 'Task or benchmark', '--c-task'],
+    ['Robot', 'Physical robot', '--c-robot'], ['Challenge', 'Open problem', '--c-challenge'], ['DetailedChallenge', 'Detailed problem (long version)', '--c-detail'],
+    ['Survey', 'Survey', '--c-survey'], ['ResearchLine', 'Research line', '--c-line'], ['ExclusionCategory', 'Excluded category', '--c-excl'],
+  ];
+  const TYPE_NAME = Object.fromEntries(TYPES.map(t => [t[0], t[1]]));
+  const DEFAULT_TYPES = ['Work', 'FeedbackLevel', 'IntegrationMethod', 'Robot', 'Challenge'];
+  const PATH_SKIP = new Set([...HUBS_LIST(), 'FeedbackLevel', 'IntegrationMethod', 'FeedbackForm']);
+  function HUBS_LIST() { return ['TeacherType', 'FeedbackType', 'EnvRewardUse', 'FeedbackModeling', 'TeacherKind', 'ChannelClass', 'FeedbackRegime', 'FMInput', 'ExclusionCategory']; }
+  const HUBS = new Set(HUBS_LIST());
+  const LEVELS = ['Rating', 'Preference', 'Action', 'Goal'];
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  const byId = Object.fromEntries(RAW.nodes.map(n => [n.id, n]));
+  const nodeColor = n => n.t === 'Work' ? (n.p.teacher === 'fm' ? css('--c-fm') : css('--c-human')) : css((TYPES.find(t => t[0] === n.t) || [0, 0, '--c-survey'])[2]);
+
+  // ---------- derived facts per work ----------
+  const adj = {};
+  RAW.edges.forEach(e => { (adj[e.s] = adj[e.s] || []).push(e); (adj[e.t] = adj[e.t] || []).push(e); });
+  const workFacts = {};
+  RAW.nodes.filter(n => n.t === 'Work').forEach(n => {
+    const out = (adj[n.id] || []).filter(e => e.s === n.id);
+    const lab = r => out.filter(e => e.r === r).map(e => byId[e.t].l);
+    workFacts[n.id] = {
+      levels: lab('USES_LEVEL'), cls: lab('CHANNEL_CLASS'), integ: out.filter(e => e.r === 'INTEGRATES_AS').map(e => byId[e.t].p.code || byId[e.t].l),
+      robots: out.filter(e => e.r === 'RAN_ON_ROBOT').map(e => ({ name: byId[e.t].l, online: !!e.p.online, use: e.p.use || '' })),
+      tasks: lab('TESTED_ON'), models: lab('TEACHER_MODEL'), channels: lab('VIA_CHANNEL'),
+    };
+  });
+
+  // ---------- cytoscape ----------
+  const elements = [
+    ...RAW.nodes.map(n => ({ group: 'nodes', data: { id: n.id, label: n.l, type: n.t, teacher: n.p.teacher || '' }, position: { x: n.x, y: n.y } })),
+    ...RAW.edges.map(e => ({ group: 'edges', data: { id: e.id, source: e.s, target: e.t, rel: e.r, scope: e.p.scope || '', online: e.p.online === false ? 'no' : (e.p.online ? 'yes' : '') } })),
+  ];
+  function styles() {
+    const typeRules = TYPES.map(([t, , v]) => ({ selector: `node[type = "${t}"]`, style: { 'background-color': css(v) } }));
+    return [
+      { selector: 'node', style: { 'label': 'data(label)', 'width': 40, 'height': 40, 'font-family': 'IBM Plex Sans, system-ui, sans-serif', 'font-size': 7.5,
+          'color': css('--node-text'), 'text-valign': 'center', 'text-halign': 'center', 'text-wrap': 'ellipsis', 'text-max-width': 36,
+          'border-width': 1.5, 'border-color': 'rgba(0,0,0,0.18)', 'min-zoomed-font-size': 5 } },
+      ...typeRules,
+      { selector: 'node[type = "Work"][teacher = "fm"]', style: { 'background-color': css('--c-fm') } },
+      { selector: 'node[type = "Work"][teacher = "human"]', style: { 'background-color': css('--c-human') } },
+      { selector: 'node[type = "Challenge"]', style: { 'width': 58, 'height': 58, 'color': '#ffffff', 'font-weight': 600, 'text-max-width': 52, 'shape': 'round-rectangle' } },
+      { selector: 'node[type = "DetailedChallenge"]', style: { 'shape': 'round-rectangle', 'width': 46, 'height': 34 } },
+      { selector: 'node[type = "TeacherType"], node[type = "FeedbackLevel"], node[type = "ChannelClass"], node[type = "FeedbackType"]', style: { 'width': 56, 'height': 56, 'font-weight': 600, 'text-max-width': 50 } },
+      { selector: 'node[type = "TeacherType"]', style: { 'color': '#ffffff' } },
+      { selector: 'node[type = "Robot"]', style: { 'shape': 'round-hexagon', 'width': 44, 'height': 44 } },
+      { selector: 'edge', style: { 'width': 1.1, 'line-color': css('--edge'), 'target-arrow-color': css('--edge'), 'target-arrow-shape': 'triangle', 'arrow-scale': 0.7,
+          'curve-style': 'bezier', 'font-size': 6, 'font-family': 'IBM Plex Mono, monospace', 'color': css('--muted'), 'text-rotation': 'autorotate',
+          'text-background-color': css('--canvas'), 'text-background-opacity': 1, 'text-background-padding': 1, 'min-zoomed-font-size': 6, 'opacity': 0.75 } },
+      { selector: 'edge[scope = "row"]', style: { 'line-style': 'dashed' } },
+      { selector: 'edge[rel = "RAN_ON_ROBOT"]', style: { 'width': 2, 'line-color': css('--c-robot'), 'target-arrow-color': css('--c-robot'), 'opacity': 0.95 } },
+      { selector: 'edge[rel = "RAN_ON_ROBOT"][online = "no"]', style: { 'line-style': 'dotted' } },
+      { selector: 'edge[rel = "BUILDS_ON"]', style: { 'width': 1.8, 'line-color': css('--edge-strong'), 'target-arrow-color': css('--edge-strong') } },
+      { selector: '.elabel', style: { 'label': 'data(rel)' } },
+      { selector: 'node:selected', style: { 'border-width': 4, 'border-color': css('--accent') } },
+      { selector: '.faded', style: { 'opacity': 0.12 } },
+      { selector: 'edge.hl', style: { 'width': 2.6, 'opacity': 1, 'line-color': css('--accent'), 'target-arrow-color': css('--accent'), 'label': 'data(rel)' } },
+      { selector: 'node.hl', style: { 'border-width': 4, 'border-color': css('--accent') } },
+    ];
+  }
+  const cy = cytoscape({ container: document.getElementById('cy'), elements, layout: { name: 'preset' }, style: styles(),
+    wheelSensitivity: 0.25, minZoom: 0.15, maxZoom: 3.5, boxSelectionEnabled: false });
+  new MutationObserver(() => cy.style(styles())).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  try { matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => cy.style(styles())); } catch (e) {}
+
+  // ---------- state ----------
+  const state = { types: new Set(DEFAULT_TYPES), teacher: 'all', levels: new Set(), cls: new Set(), robot: false, online: false, rowscope: true, elabels: false,
+    extra: new Set(), focus: null, custom: null };
+
+  function workPasses(n) {
+    const f = workFacts[n.id];
+    if (state.teacher !== 'all' && n.p.teacher !== state.teacher) return false;
+    if (n.p.scope === 'excluded from scope' && !state.types.has('ExclusionCategory')) return false;
+    if (state.levels.size && !f.levels.some(l => state.levels.has(l))) return false;
+    if (state.cls.size && !f.cls.some(c => state.cls.has(c))) return false;
+    if (state.robot && !f.robots.length) return false;
+    if (state.online && !f.robots.some(r => r.online)) return false;
+    return true;
+  }
+  function apply() {
+    cy.batch(() => {
+      const visibleWorks = new Set(RAW.nodes.filter(n => n.t === 'Work' && workPasses(n) && (!state.custom || state.custom.works(n))).map(n => n.id));
+      const show = new Set();
+      RAW.nodes.forEach(n => {
+        if (state.focus) return;
+        if (n.t === 'Work') { if (visibleWorks.has(n.id) && state.types.has('Work')) show.add(n.id); return; }
+        if (!state.types.has(n.t)) return;
+        if ((n.t === 'Challenge' || n.t === 'DetailedChallenge') && state.teacher !== 'all' && n.p.teacher !== state.teacher) return;
+        show.add(n.id);
+      });
+      if (state.focus) {
+        show.add(state.focus);
+        (adj[state.focus] || []).forEach(e => { show.add(e.s); show.add(e.t); });
+      }
+      state.extra.forEach(id => show.add(id));
+      // drop non-work nodes left without any visible work neighbour (keeps the picture readable)
+      if (!state.focus) {
+        [...show].forEach(id => {
+          const n = byId[id]; if (n.t === 'Work' || state.extra.has(id)) return;
+          const linked = (adj[id] || []).some(e => { const o = e.s === id ? e.t : e.s; return visibleWorks.has(o) && show.has(o); });
+          const hubLink = (adj[id] || []).some(e => { const o = e.s === id ? e.t : e.s; return show.has(o) && byId[o].t !== 'Work'; });
+          if (!linked && !(hubLink && !state.types.has('Work'))) show.delete(id);
+        });
+      }
+      cy.nodes().forEach(nd => nd.style('display', show.has(nd.id()) ? 'element' : 'none'));
+      cy.edges().forEach(ed => {
+        const ok = show.has(ed.data('source')) && show.has(ed.data('target')) && (state.rowscope || ed.data('scope') !== 'row') && (!state.custom || !state.custom.edges || state.custom.edges(ed));
+        ed.style('display', ok ? 'element' : 'none');
+      });
+      cy.edges().toggleClass('elabel', state.elabels);
+    });
+    renderCounts(); renderTypes(); renderFilters();
+    if (location.hash === '#table') renderTable();
+  }
+
+  // ---------- rail ----------
+  function renderTypes() {
+    const counts = {}; RAW.nodes.forEach(n => counts[n.t] = (counts[n.t] || 0) + 1);
+    document.getElementById('types').innerHTML = TYPES.filter(t => counts[t[0]]).map(([t, name, v]) => {
+      const dot = t === 'Work' ? `background:linear-gradient(90deg, var(--c-human) 50%, var(--c-fm) 50%)` : `background:var(${v})`;
+      return `<button type="button" class="tchip" data-type="${t}" aria-pressed="${state.types.has(t)}"><span class="dot" style="${dot}"></span><span>${esc(name)}</span><span class="n">${counts[t]}</span></button>`;
+    }).join('');
+  }
+  function renderFilters() {
+    document.getElementById('f-level').innerHTML = LEVELS.map(l => `<button type="button" class="chip" data-level="${l}" aria-pressed="${state.levels.has(l)}">${l}</button>`).join('');
+    document.getElementById('f-class').innerHTML = ['Explicit', 'Implicit'].map(c => `<button type="button" class="chip" data-cls="${c}" aria-pressed="${state.cls.has(c)}">${c}</button>`).join('');
+    document.getElementById('f-robot').checked = state.robot; document.getElementById('f-online').checked = state.online;
+    document.getElementById('f-rowscope').checked = state.rowscope; document.getElementById('f-elabels').checked = state.elabels;
+    document.querySelectorAll('[data-teacher]').forEach(b => b.setAttribute('aria-pressed', b.dataset.teacher === state.teacher));
+  }
+  function renderCounts() {
+    const vn = cy.nodes().filter(n => n.style('display') !== 'none'), ve = cy.edges().filter(e => e.style('display') !== 'none');
+    document.getElementById('counts').innerHTML = `<b>${vn.length}</b> of ${RAW.nodes.length} nodes · <b>${ve.length}</b> of ${RAW.edges.length} links · <b>${vn.filter('[type = "Work"]').length}</b> works shown`;
+  }
+
+  // ---------- properties panel ----------
+  const PROP_LABEL = { authorYear: 'author, year', short: 'short name', discussedIn: 'discussed in', teachersNote: 'teachers', openQuestion: 'open question', feedbackType: 'feedback type', channelClass: 'channel class', standIn: 'stand-in teacher', definedBy: 'defined by', nameAsPrinted: 'as printed' };
+  function showNode(id) {
+    const n = byId[id]; if (!n) return;
+    const color = nodeColor(n);
+    let h = `<div><span class="ptype" style="background:${color}">${esc(TYPE_NAME[n.t] || n.t)}${n.t === 'Work' ? ' · ' + (n.p.teacher === 'fm' ? 'foundation model' : 'human') : ''}</span></div><h3>${esc(n.l)}</h3>`;
+    if (n.t === 'Work') {
+      h += `<p class="sub">${esc(n.p.authorYear || '')}${n.p.title ? ' · ' + esc(n.p.title) : ''}</p>`;
+      if (n.p.title) h += `<p class="sub"><a href="https://scholar.google.com/scholar?q=${encodeURIComponent(n.p.title)}" target="_blank" rel="noopener">Find the paper</a></p>`;
+    }
+    if (n.p.openQuestion) h += `<p class="open">${esc(n.p.openQuestion)}</p>`;
+    const skip = new Set(['title', 'openQuestion', 'teacher', 'short']);
+    const props = Object.entries(n.p).filter(([k, v]) => !skip.has(k) && v !== '' && v != null && !(Array.isArray(v) && !v.length));
+    if (props.length) h += `<dl class="props">${props.map(([k, v]) => `<dt>${esc(PROP_LABEL[k] || k)}</dt><dd>${esc(Array.isArray(v) ? v.join('; ') : (v === true ? 'yes' : v === false ? 'no' : v))}</dd>`).join('')}</dl>`;
+    h += `<div class="actions"><button type="button" class="btn primary" data-act="focus">Show only its links</button><button type="button" class="btn" data-act="expand">Add its neighbours</button><button type="button" class="btn" data-act="clearfocus">Back to filters</button></div>`;
+    const groups = {};
+    (adj[id] || []).forEach(e => { const out = e.s === id; const o = out ? e.t : e.s; const k = (out ? '→ ' : '← ') + e.r; (groups[k] = groups[k] || []).push({ o, e }); });
+    h += `<div class="nbrs">` + Object.entries(groups).sort().map(([k, arr]) => `<div><h4>${esc(k)} (${arr.length})</h4>${arr.map(({ o, e }) => {
+      const on = byId[o]; const vis = cy.getElementById(o).style('display') !== 'none';
+      const extra = e.p.use ? ` · ${esc(e.p.use)}` : (e.p.scope === 'row' ? ' · shared row' : '');
+      return `<button type="button" class="nbr ${vis ? '' : 'hidden-n'}" data-go="${esc(o)}" title="${esc(e.p.asListed || e.p.evidence || '')}"><span class="dot" style="background:${nodeColor(on)}"></span>${esc(on.l)}${extra}</button>`;
+    }).join('')}</div>`).join('') + `</div>`;
+    const panel = document.getElementById('panel'); panel.innerHTML = h; panel.dataset.node = id;
+  }
+  function showEdge(id) {
+    const e = RAW.edges.find(x => x.id === id); if (!e) return;
+    const props = Object.entries(e.p);
+    document.getElementById('panel').innerHTML = `<div><span class="ptype" style="background:var(--rule)">Relationship</span></div><h3 class="mono">${esc(e.r)}</h3>
+      <p class="sub"><button type="button" class="nbr" data-go="${esc(e.s)}">${esc(byId[e.s].l)}</button> → <button type="button" class="nbr" data-go="${esc(e.t)}">${esc(byId[e.t].l)}</button></p>
+      ${props.length ? `<dl class="props">${props.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(Array.isArray(v) ? v.join('; ') : (v === true ? 'yes' : v === false ? 'no' : v))}</dd>`).join('')}</dl>` : ''}`;
+  }
+  function welcome() {
+    document.getElementById('panel').innerHTML = `<div class="empty"><b style="color:var(--ink)">Select a node</b> to see its properties and links.
+      <ul><li>Click a node or a link to inspect it.</li><li>Choose a view in the toolbar to see one finding of the survey.</li><li>Toggle node types on the left; filters apply to works.</li><li>Use “Path” to see how two works are related.</li></ul></div>`;
+  }
+
+  // ---------- table ----------
+  function renderTable() {
+    const vis = cy.nodes('[type = "Work"]').filter(n => n.style('display') !== 'none').map(n => byId[n.id()]);
+    vis.sort((a, b) => (a.p.teacher + a.p.authorYear).localeCompare(b.p.teacher + b.p.authorYear));
+    const rows = vis.map(n => { const f = workFacts[n.id];
+      return `<tr data-go="${esc(n.id)}"><td><b>${esc(n.l)}</b><br><span style="color:var(--muted)">${esc(n.p.authorYear)}</span></td><td>${n.p.teacher === 'fm' ? 'Foundation model' : 'Human'}</td>
+        <td>${esc(f.levels.join(', '))}</td><td>${esc(n.p.teacher === 'fm' ? f.models.join(', ') : f.channels.join(', '))}</td><td>${esc(f.integ.join(', '))}</td>
+        <td>${esc(f.tasks.join(', '))}</td><td>${esc(f.robots.map(r => r.name + (r.online ? '' : ' (' + r.use + ')')).join(', '))}</td></tr>`; }).join('');
+    document.getElementById('tablepane').innerHTML = `<table class="works"><thead><tr><th>Work</th><th>Teacher</th><th>Level</th><th>Channel or model</th><th>Integration</th><th>Tasks</th><th>Physical robot</th></tr></thead><tbody>${rows || '<tr><td colspan="7">No work matches the filters.</td></tr>'}</tbody></table>`;
+  }
+
+  // ---------- views ----------
+  const VIEWS = {
+    overview: () => ({}),
+    implicit: () => ({ types: ['Work', 'FeedbackLevel', 'ChannelClass', 'Channel'], teacher: 'human', cls: ['Implicit'] }),
+    robots: () => ({ types: ['Work', 'Robot', 'TeacherType'], robot: true }),
+    'fm-robots': () => ({ types: ['Work', 'Robot', 'FoundationModel'], teacher: 'fm', robot: true }),
+    integration: () => ({ types: ['Work', 'IntegrationMethod', 'TeacherType'] }),
+    lineage: () => ({ types: ['Work'], custom: { works: n => (adj[n.id] || []).some(e => e.r === 'BUILDS_ON' || e.r === 'COMPARED_WITH'), edges: ed => ed.data('rel') === 'BUILDS_ON' || ed.data('rel') === 'COMPARED_WITH' }, elabels: true }),
+    'human-problems': () => ({ types: ['Work', 'Challenge'], teacher: 'human' }),
+    'fm-problems': () => ({ types: ['Work', 'Challenge'], teacher: 'fm' }),
+    models: () => ({ types: ['Work', 'FoundationModel', 'FMInput'], teacher: 'fm' }),
+    tasks: () => ({ types: ['Work', 'Task', 'TeacherType'] }),
+  };
+  function setView(name, relayout) {
+    const v = (VIEWS[name] || VIEWS.overview)();
+    Object.assign(state, { types: new Set(v.types || DEFAULT_TYPES), teacher: v.teacher || 'all', levels: new Set(v.levels || []), cls: new Set(v.cls || []),
+      robot: !!v.robot, online: !!v.online, rowscope: true, elabels: !!v.elabels, extra: new Set(), focus: null, custom: v.custom || null });
+    document.getElementById('view').value = VIEWS[name] ? name : 'overview';
+    apply(); welcome();
+    if (relayout && name !== 'overview') arrange(); else cy.fit(cy.elements(':visible'), 30);
+  }
+  function arrange() {
+    const vis = cy.elements().filter(el => el.style('display') !== 'none');
+    vis.layout({ name: 'cose', animate: false, randomize: false, nodeRepulsion: () => 9000, idealEdgeLength: () => 70, gravity: 0.6, numIter: 1500, fit: true, padding: 30 }).run();
+  }
+
+  // ---------- events ----------
+  cy.on('tap', 'node', ev => { showNode(ev.target.id()); });
+  cy.on('tap', 'edge', ev => { showEdge(ev.target.id()); });
+  cy.on('tap', ev => { if (ev.target === cy) { cy.elements().removeClass('hl faded'); welcome(); } });
+  cy.on('dbltap', 'node', ev => { expand(ev.target.id()); });
+  function expand(id) { (adj[id] || []).forEach(e => { state.extra.add(e.s); state.extra.add(e.t); }); apply(); showNode(id); }
+  function goTo(id) {
+    const el = cy.getElementById(id); if (!el.length) return;
+    if (el.style('display') === 'none') { state.extra.add(id); apply(); }
+    if (location.hash === '#table') location.hash = 'graph';
+    cy.elements().unselect(); el.select(); cy.animate({ center: { eles: el }, zoom: Math.max(cy.zoom(), 1.1) }, { duration: 250 }); showNode(id);
+  }
+  document.addEventListener('click', e => {
+    const tc = e.target.closest('.tchip'); if (tc) { const t = tc.dataset.type; state.types.has(t) ? state.types.delete(t) : state.types.add(t); state.custom = null; apply(); return; }
+    const lv = e.target.closest('[data-level]'); if (lv) { const v = lv.dataset.level; state.levels.has(v) ? state.levels.delete(v) : state.levels.add(v); apply(); return; }
+    const cl = e.target.closest('[data-cls]'); if (cl) { const v = cl.dataset.cls; state.cls.has(v) ? state.cls.delete(v) : state.cls.add(v); apply(); return; }
+    const tb = e.target.closest('[data-teacher]'); if (tb) { state.teacher = tb.dataset.teacher; apply(); return; }
+    const go = e.target.closest('[data-go]'); if (go) { goTo(go.dataset.go); return; }
+    const act = e.target.closest('[data-act]');
+    if (act) { const id = document.getElementById('panel').dataset.node;
+      if (act.dataset.act === 'focus') { state.focus = id; apply(); arrange(); showNode(id); }
+      if (act.dataset.act === 'expand') expand(id);
+      if (act.dataset.act === 'clearfocus') { state.focus = null; state.extra = new Set(); apply(); cy.fit(cy.elements(':visible'), 30); showNode(id); }
+      return; }
+  });
+  ['f-robot', 'f-online', 'f-rowscope', 'f-elabels'].forEach(id => document.getElementById(id).addEventListener('change', ev => {
+    const key = { 'f-robot': 'robot', 'f-online': 'online', 'f-rowscope': 'rowscope', 'f-elabels': 'elabels' }[id]; state[key] = ev.target.checked; apply(); }));
+  document.getElementById('reset').addEventListener('click', () => setView('overview'));
+  document.getElementById('fit').addEventListener('click', () => cy.fit(cy.elements(':visible'), 30));
+  document.getElementById('relayout').addEventListener('click', arrange);
+  document.getElementById('view').addEventListener('change', ev => setView(ev.target.value, true));
+
+  const labelOf = n => n.t === 'Work' ? `${n.l} — ${n.p.authorYear}` : `${n.l} (${TYPE_NAME[n.t] || n.t})`;
+  const LOOKUP = {}; RAW.nodes.forEach(n => LOOKUP[labelOf(n)] = n.id);
+  document.getElementById('qlist').innerHTML = RAW.nodes.map(n => `<option value="${esc(labelOf(n))}">`).join('');
+  document.getElementById('wlist').innerHTML = RAW.nodes.filter(n => n.t === 'Work').map(n => `<option value="${esc(labelOf(n))}">`).join('');
+  function findNode(txt) {
+    if (!txt) return null; if (LOOKUP[txt]) return LOOKUP[txt];
+    const q = txt.toLowerCase();
+    const hit = RAW.nodes.find(n => n.l.toLowerCase() === q) || RAW.nodes.find(n => labelOf(n).toLowerCase().includes(q) || (n.p.title || '').toLowerCase().includes(q) || (n.p.key || '') === q);
+    return hit ? hit.id : null;
+  }
+  const q = document.getElementById('q');
+  q.addEventListener('change', () => { const id = findNode(q.value.trim()); if (id) goTo(id); });
+  q.addEventListener('keydown', ev => { if (ev.key === 'Enter') { const id = findNode(q.value.trim()); if (id) goTo(id); } });
+
+  document.getElementById('findpath').addEventListener('click', () => {
+    const a = findNode(document.getElementById('pa').value.trim()), b = findNode(document.getElementById('pb').value.trim());
+    const panel = document.getElementById('panel');
+    if (!a || !b) { panel.innerHTML = `<p class="empty">Pick two works from the suggestions to find how they are linked.</p>`; return; }
+    cy.elements().removeClass('hl faded');
+    const pathOver = skip => cy.elements().filter(el => el.isEdge() ? !skip.has(byId[el.data('source')].t) && !skip.has(byId[el.data('target')].t) : !skip.has(el.data('type')))
+      .aStar({ root: cy.getElementById(a), goal: cy.getElementById(b) });
+    let res = pathOver(PATH_SKIP);
+    if (!res.found) res = pathOver(HUBS);
+    if (!res.found) { panel.innerHTML = `<p class="empty">No path links these two works without passing through a broad category such as “Human”.</p>`; return; }
+    res.path.forEach(el => { if (el.style('display') === 'none') { el.isNode() ? state.extra.add(el.id()) : null; } });
+    apply();
+    cy.elements().addClass('faded'); res.path.removeClass('faded').addClass('hl');
+    cy.animate({ fit: { eles: res.path, padding: 60 } }, { duration: 300 });
+    const steps = res.path.filter(el => el.isNode()).map(n => byId[n.id()]);
+    const rels = res.path.filter(el => el.isEdge()).map(e => e.data('rel'));
+    panel.innerHTML = `<div><span class="ptype" style="background:var(--accent-soft)">Path, ${rels.length} links</span></div><div class="pathout">` +
+      steps.map((n, i) => `<button type="button" class="nbr" data-go="${esc(n.id)}"><span class="dot" style="background:${nodeColor(n)}"></span>${esc(n.l)}</button>${i < rels.length ? `<div class="mono" style="color:var(--muted);font-size:.72rem;margin:2px 0 4px 10px">${esc(rels[i])}</div>` : ''}`).join('') + `</div>`;
+  });
+
+  function route() {
+    const h = location.hash.replace('#', '');
+    const table = h === 'table';
+    document.getElementById('graphpane').hidden = table; document.getElementById('tablepane').hidden = !table;
+    document.getElementById('tab-graph').toggleAttribute('aria-current', !table); document.getElementById('tab-table').toggleAttribute('aria-current', table);
+    if (table) document.getElementById('tab-table').setAttribute('aria-current', 'page'); else document.getElementById('tab-graph').setAttribute('aria-current', 'page');
+    if (table) renderTable(); else { cy.resize(); }
+    if (VIEWS[h] && h !== 'overview') setView(h, true);
+  }
+  window.addEventListener('hashchange', route);
+  setView('overview');
+  route();
+})();
+</script>
+</body>
+</html>

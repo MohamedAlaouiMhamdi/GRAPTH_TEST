@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this graph or its data, please cite the survey."
+title: "IRL Survey Graph: companion data for Interactive Reinforcement Learning: A Unified Survey of Human and Foundation-Model Feedback"
+type: dataset
+authors:
+  - family-names: "Alaoui Mhamdi"
+    given-names: "Mohamed"
+    affiliation: "UTBM, CIAD"
+  # add co-authors here
+version: "0.1.0"
+date-released: "2026-11-12"
+repository-code: "https://github.com/USERNAME/irl-survey-graph"
+keywords:
+  - interactive reinforcement learning
+  - human feedback
+  - foundation models
+  - robotics
+  - survey

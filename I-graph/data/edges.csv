@@ -1,0 +1,1656 @@
+id,source,target,type,properties_json
+e1,teacherkind:people,teacher:human,KIND_OF,{}
+e2,teacherkind:standin,teacher:human,KIND_OF,{}
+e3,level:rating,ftype:evaluative,LEVEL_OF,{}
+e4,level:preference,ftype:evaluative,LEVEL_OF,{}
+e5,level:action,ftype:informative,LEVEL_OF,{}
+e6,level:goal,ftype:informative,LEVEL_OF,{}
+e7,channel:mouse,chclass:explicit,IN_CLASS,{}
+e8,channel:keyboard,chclass:explicit,IN_CLASS,{}
+e9,channel:buttons,chclass:explicit,IN_CLASS,{}
+e10,channel:gui,chclass:explicit,IN_CLASS,{}
+e11,channel:wii,chclass:explicit,IN_CLASS,{}
+e12,channel:touch,chclass:explicit,IN_CLASS,{}
+e13,channel:speech,chclass:explicit,IN_CLASS,{}
+e14,channel:typed,chclass:explicit,IN_CLASS,{}
+e15,channel:gesture,chclass:explicit,IN_CLASS,{}
+e16,channel:face,chclass:implicit,IN_CLASS,{}
+e17,channel:headpose,chclass:implicit,IN_CLASS,{}
+e18,channel:prosody,chclass:implicit,IN_CLASS,{}
+e19,channel:eeg,chclass:implicit,IN_CLASS,{}
+e20,survey:najar_reinforcement_2021,ftype:evaluative,DEFINES,"{""term"": ""critique"", ""relation"": ""earlier name""}"
+e21,survey:cruz_survey_2021,ftype:evaluative,DEFINES,"{""term"": ""critique"", ""relation"": ""earlier name""}"
+e22,survey:li_human-centered_2019,ftype:evaluative,DEFINES,"{""term"": ""human reward"", ""relation"": ""earlier name""}"
+e23,survey:wirth_survey_2017,level:preference,DEFINES,"{""term"": ""preference"", ""relation"": ""definition cited""}"
+e24,survey:najar_reinforcement_2021,chclass:explicit,DEFINES,"{""term"": ""explicit feedback"", ""relation"": ""definition cited""}"
+e25,survey:li_human-centered_2019,chclass:explicit,DEFINES,"{""term"": ""explicit feedback"", ""relation"": ""definition cited""}"
+e26,survey:lin_review_2020,chclass:explicit,DEFINES,"{""term"": ""explicit feedback"", ""relation"": ""definition cited""}"
+e27,survey:lin_review_2020,chclass:implicit,DEFINES,"{""term"": ""implicit feedback"", ""relation"": ""definition cited""}"
+e28,survey:najar_reinforcement_2021,integ:RS,DEFINES,"{""term"": ""reward shaping"", ""relation"": ""source of the integration vocabulary""}"
+e29,survey:najar_reinforcement_2021,integ:VS,DEFINES,"{""term"": ""value shaping"", ""relation"": ""source of the integration vocabulary""}"
+e30,survey:najar_reinforcement_2021,integ:PS,DEFINES,"{""term"": ""policy shaping"", ""relation"": ""source of the integration vocabulary""}"
+e31,survey:najar_reinforcement_2021,integ:DB,DEFINES,"{""term"": ""decision biasing"", ""relation"": ""source of the integration vocabulary""}"
+e32,survey:najar_reinforcement_2021,modeling:MF,DEFINES,"{""term"": ""model-free shaping"", ""relation"": ""source of the MF/MB distinction""}"
+e33,survey:najar_reinforcement_2021,modeling:MB,DEFINES,"{""term"": ""model-based shaping"", ""relation"": ""source of the MF/MB distinction""}"
+e34,survey:schoepp_evolving_2025,ftype:evaluative,DEFINES,"{""term"": ""reward role"", ""relation"": ""their role corresponds to our type""}"
+e35,survey:schoepp_evolving_2025,ftype:informative,DEFINES,"{""term"": ""planner role"", ""relation"": ""their role corresponds to our type""}"
+e36,work:thomaz_reinforcement_2006,teacher:human,TAUGHT_BY,{}
+e37,work:thomaz_reinforcement_2006-1,teacher:human,TAUGHT_BY,{}
+e38,work:thomaz_teachable_2008,teacher:human,TAUGHT_BY,{}
+e39,work:tenorio-gonzalez_dynamic_2010,teacher:human,TAUGHT_BY,{}
+e40,work:zhang_deep_2020,teacher:human,TAUGHT_BY,{}
+e41,work:bignold_evaluation_2021,teacher:human,TAUGHT_BY,{}
+e42,work:bradley_knox_tamer_2008,teacher:human,TAUGHT_BY,{}
+e43,work:hutchison_training_2013,teacher:human,TAUGHT_BY,{}
+e44,work:li_learning_2014,teacher:human,TAUGHT_BY,{}
+e45,work:li_using_2016,teacher:human,TAUGHT_BY,{}
+e46,work:li_social_2018,teacher:human,TAUGHT_BY,{}
+e47,work:warnell_deep_2018,teacher:human,TAUGHT_BY,{}
+e48,work:knox_framing_2015,teacher:human,TAUGHT_BY,{}
+e49,work:li_interactive_2018,teacher:human,TAUGHT_BY,{}
+e50,work:li_improving_2019,teacher:human,TAUGHT_BY,{}
+e51,work:knox_combining_2010,teacher:human,TAUGHT_BY,{}
+e52,work:yu_learning_2018,teacher:human,TAUGHT_BY,{}
+e53,work:macglashan_interactive_2023,teacher:human,TAUGHT_BY,{}
+e54,work:arumugam_deep_2019,teacher:human,TAUGHT_BY,{}
+e55,work:griffith_policy_2013,teacher:human,TAUGHT_BY,{}
+e56,work:loftin_learning_2016,teacher:human,TAUGHT_BY,{}
+e57,work:peng_need_2016,teacher:human,TAUGHT_BY,{}
+e58,work:white_rating-based_2024,teacher:human,TAUGHT_BY,{}
+e59,work:xiao_fresh_2020,teacher:human,TAUGHT_BY,{}
+e60,work:guan_widening_2021,teacher:human,TAUGHT_BY,{}
+e61,work:hiranaka_primitive_2023,teacher:human,TAUGHT_BY,{}
+e62,work:zhang_dual_2023,teacher:human,TAUGHT_BY,{}
+e63,work:broekens_emotion_2007,teacher:human,TAUGHT_BY,{}
+e64,work:arakawa_dqn-tamer_2018,teacher:human,TAUGHT_BY,{}
+e65,work:li_facial_2020,teacher:human,TAUGHT_BY,{}
+e66,work:lin_human_2020,teacher:human,TAUGHT_BY,{}
+e67,work:churamani_icub_2020,teacher:human,TAUGHT_BY,{}
+e68,work:wang_affective_2022,teacher:human,TAUGHT_BY,{}
+e69,work:veeriah_face_2016,teacher:human,TAUGHT_BY,{}
+e70,work:cui_empathic_2020,teacher:human,TAUGHT_BY,{}
+e71,work:kim_intrinsic_2017,teacher:human,TAUGHT_BY,{}
+e72,work:kim_learning_2007,teacher:human,TAUGHT_BY,{}
+e73,work:knierim_leveraging_2024,teacher:human,TAUGHT_BY,{}
+e74,work:christiano_deep_2023,teacher:human,TAUGHT_BY,{}
+e75,work:lee_pebble_2021,teacher:human,TAUGHT_BY,{}
+e76,work:hejna_few-shot_2022,teacher:human,TAUGHT_BY,{}
+e77,work:cruz_interactive_2015,teacher:human,TAUGHT_BY,{}
+e78,work:cruz_training_2016,teacher:human,TAUGHT_BY,{}
+e79,work:cruz_multi-modal_2018,teacher:human,TAUGHT_BY,{}
+e80,work:moreira_deep_2020,teacher:human,TAUGHT_BY,{}
+e81,work:trick_interactive_2022,teacher:human,TAUGHT_BY,{}
+e82,work:bignold_persistent_2021,teacher:human,TAUGHT_BY,{}
+e83,work:nguyen_towards_2023,teacher:human,TAUGHT_BY,{}
+e84,work:celemin_fast_2019,teacher:human,TAUGHT_BY,{}
+e85,work:millan_human_2019,teacher:human,TAUGHT_BY,{}
+e86,work:millan-arias_robust_2020,teacher:human,TAUGHT_BY,{}
+e87,work:goyal_using_2019,teacher:human,TAUGHT_BY,{}
+e88,work:najar_interactively_2020,teacher:human,TAUGHT_BY,{}
+e89,work:tarakli_interactive_2024,teacher:human,TAUGHT_BY,{}
+e90,work:suay_effect_2011,teacher:human,TAUGHT_BY,{}
+e91,work:krening_interaction_2018,teacher:human,TAUGHT_BY,{}
+e92,work:bignold_human_2023,teacher:human,TAUGHT_BY,{}
+e93,work:koert_multi-channel_2020,teacher:human,TAUGHT_BY,{}
+e94,work:rocamonde_vision-language_2023,teacher:fm,TAUGHT_BY,{}
+e95,work:fu_furl_2024,teacher:fm,TAUGHT_BY,{}
+e96,work:zhou_marvl_2026,teacher:fm,TAUGHT_BY,{}
+e97,work:kwon_reward_2023,teacher:fm,TAUGHT_BY,{}
+e98,work:chu_accelerating_2023,teacher:fm,TAUGHT_BY,{}
+e99,work:luu_enhancing_2025,teacher:fm,TAUGHT_BY,{}
+e100,work:zhao_training-free_2025,teacher:fm,TAUGHT_BY,{}
+e101,work:lin_autoskill_2025,teacher:fm,TAUGHT_BY,{}
+e102,work:sharony_vlm-guided_2026,teacher:fm,TAUGHT_BY,{}
+e103,work:wang_rl-vlm-f_2024,teacher:fm,TAUGHT_BY,{}
+e104,work:zakharov_goalladder_2025,teacher:fm,TAUGHT_BY,{}
+e105,work:klissarov_motif_2023,teacher:fm,TAUGHT_BY,{}
+e106,work:klissarov_modeling_2024,teacher:fm,TAUGHT_BY,{}
+e107,work:lin_navigating_2024,teacher:fm,TAUGHT_BY,{}
+e108,work:zhang_improving_2024,teacher:fm,TAUGHT_BY,{}
+e109,work:merler_guiding_2025,teacher:fm,TAUGHT_BY,{}
+e110,work:du_guiding_2023,teacher:fm,TAUGHT_BY,{}
+e111,work:ruiz-gonzalez_words_2024,teacher:fm,TAUGHT_BY,{}
+e112,work:cruz_improving_2018,teacher:human,TAUGHT_BY,{}
+e113,work:yang_trajectory_2024,teacher:human,TAUGHT_BY,{}
+e114,work:arzate_cruz_mariomix_2020,teacher:human,TAUGHT_BY,{}
+e115,work:knox_learning_2012,teacher:human,TAUGHT_BY,{}
+e116,work:zhang_atari-head_2020,teacher:human,TAUGHT_BY,{}
+e117,work:li_how_2025,teacher:fm,TAUGHT_BY,{}
+e118,work:ma_eureka_2024,excl:reward-code,EXCLUDED_AS,{}
+e119,work:xie_text2reward_2024,excl:reward-code,EXCLUDED_AS,{}
+e120,work:yu_language_2023,excl:reward-code,EXCLUDED_AS,{}
+e121,work:turcato_towards_2025,excl:reward-code,EXCLUDED_AS,{}
+e122,work:song_self-refined_2023,excl:reward-code,EXCLUDED_AS,{}
+e123,work:zhang_progress_2025,excl:reward-code,EXCLUDED_AS,{}
+e124,work:carta_grounding_2026,excl:fm-policy,EXCLUDED_AS,{}
+e125,work:sikchi_rlzero_2024,excl:fm-policy,EXCLUDED_AS,{}
+e126,work:thomaz_reinforcement_2006,row:H01,IN_ROW,{}
+e127,work:thomaz_reinforcement_2006-1,row:H01,IN_ROW,{}
+e128,work:thomaz_teachable_2008,row:H01,IN_ROW,{}
+e129,work:tenorio-gonzalez_dynamic_2010,row:H01,IN_ROW,{}
+e130,work:zhang_deep_2020,row:H01,IN_ROW,{}
+e131,work:bignold_evaluation_2021,row:H01,IN_ROW,{}
+e132,row:H01,task:sophie-s-kitchen,ROW_LISTS_TASK,"{""asListed"": ""Sophie's Kitchen""}"
+e133,row:H01,task:navigation,ROW_LISTS_TASK,"{""asListed"": ""navigation""}"
+e134,row:H01,task:h01:auv-path-following,ROW_LISTS_TASK,"{""asListed"": ""AUV path following""}"
+e135,row:H01,task:mountain-car,ROW_LISTS_TASK,"{""asListed"": ""Mountain Car""}"
+e136,work:thomaz_reinforcement_2006,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H01""]}"
+e137,work:thomaz_reinforcement_2006,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H01""]}"
+e138,work:thomaz_reinforcement_2006,form:scalar,HAS_FORM,"{""asListed"": ""Scalar / binary"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e139,work:thomaz_reinforcement_2006,form:binary,HAS_FORM,"{""asListed"": ""Scalar / binary"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e140,work:thomaz_reinforcement_2006,channel:mouse,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e141,work:thomaz_reinforcement_2006,channel:speech,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e142,work:thomaz_reinforcement_2006,channel:gui,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e143,work:thomaz_reinforcement_2006,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e144,work:thomaz_reinforcement_2006,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H01""]}"
+e145,work:thomaz_reinforcement_2006,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H01""]}"
+e146,work:thomaz_reinforcement_2006,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""RS (MF)"", ""scope"": ""work"", ""rows"": [""H01""]}"
+e147,work:thomaz_reinforcement_2006,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H01""]}"
+e148,work:thomaz_reinforcement_2006,env:used,USES_ENV_REWARD,"{""asListed"": ""Present / absent"", ""scope"": ""work"", ""basis"": ""survey Sec. VI-A1 (\""used together with the environment reward\"")"", ""rows"": [""H01""]}"
+e149,work:thomaz_reinforcement_2006,task:sophie-s-kitchen,TESTED_ON,"{""scope"": ""work"", ""basis"": ""survey Sec. VI-A1"", ""asListed"": ""Sophie's Kitchen"", ""setting"": ""sim"", ""rows"": [""H01""]}"
+e150,work:thomaz_reinforcement_2006-1,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H01"", ""H28""]}"
+e151,work:thomaz_reinforcement_2006-1,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H01"", ""H28""]}"
+e152,work:thomaz_reinforcement_2006-1,form:scalar,HAS_FORM,"{""asListed"": ""Scalar / binary"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e153,work:thomaz_reinforcement_2006-1,form:binary,HAS_FORM,"{""asListed"": ""Scalar / binary"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e154,work:thomaz_reinforcement_2006-1,channel:mouse,VIA_CHANNEL,"{""asListed"": [""Mouse; speech; GUI; simulated user"", ""Mouse""], ""scope"": ""work"", ""rows"": [""H01"", ""H28""]}"
+e155,work:thomaz_reinforcement_2006-1,channel:speech,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e156,work:thomaz_reinforcement_2006-1,channel:gui,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e157,work:thomaz_reinforcement_2006-1,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e158,work:thomaz_reinforcement_2006-1,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H01"", ""H28""]}"
+e159,work:thomaz_reinforcement_2006-1,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H01""]}"
+e160,work:thomaz_reinforcement_2006-1,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""RS (MF)"", ""scope"": ""work"", ""rows"": [""H01""]}"
+e161,work:thomaz_reinforcement_2006-1,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H01""]}"
+e162,work:thomaz_reinforcement_2006-1,env:used,USES_ENV_REWARD,"{""asListed"": ""Present / absent"", ""scope"": ""row"", ""rows"": [""H01"", ""H28""]}"
+e163,work:thomaz_reinforcement_2006-1,env:notused,USES_ENV_REWARD,"{""asListed"": ""Present / absent"", ""scope"": ""row"", ""rows"": [""H01"", ""H28""]}"
+e164,work:thomaz_reinforcement_2006-1,task:sophie-s-kitchen,TESTED_ON,"{""scope"": ""work"", ""basis"": ""survey Sec. VI-B2"", ""asListed"": ""Sophie's Kitchen"", ""setting"": ""sim"", ""rows"": [""H01"", ""H28""]}"
+e165,work:thomaz_teachable_2008,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H01"", ""H28""]}"
+e166,work:thomaz_teachable_2008,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H01"", ""H28""]}"
+e167,work:thomaz_teachable_2008,form:scalar,HAS_FORM,"{""asListed"": ""Scalar / binary"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e168,work:thomaz_teachable_2008,form:binary,HAS_FORM,"{""asListed"": ""Scalar / binary"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e169,work:thomaz_teachable_2008,channel:mouse,VIA_CHANNEL,"{""asListed"": [""Mouse; speech; GUI; simulated user"", ""Mouse""], ""scope"": ""work"", ""rows"": [""H01"", ""H28""]}"
+e170,work:thomaz_teachable_2008,channel:speech,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e171,work:thomaz_teachable_2008,channel:gui,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e172,work:thomaz_teachable_2008,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e173,work:thomaz_teachable_2008,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H01"", ""H28""]}"
+e174,work:thomaz_teachable_2008,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H01""]}"
+e175,work:thomaz_teachable_2008,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""RS (MF)"", ""scope"": ""work"", ""rows"": [""H01""]}"
+e176,work:thomaz_teachable_2008,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H01""]}"
+e177,work:thomaz_teachable_2008,env:used,USES_ENV_REWARD,"{""asListed"": ""Present / absent"", ""scope"": ""work"", ""basis"": ""survey Sec. VI-A1 (\""used together with the environment reward\"")"", ""rows"": [""H01"", ""H28""]}"
+e178,work:thomaz_teachable_2008,task:sophie-s-kitchen,TESTED_ON,"{""scope"": ""work"", ""basis"": ""survey Sec. VI-A1"", ""asListed"": ""Sophie's Kitchen"", ""setting"": ""sim"", ""rows"": [""H01"", ""H28""]}"
+e179,work:tenorio-gonzalez_dynamic_2010,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H01""]}"
+e180,work:tenorio-gonzalez_dynamic_2010,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H01""]}"
+e181,work:tenorio-gonzalez_dynamic_2010,form:scalar,HAS_FORM,"{""asListed"": ""Scalar / binary"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e182,work:tenorio-gonzalez_dynamic_2010,form:binary,HAS_FORM,"{""asListed"": ""Scalar / binary"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e183,work:tenorio-gonzalez_dynamic_2010,channel:mouse,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e184,work:tenorio-gonzalez_dynamic_2010,channel:speech,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e185,work:tenorio-gonzalez_dynamic_2010,channel:gui,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e186,work:tenorio-gonzalez_dynamic_2010,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e187,work:tenorio-gonzalez_dynamic_2010,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H01""]}"
+e188,work:tenorio-gonzalez_dynamic_2010,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H01""]}"
+e189,work:tenorio-gonzalez_dynamic_2010,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""RS (MF)"", ""scope"": ""work"", ""rows"": [""H01""]}"
+e190,work:tenorio-gonzalez_dynamic_2010,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H01""]}"
+e191,work:tenorio-gonzalez_dynamic_2010,env:used,USES_ENV_REWARD,"{""asListed"": ""Present / absent"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e192,work:tenorio-gonzalez_dynamic_2010,env:notused,USES_ENV_REWARD,"{""asListed"": ""Present / absent"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e193,work:tenorio-gonzalez_dynamic_2010,task:navigation,TESTED_ON,"{""scope"": ""work"", ""basis"": ""rows R863"", ""asListed"": ""navigation"", ""setting"": ""sim"", ""rows"": [""H01""]}"
+e194,work:zhang_deep_2020,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H01""]}"
+e195,work:zhang_deep_2020,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H01""]}"
+e196,work:zhang_deep_2020,form:scalar,HAS_FORM,"{""asListed"": ""Scalar / binary"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e197,work:zhang_deep_2020,form:binary,HAS_FORM,"{""asListed"": ""Scalar / binary"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e198,work:zhang_deep_2020,channel:mouse,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e199,work:zhang_deep_2020,channel:speech,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e200,work:zhang_deep_2020,channel:gui,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e201,work:zhang_deep_2020,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e202,work:zhang_deep_2020,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H01""]}"
+e203,work:zhang_deep_2020,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H01""]}"
+e204,work:zhang_deep_2020,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""RS (MF)"", ""scope"": ""work"", ""rows"": [""H01""]}"
+e205,work:zhang_deep_2020,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H01""]}"
+e206,work:zhang_deep_2020,env:used,USES_ENV_REWARD,"{""asListed"": ""Present / absent"", ""scope"": ""work"", ""basis"": ""survey Sec. VI-A1 (\""used either alone or added to the environment reward\"")"", ""note"": ""tested with and without"", ""rows"": [""H01""]}"
+e207,work:zhang_deep_2020,env:notused,USES_ENV_REWARD,"{""asListed"": ""Present / absent"", ""scope"": ""work"", ""basis"": ""survey Sec. VI-A1 (\""used either alone or added to the environment reward\"")"", ""note"": ""tested with and without"", ""rows"": [""H01""]}"
+e208,work:zhang_deep_2020,task:h01:auv-path-following,TESTED_ON,"{""scope"": ""work"", ""basis"": ""survey Sec. VI-A1"", ""asListed"": ""AUV path following"", ""setting"": ""sim"", ""rows"": [""H01""]}"
+e209,work:bignold_evaluation_2021,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H01""]}"
+e210,work:bignold_evaluation_2021,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H01""]}"
+e211,work:bignold_evaluation_2021,form:scalar,HAS_FORM,"{""asListed"": ""Scalar / binary"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e212,work:bignold_evaluation_2021,form:binary,HAS_FORM,"{""asListed"": ""Scalar / binary"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e213,work:bignold_evaluation_2021,channel:mouse,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e214,work:bignold_evaluation_2021,channel:speech,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e215,work:bignold_evaluation_2021,channel:gui,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e216,work:bignold_evaluation_2021,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Mouse; speech; GUI; simulated user"", ""scope"": ""row"", ""rows"": [""H01""]}"
+e217,work:bignold_evaluation_2021,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H01""]}"
+e218,work:bignold_evaluation_2021,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H01""]}"
+e219,work:bignold_evaluation_2021,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""RS (MF)"", ""scope"": ""work"", ""rows"": [""H01""]}"
+e220,work:bignold_evaluation_2021,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H01""]}"
+e221,work:bignold_evaluation_2021,env:used,USES_ENV_REWARD,"{""asListed"": ""Present / absent"", ""scope"": ""work"", ""basis"": ""survey Sec. VI-A1 (\""the same additive scheme\"")"", ""rows"": [""H01""]}"
+e222,work:bignold_evaluation_2021,task:mountain-car,TESTED_ON,"{""scope"": ""work"", ""basis"": ""survey Sec. VI-A1"", ""asListed"": ""Mountain Car"", ""setting"": ""sim"", ""rows"": [""H01""]}"
+e223,work:bradley_knox_tamer_2008,row:H02,IN_ROW,{}
+e224,work:hutchison_training_2013,row:H02,IN_ROW,{}
+e225,work:li_learning_2014,row:H02,IN_ROW,{}
+e226,work:li_using_2016,row:H02,IN_ROW,{}
+e227,work:li_social_2018,row:H02,IN_ROW,{}
+e228,work:warnell_deep_2018,row:H02,IN_ROW,{}
+e229,work:knox_framing_2015,row:H02,IN_ROW,{}
+e230,work:li_interactive_2018,row:H02,IN_ROW,{}
+e231,work:li_improving_2019,row:H02,IN_ROW,{}
+e232,row:H02,task:tetris,ROW_LISTS_TASK,"{""asListed"": ""Tetris""}"
+e233,row:H02,task:atari,ROW_LISTS_TASK,"{""asListed"": ""Atari Bowling""}"
+e234,row:H02,task:mountain-car,ROW_LISTS_TASK,"{""asListed"": ""Mountain Car""}"
+e235,row:H02,task:grid-world,ROW_LISTS_TASK,"{""asListed"": ""grid world""}"
+e236,row:H02,robot:nexi,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e237,work:bradley_knox_tamer_2008,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H02""]}"
+e238,work:bradley_knox_tamer_2008,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H02""]}"
+e239,work:bradley_knox_tamer_2008,form:binary,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e240,work:bradley_knox_tamer_2008,form:scalar,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e241,work:bradley_knox_tamer_2008,channel:keyboard,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e242,work:bradley_knox_tamer_2008,channel:buttons,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e243,work:bradley_knox_tamer_2008,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H02""]}"
+e244,work:bradley_knox_tamer_2008,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e245,work:bradley_knox_tamer_2008,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H02""]}"
+e246,work:bradley_knox_tamer_2008,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e247,work:bradley_knox_tamer_2008,task:tetris,TESTED_ON,"{""scope"": ""work"", ""basis"": ""rows R883, R886"", ""asListed"": ""Tetris"", ""setting"": ""sim"", ""rows"": [""H02""]}"
+e248,work:hutchison_training_2013,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H02""]}"
+e249,work:hutchison_training_2013,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H02""]}"
+e250,work:hutchison_training_2013,form:binary,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e251,work:hutchison_training_2013,form:scalar,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e252,work:hutchison_training_2013,channel:keyboard,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e253,work:hutchison_training_2013,channel:buttons,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e254,work:hutchison_training_2013,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H02""]}"
+e255,work:hutchison_training_2013,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e256,work:hutchison_training_2013,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H02""]}"
+e257,work:hutchison_training_2013,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e258,work:hutchison_training_2013,task:tetris,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Tetris"", ""setting"": ""sim"", ""rows"": [""H02""]}"
+e259,work:hutchison_training_2013,task:atari,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""detail"": ""Bowling"", ""asListed"": ""Atari Bowling"", ""setting"": ""sim"", ""rows"": [""H02""]}"
+e260,work:hutchison_training_2013,task:mountain-car,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Mountain Car"", ""setting"": ""sim"", ""rows"": [""H02""]}"
+e261,work:hutchison_training_2013,task:grid-world,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""grid world"", ""setting"": ""sim"", ""rows"": [""H02""]}"
+e262,work:li_learning_2014,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H02""]}"
+e263,work:li_learning_2014,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H02""]}"
+e264,work:li_learning_2014,form:binary,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e265,work:li_learning_2014,form:scalar,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e266,work:li_learning_2014,channel:keyboard,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e267,work:li_learning_2014,channel:buttons,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e268,work:li_learning_2014,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H02""]}"
+e269,work:li_learning_2014,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e270,work:li_learning_2014,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H02""]}"
+e271,work:li_learning_2014,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e272,work:li_learning_2014,task:tetris,TESTED_ON,"{""scope"": ""work"", ""basis"": ""rows R976, R977"", ""asListed"": ""Tetris"", ""setting"": ""sim"", ""rows"": [""H02""]}"
+e273,work:li_using_2016,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H02""]}"
+e274,work:li_using_2016,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H02""]}"
+e275,work:li_using_2016,form:binary,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e276,work:li_using_2016,form:scalar,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e277,work:li_using_2016,channel:keyboard,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e278,work:li_using_2016,channel:buttons,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e279,work:li_using_2016,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H02""]}"
+e280,work:li_using_2016,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e281,work:li_using_2016,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H02""]}"
+e282,work:li_using_2016,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e283,work:li_using_2016,task:tetris,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Tetris"", ""setting"": ""sim"", ""rows"": [""H02""]}"
+e284,work:li_using_2016,task:atari,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""detail"": ""Bowling"", ""asListed"": ""Atari Bowling"", ""setting"": ""sim"", ""rows"": [""H02""]}"
+e285,work:li_using_2016,task:mountain-car,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Mountain Car"", ""setting"": ""sim"", ""rows"": [""H02""]}"
+e286,work:li_using_2016,task:grid-world,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""grid world"", ""setting"": ""sim"", ""rows"": [""H02""]}"
+e287,work:li_social_2018,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H02""]}"
+e288,work:li_social_2018,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H02""]}"
+e289,work:li_social_2018,form:binary,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e290,work:li_social_2018,form:scalar,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e291,work:li_social_2018,channel:keyboard,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e292,work:li_social_2018,channel:buttons,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e293,work:li_social_2018,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H02""]}"
+e294,work:li_social_2018,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e295,work:li_social_2018,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H02""]}"
+e296,work:li_social_2018,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e297,work:li_social_2018,task:tetris,TESTED_ON,"{""scope"": ""work"", ""basis"": ""rows R984"", ""asListed"": ""Tetris"", ""setting"": ""sim"", ""rows"": [""H02""]}"
+e298,work:warnell_deep_2018,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H02""]}"
+e299,work:warnell_deep_2018,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H02""]}"
+e300,work:warnell_deep_2018,form:binary,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e301,work:warnell_deep_2018,form:scalar,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e302,work:warnell_deep_2018,channel:keyboard,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e303,work:warnell_deep_2018,channel:buttons,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e304,work:warnell_deep_2018,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H02""]}"
+e305,work:warnell_deep_2018,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e306,work:warnell_deep_2018,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H02""]}"
+e307,work:warnell_deep_2018,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e308,work:warnell_deep_2018,task:atari,TESTED_ON,"{""scope"": ""work"", ""basis"": ""survey Sec. VI-A1 (Bowling)"", ""detail"": ""Bowling"", ""asListed"": ""Atari Bowling"", ""setting"": ""sim"", ""rows"": [""H02""]}"
+e309,work:knox_framing_2015,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H02""]}"
+e310,work:knox_framing_2015,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H02""]}"
+e311,work:knox_framing_2015,form:binary,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e312,work:knox_framing_2015,form:scalar,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e313,work:knox_framing_2015,channel:keyboard,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e314,work:knox_framing_2015,channel:buttons,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e315,work:knox_framing_2015,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H02""]}"
+e316,work:knox_framing_2015,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e317,work:knox_framing_2015,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H02""]}"
+e318,work:knox_framing_2015,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e319,work:knox_framing_2015,task:grid-world,TESTED_ON,"{""scope"": ""work"", ""basis"": ""survey Sec. IX draft (\""episodic grid world\"")"", ""asListed"": ""grid world"", ""setting"": ""sim"", ""rows"": [""H02""]}"
+e320,work:li_interactive_2018,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H02""]}"
+e321,work:li_interactive_2018,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H02""]}"
+e322,work:li_interactive_2018,form:binary,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e323,work:li_interactive_2018,form:scalar,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e324,work:li_interactive_2018,channel:keyboard,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e325,work:li_interactive_2018,channel:buttons,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e326,work:li_interactive_2018,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H02""]}"
+e327,work:li_interactive_2018,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e328,work:li_interactive_2018,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H02""]}"
+e329,work:li_interactive_2018,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e330,work:li_interactive_2018,task:grid-world,TESTED_ON,"{""scope"": ""work"", ""basis"": ""rows R958"", ""asListed"": ""grid world"", ""setting"": ""sim"", ""rows"": [""H02""]}"
+e331,work:li_improving_2019,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H02""]}"
+e332,work:li_improving_2019,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H02""]}"
+e333,work:li_improving_2019,form:binary,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e334,work:li_improving_2019,form:scalar,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e335,work:li_improving_2019,channel:keyboard,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e336,work:li_improving_2019,channel:buttons,VIA_CHANNEL,"{""asListed"": ""Keyboard; buttons"", ""scope"": ""row"", ""rows"": [""H02""]}"
+e337,work:li_improving_2019,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H02""]}"
+e338,work:li_improving_2019,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e339,work:li_improving_2019,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H02""]}"
+e340,work:li_improving_2019,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H02""]}"
+e341,work:li_improving_2019,task:grid-world,TESTED_ON,"{""scope"": ""work"", ""basis"": ""Section IX v4 (\""plain TAMER in a grid world\"")"", ""asListed"": ""grid world"", ""setting"": ""sim"", ""rows"": [""H02""]}"
+e342,work:hutchison_training_2013,robot:nexi,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""Section IX v4; rows R946-R952"", ""useBasis"": ""Table I caption convention (no use printed)"", ""teachers"": ""n/r in sources"", ""rows"": [""H02""]}"
+e343,work:knox_combining_2010,row:H03,IN_ROW,{}
+e344,row:H03,task:mountain-car,ROW_LISTS_TASK,"{""asListed"": ""Mountain Car""}"
+e345,work:knox_combining_2010,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H03""]}"
+e346,work:knox_combining_2010,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H03""]}"
+e347,work:knox_combining_2010,form:scalar,HAS_FORM,"{""asListed"": ""Scalar"", ""scope"": ""work"", ""rows"": [""H03""]}"
+e348,work:knox_combining_2010,channel:recorded,VIA_CHANNEL,"{""asListed"": ""Recorded reward models"", ""scope"": ""work"", ""rows"": [""H03""]}"
+e349,work:knox_combining_2010,teacherkind:standin,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H03""]}"
+e350,work:knox_combining_2010,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS, VS or PS (MB)"", ""scope"": ""work"", ""rows"": [""H03""]}"
+e351,work:knox_combining_2010,integ:VS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS, VS or PS (MB)"", ""scope"": ""work"", ""rows"": [""H03""]}"
+e352,work:knox_combining_2010,integ:PS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS, VS or PS (MB)"", ""scope"": ""work"", ""rows"": [""H03""]}"
+e353,work:knox_combining_2010,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H03""]}"
+e354,work:knox_combining_2010,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H03""]}"
+e355,work:knox_combining_2010,task:mountain-car,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Mountain Car"", ""setting"": ""sim"", ""rows"": [""H03""]}"
+e356,work:yu_learning_2018,row:H04,IN_ROW,{}
+e357,row:H04,task:pac-man,ROW_LISTS_TASK,"{""asListed"": ""Pac-Man""}"
+e358,row:H04,task:cartpole,ROW_LISTS_TASK,"{""asListed"": ""cart-pole""}"
+e359,work:yu_learning_2018,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H04""]}"
+e360,work:yu_learning_2018,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H04""]}"
+e361,work:yu_learning_2018,form:binary,HAS_FORM,"{""asListed"": ""Binary"", ""scope"": ""work"", ""rows"": [""H04""]}"
+e362,work:yu_learning_2018,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Simulated oracle; humans"", ""scope"": ""work"", ""rows"": [""H04""]}"
+e363,work:yu_learning_2018,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H04""]}"
+e364,work:yu_learning_2018,teacherkind:standin,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H04""]}"
+e365,work:yu_learning_2018,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""RS, VS or PS (MF)"", ""scope"": ""work"", ""rows"": [""H04""]}"
+e366,work:yu_learning_2018,integ:VS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""RS, VS or PS (MF)"", ""scope"": ""work"", ""rows"": [""H04""]}"
+e367,work:yu_learning_2018,integ:PS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""RS, VS or PS (MF)"", ""scope"": ""work"", ""rows"": [""H04""]}"
+e368,work:yu_learning_2018,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H04""]}"
+e369,work:yu_learning_2018,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H04""]}"
+e370,work:yu_learning_2018,task:pac-man,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Pac-Man"", ""setting"": ""sim"", ""rows"": [""H04""]}"
+e371,work:yu_learning_2018,task:cartpole,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""cart-pole"", ""setting"": ""sim"", ""rows"": [""H04""]}"
+e372,work:macglashan_interactive_2023,row:H05,IN_ROW,{}
+e373,work:arumugam_deep_2019,row:H05,IN_ROW,{}
+e374,row:H05,task:cliff-world,ROW_LISTS_TASK,"{""asListed"": ""Cliff world""}"
+e375,row:H05,task:minecraft,ROW_LISTS_TASK,"{""asListed"": ""Minecraft""}"
+e376,row:H05,robot:turtlebot,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e377,work:macglashan_interactive_2023,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H05""]}"
+e378,work:macglashan_interactive_2023,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H05""]}"
+e379,work:macglashan_interactive_2023,form:scalar,HAS_FORM,"{""asListed"": ""Scalar / ternary"", ""scope"": ""row"", ""rows"": [""H05""]}"
+e380,work:macglashan_interactive_2023,form:ternary,HAS_FORM,"{""asListed"": ""Scalar / ternary"", ""scope"": ""row"", ""rows"": [""H05""]}"
+e381,work:macglashan_interactive_2023,channel:wii,VIA_CHANNEL,"{""asListed"": ""Wii controller; synthetic (sim)"", ""scope"": ""row"", ""rows"": [""H05""]}"
+e382,work:macglashan_interactive_2023,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Wii controller; synthetic (sim)"", ""scope"": ""row"", ""rows"": [""H05""]}"
+e383,work:macglashan_interactive_2023,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H05""]}"
+e384,work:macglashan_interactive_2023,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H05""]}"
+e385,work:macglashan_interactive_2023,integ:PS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""PS (MF)"", ""scope"": ""work"", ""rows"": [""H05""]}"
+e386,work:macglashan_interactive_2023,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H05""]}"
+e387,work:macglashan_interactive_2023,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H05""]}"
+e388,work:macglashan_interactive_2023,task:cliff-world,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Cliff world"", ""setting"": ""sim"", ""rows"": [""H05""]}"
+e389,work:macglashan_interactive_2023,task:minecraft,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Minecraft"", ""setting"": ""sim"", ""rows"": [""H05""]}"
+e390,work:arumugam_deep_2019,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H05""]}"
+e391,work:arumugam_deep_2019,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H05""]}"
+e392,work:arumugam_deep_2019,form:scalar,HAS_FORM,"{""asListed"": ""Scalar / ternary"", ""scope"": ""row"", ""rows"": [""H05""]}"
+e393,work:arumugam_deep_2019,form:ternary,HAS_FORM,"{""asListed"": ""Scalar / ternary"", ""scope"": ""row"", ""rows"": [""H05""]}"
+e394,work:arumugam_deep_2019,channel:wii,VIA_CHANNEL,"{""asListed"": ""Wii controller; synthetic (sim)"", ""scope"": ""row"", ""rows"": [""H05""]}"
+e395,work:arumugam_deep_2019,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Wii controller; synthetic (sim)"", ""scope"": ""row"", ""rows"": [""H05""]}"
+e396,work:arumugam_deep_2019,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H05""]}"
+e397,work:arumugam_deep_2019,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H05""]}"
+e398,work:arumugam_deep_2019,integ:PS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""PS (MF)"", ""scope"": ""work"", ""rows"": [""H05""]}"
+e399,work:arumugam_deep_2019,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H05""]}"
+e400,work:arumugam_deep_2019,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H05""]}"
+e401,work:arumugam_deep_2019,task:minecraft,TESTED_ON,"{""scope"": ""work"", ""basis"": ""rows R395, R396"", ""asListed"": ""Minecraft"", ""setting"": ""sim"", ""rows"": [""H05""]}"
+e402,work:macglashan_interactive_2023,robot:turtlebot,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""Section IX v4; rows R385, R387"", ""useBasis"": ""Table I caption convention (no use printed)"", ""teachers"": ""one co-author trained five behaviors (rows R387)"", ""rows"": [""H05""]}"
+e403,work:griffith_policy_2013,row:H06,IN_ROW,{}
+e404,row:H06,task:pac-man,ROW_LISTS_TASK,"{""asListed"": ""Pac-Man""}"
+e405,row:H06,task:frogger,ROW_LISTS_TASK,"{""asListed"": ""Frogger""}"
+e406,work:griffith_policy_2013,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H06""]}"
+e407,work:griffith_policy_2013,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H06""]}"
+e408,work:griffith_policy_2013,form:binary,HAS_FORM,"{""asListed"": ""Binary"", ""scope"": ""work"", ""rows"": [""H06""]}"
+e409,work:griffith_policy_2013,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Simulated oracle"", ""scope"": ""work"", ""rows"": [""H06""]}"
+e410,work:griffith_policy_2013,teacherkind:standin,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H06""]}"
+e411,work:griffith_policy_2013,integ:PS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""PS (MB)"", ""scope"": ""work"", ""rows"": [""H06""]}"
+e412,work:griffith_policy_2013,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H06""]}"
+e413,work:griffith_policy_2013,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H06""]}"
+e414,work:griffith_policy_2013,task:pac-man,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Pac-Man"", ""setting"": ""sim"", ""rows"": [""H06""]}"
+e415,work:griffith_policy_2013,task:frogger,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Frogger"", ""setting"": ""sim"", ""rows"": [""H06""]}"
+e416,work:loftin_learning_2016,row:H07,IN_ROW,{}
+e417,work:peng_need_2016,row:H07,IN_ROW,{}
+e418,row:H07,task:h07:virtual-dog,ROW_LISTS_TASK,"{""asListed"": ""Virtual dog""}"
+e419,row:H07,task:grid-world,ROW_LISTS_TASK,"{""asListed"": ""grid world""}"
+e420,work:loftin_learning_2016,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H07""]}"
+e421,work:loftin_learning_2016,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H07""]}"
+e422,work:loftin_learning_2016,form:binary,HAS_FORM,"{""asListed"": ""Binary + silence"", ""scope"": ""work"", ""rows"": [""H07""]}"
+e423,work:loftin_learning_2016,channel:gui,VIA_CHANNEL,"{""asListed"": ""GUI"", ""scope"": ""work"", ""rows"": [""H07""]}"
+e424,work:loftin_learning_2016,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H07""]}"
+e425,work:loftin_learning_2016,integ:PS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""PS (MB)"", ""scope"": ""work"", ""rows"": [""H07""]}"
+e426,work:loftin_learning_2016,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H07""]}"
+e427,work:loftin_learning_2016,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H07""]}"
+e428,work:loftin_learning_2016,task:h07:virtual-dog,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Virtual dog"", ""setting"": ""sim"", ""rows"": [""H07""]}"
+e429,work:loftin_learning_2016,task:grid-world,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""grid world"", ""setting"": ""sim"", ""rows"": [""H07""]}"
+e430,work:peng_need_2016,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H07""]}"
+e431,work:peng_need_2016,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H07""]}"
+e432,work:peng_need_2016,form:binary,HAS_FORM,"{""asListed"": ""Binary + silence"", ""scope"": ""work"", ""rows"": [""H07""]}"
+e433,work:peng_need_2016,channel:gui,VIA_CHANNEL,"{""asListed"": ""GUI"", ""scope"": ""work"", ""rows"": [""H07""]}"
+e434,work:peng_need_2016,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H07""]}"
+e435,work:peng_need_2016,integ:PS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""PS (MB)"", ""scope"": ""work"", ""rows"": [""H07""]}"
+e436,work:peng_need_2016,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H07""]}"
+e437,work:peng_need_2016,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H07""]}"
+e438,work:peng_need_2016,task:h07:virtual-dog,TESTED_ON,"{""scope"": ""work"", ""basis"": ""rows R432"", ""asListed"": ""Virtual dog"", ""setting"": ""sim"", ""rows"": [""H07""]}"
+e439,work:white_rating-based_2024,row:H08,IN_ROW,{}
+e440,row:H08,task:dmcontrol,ROW_LISTS_TASK,"{""asListed"": ""DMControl locomotion""}"
+e441,work:white_rating-based_2024,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H08""]}"
+e442,work:white_rating-based_2024,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H08""]}"
+e443,work:white_rating-based_2024,form:nclass,HAS_FORM,"{""asListed"": ""n-class, per segment"", ""scope"": ""work"", ""rows"": [""H08""]}"
+e444,work:white_rating-based_2024,channel:gui,VIA_CHANNEL,"{""asListed"": ""GUI (video clips)"", ""scope"": ""work"", ""rows"": [""H08""]}"
+e445,work:white_rating-based_2024,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H08""]}"
+e446,work:white_rating-based_2024,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H08""]}"
+e447,work:white_rating-based_2024,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H08""]}"
+e448,work:white_rating-based_2024,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H08""]}"
+e449,work:white_rating-based_2024,task:dmcontrol,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""detail"": ""locomotion"", ""asListed"": ""DMControl locomotion"", ""setting"": ""sim"", ""rows"": [""H08""]}"
+e450,work:xiao_fresh_2020,row:H09,IN_ROW,{}
+e451,work:guan_widening_2021,row:H09,IN_ROW,{}
+e452,row:H09,task:atari,ROW_LISTS_TASK,"{""asListed"": ""Atari""}"
+e453,row:H09,task:pixel-taxi,ROW_LISTS_TASK,"{""asListed"": ""Pixel-Taxi""}"
+e454,work:xiao_fresh_2020,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H09""]}"
+e455,work:xiao_fresh_2020,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H09""]}"
+e456,work:xiao_fresh_2020,form:binary,HAS_FORM,"{""asListed"": ""Binary; binary + saliency"", ""scope"": ""work"", ""rows"": [""H09""]}"
+e457,work:xiao_fresh_2020,channel:gui,VIA_CHANNEL,"{""asListed"": ""GUI; simulated oracle"", ""scope"": ""row"", ""rows"": [""H09""]}"
+e458,work:xiao_fresh_2020,channel:simulated,VIA_CHANNEL,"{""asListed"": ""GUI; simulated oracle"", ""scope"": ""row"", ""rows"": [""H09""]}"
+e459,work:xiao_fresh_2020,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H09""]}"
+e460,work:xiao_fresh_2020,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H09""]}"
+e461,work:xiao_fresh_2020,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB); VS (MF)"", ""scope"": ""row"", ""rows"": [""H09""]}"
+e462,work:xiao_fresh_2020,integ:VS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""RS (MB); VS (MF)"", ""scope"": ""row"", ""rows"": [""H09""]}"
+e463,work:xiao_fresh_2020,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""row"", ""rows"": [""H09""]}"
+e464,work:xiao_fresh_2020,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""row"", ""rows"": [""H09""]}"
+e465,work:xiao_fresh_2020,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H09""]}"
+e466,work:xiao_fresh_2020,task:atari,TESTED_ON,"{""scope"": ""work"", ""basis"": ""survey Sec. VI-A1 (Bowling, Skiing)"", ""asListed"": ""Atari"", ""setting"": ""sim"", ""rows"": [""H09""]}"
+e467,work:guan_widening_2021,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H09""]}"
+e468,work:guan_widening_2021,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H09""]}"
+e469,work:guan_widening_2021,form:binary,HAS_FORM,"{""asListed"": ""Binary; binary + saliency"", ""scope"": ""work"", ""rows"": [""H09""]}"
+e470,work:guan_widening_2021,channel:gui,VIA_CHANNEL,"{""asListed"": ""GUI; simulated oracle"", ""scope"": ""row"", ""rows"": [""H09""]}"
+e471,work:guan_widening_2021,channel:simulated,VIA_CHANNEL,"{""asListed"": ""GUI; simulated oracle"", ""scope"": ""row"", ""rows"": [""H09""]}"
+e472,work:guan_widening_2021,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H09""]}"
+e473,work:guan_widening_2021,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H09""]}"
+e474,work:guan_widening_2021,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB); VS (MF)"", ""scope"": ""row"", ""rows"": [""H09""]}"
+e475,work:guan_widening_2021,integ:VS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""RS (MB); VS (MF)"", ""scope"": ""row"", ""rows"": [""H09""]}"
+e476,work:guan_widening_2021,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""row"", ""rows"": [""H09""]}"
+e477,work:guan_widening_2021,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""row"", ""rows"": [""H09""]}"
+e478,work:guan_widening_2021,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H09""]}"
+e479,work:guan_widening_2021,task:atari,TESTED_ON,"{""scope"": ""work"", ""basis"": ""rows R489"", ""asListed"": ""Atari"", ""setting"": ""sim"", ""rows"": [""H09""]}"
+e480,work:guan_widening_2021,task:pixel-taxi,TESTED_ON,"{""scope"": ""work"", ""basis"": ""rows R489"", ""asListed"": ""Pixel-Taxi"", ""setting"": ""sim"", ""rows"": [""H09""]}"
+e481,work:hiranaka_primitive_2023,row:H10,IN_ROW,{}
+e482,row:H10,task:reaching,ROW_LISTS_TASK,"{""asListed"": ""Reaching""}"
+e483,row:H10,task:stacking,ROW_LISTS_TASK,"{""asListed"": ""stacking""}"
+e484,row:H10,robot:franka-emika-arm,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e485,work:hiranaka_primitive_2023,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H10""]}"
+e486,work:hiranaka_primitive_2023,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H10""]}"
+e487,work:hiranaka_primitive_2023,form:binary,HAS_FORM,"{""asListed"": ""Binary / ternary, on a proposed skill"", ""scope"": ""work"", ""rows"": [""H10""]}"
+e488,work:hiranaka_primitive_2023,form:ternary,HAS_FORM,"{""asListed"": ""Binary / ternary, on a proposed skill"", ""scope"": ""work"", ""rows"": [""H10""]}"
+e489,work:hiranaka_primitive_2023,channel:gui,VIA_CHANNEL,"{""asListed"": ""GUI + keyboard; synthetic (sim)"", ""scope"": ""work"", ""rows"": [""H10""]}"
+e490,work:hiranaka_primitive_2023,channel:keyboard,VIA_CHANNEL,"{""asListed"": ""GUI + keyboard; synthetic (sim)"", ""scope"": ""work"", ""rows"": [""H10""]}"
+e491,work:hiranaka_primitive_2023,channel:simulated,VIA_CHANNEL,"{""asListed"": ""GUI + keyboard; synthetic (sim)"", ""scope"": ""work"", ""rows"": [""H10""]}"
+e492,work:hiranaka_primitive_2023,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H10""]}"
+e493,work:hiranaka_primitive_2023,teacherkind:standin,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H10""]}"
+e494,work:hiranaka_primitive_2023,integ:VS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""VS / PS (MB)"", ""scope"": ""work"", ""rows"": [""H10""]}"
+e495,work:hiranaka_primitive_2023,integ:PS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""VS / PS (MB)"", ""scope"": ""work"", ""rows"": [""H10""]}"
+e496,work:hiranaka_primitive_2023,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H10""]}"
+e497,work:hiranaka_primitive_2023,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H10""]}"
+e498,work:hiranaka_primitive_2023,task:reaching,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Reaching"", ""setting"": ""sim"", ""rows"": [""H10""]}"
+e499,work:hiranaka_primitive_2023,task:stacking,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""stacking"", ""setting"": ""sim"", ""rows"": [""H10""]}"
+e500,work:hiranaka_primitive_2023,robot:franka-emika-arm,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""single-work row"", ""useBasis"": ""Table I caption convention (no use printed)"", ""teachers"": ""a single trainer (survey Sec. VI-A1)"", ""rows"": [""H10""]}"
+e501,work:zhang_dual_2023,row:H11,IN_ROW,"{""module"": ""DREF""}"
+e502,row:H11,task:lunar-lander,ROW_LISTS_TASK,"{""asListed"": ""Lunar Lander""}"
+e503,row:H11,task:reaching,ROW_LISTS_TASK,"{""asListed"": ""reaching""}"
+e504,row:H11,task:placing,ROW_LISTS_TASK,"{""asListed"": ""placing""}"
+e505,row:H11,robot:h11:robot-arm,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e506,work:zhang_dual_2023,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H11""]}"
+e507,work:zhang_dual_2023,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H11""]}"
+e508,work:zhang_dual_2023,form:ternary,HAS_FORM,"{""asListed"": ""Ternary (+1, 0, −1)"", ""scope"": ""work"", ""rows"": [""H11""]}"
+e509,work:zhang_dual_2023,channel:keyboard,VIA_CHANNEL,"{""asListed"": ""Keyboard; synthetic oracle (sim)"", ""scope"": ""work"", ""rows"": [""H11""]}"
+e510,work:zhang_dual_2023,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Keyboard; synthetic oracle (sim)"", ""scope"": ""work"", ""rows"": [""H11""]}"
+e511,work:zhang_dual_2023,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H11""]}"
+e512,work:zhang_dual_2023,teacherkind:standin,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H11""]}"
+e513,work:zhang_dual_2023,integ:VS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""VS / PS (MB)"", ""scope"": ""work"", ""rows"": [""H11""]}"
+e514,work:zhang_dual_2023,integ:PS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""VS / PS (MB)"", ""scope"": ""work"", ""rows"": [""H11""]}"
+e515,work:zhang_dual_2023,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H11""]}"
+e516,work:zhang_dual_2023,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H11""]}"
+e517,work:zhang_dual_2023,task:lunar-lander,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Lunar Lander"", ""setting"": ""sim"", ""rows"": [""H11""]}"
+e518,work:zhang_dual_2023,task:reaching,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""reaching"", ""setting"": ""sim"", ""rows"": [""H11""]}"
+e519,work:zhang_dual_2023,task:placing,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""placing"", ""setting"": ""sim"", ""rows"": [""H11""]}"
+e520,work:zhang_dual_2023,robot:h11:robot-arm,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""single-work row"", ""useBasis"": ""Table I caption convention (no use printed)"", ""rows"": [""H11""]}"
+e521,work:broekens_emotion_2007,row:H12,IN_ROW,{}
+e522,work:arakawa_dqn-tamer_2018,row:H12,IN_ROW,{}
+e523,row:H12,task:grid-world,ROW_LISTS_TASK,"{""asListed"": ""Grid world""}"
+e524,row:H12,task:maze,ROW_LISTS_TASK,"{""asListed"": ""maze""}"
+e525,row:H12,task:taxi,ROW_LISTS_TASK,"{""asListed"": ""taxi""}"
+e526,row:H12,robot:gopigo3,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e527,work:broekens_emotion_2007,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H12""]}"
+e528,work:broekens_emotion_2007,chclass:implicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H12""]}"
+e529,work:broekens_emotion_2007,form:ternary,HAS_FORM,"{""asListed"": ""Ternary / binary"", ""scope"": ""row"", ""rows"": [""H12""]}"
+e530,work:broekens_emotion_2007,form:binary,HAS_FORM,"{""asListed"": ""Ternary / binary"", ""scope"": ""row"", ""rows"": [""H12""]}"
+e531,work:broekens_emotion_2007,channel:face,VIA_CHANNEL,"{""asListed"": ""Face, posed or n/r; simulated observer"", ""elicitation"": ""posed or n/r"", ""elicitationScope"": ""row"", ""scope"": ""work"", ""basis"": ""survey Sec. VI-A1 names facial expressions for every work of this row"", ""rows"": [""H12""]}"
+e532,work:broekens_emotion_2007,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Face, posed or n/r; simulated observer"", ""scope"": ""row"", ""rows"": [""H12""]}"
+e533,work:broekens_emotion_2007,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H12""]}"
+e534,work:broekens_emotion_2007,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H12""]}"
+e535,work:broekens_emotion_2007,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""RS (MF); PS (MB)"", ""scope"": ""row"", ""rows"": [""H12""]}"
+e536,work:broekens_emotion_2007,integ:PS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MF); PS (MB)"", ""scope"": ""row"", ""rows"": [""H12""]}"
+e537,work:broekens_emotion_2007,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""row"", ""rows"": [""H12""]}"
+e538,work:broekens_emotion_2007,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""row"", ""rows"": [""H12""]}"
+e539,work:broekens_emotion_2007,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H12""]}"
+e540,work:broekens_emotion_2007,task:grid-world,TESTED_ON,"{""scope"": ""work"", ""basis"": ""rows R006"", ""asListed"": ""Grid world"", ""setting"": ""sim"", ""rows"": [""H12""]}"
+e541,work:arakawa_dqn-tamer_2018,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H12""]}"
+e542,work:arakawa_dqn-tamer_2018,chclass:implicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H12""]}"
+e543,work:arakawa_dqn-tamer_2018,form:ternary,HAS_FORM,"{""asListed"": ""Ternary / binary"", ""scope"": ""row"", ""rows"": [""H12""]}"
+e544,work:arakawa_dqn-tamer_2018,form:binary,HAS_FORM,"{""asListed"": ""Ternary / binary"", ""scope"": ""row"", ""rows"": [""H12""]}"
+e545,work:arakawa_dqn-tamer_2018,channel:face,VIA_CHANNEL,"{""asListed"": ""Face, posed or n/r; simulated observer"", ""elicitation"": ""posed or n/r"", ""elicitationScope"": ""row"", ""scope"": ""work"", ""basis"": ""survey Sec. VI-A1 names facial expressions for every work of this row"", ""rows"": [""H12""]}"
+e546,work:arakawa_dqn-tamer_2018,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Face, posed or n/r; simulated observer"", ""scope"": ""row"", ""rows"": [""H12""]}"
+e547,work:arakawa_dqn-tamer_2018,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H12""]}"
+e548,work:arakawa_dqn-tamer_2018,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H12""]}"
+e549,work:arakawa_dqn-tamer_2018,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""RS (MF); PS (MB)"", ""scope"": ""row"", ""rows"": [""H12""]}"
+e550,work:arakawa_dqn-tamer_2018,integ:PS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MF); PS (MB)"", ""scope"": ""row"", ""rows"": [""H12""]}"
+e551,work:arakawa_dqn-tamer_2018,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""row"", ""rows"": [""H12""]}"
+e552,work:arakawa_dqn-tamer_2018,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""row"", ""rows"": [""H12""]}"
+e553,work:arakawa_dqn-tamer_2018,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H12""]}"
+e554,work:arakawa_dqn-tamer_2018,task:grid-world,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Grid world"", ""setting"": ""sim"", ""rows"": [""H12""]}"
+e555,work:arakawa_dqn-tamer_2018,task:maze,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""maze"", ""setting"": ""sim"", ""rows"": [""H12""]}"
+e556,work:arakawa_dqn-tamer_2018,task:taxi,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""taxi"", ""setting"": ""sim"", ""rows"": [""H12""]}"
+e557,work:arakawa_dqn-tamer_2018,robot:gopigo3,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""rows R018; survey Sec. VI-A1 (car robot)"", ""useBasis"": ""Table I caption convention (no use printed)"", ""teachers"": ""no participant count reported (rows R018)"", ""rows"": [""H12""]}"
+e558,work:li_facial_2020,row:H13,IN_ROW,{}
+e559,work:lin_human_2020,row:H13,IN_ROW,{}
+e560,row:H13,task:infinite-mario,ROW_LISTS_TASK,"{""asListed"": ""Infinite Mario""}"
+e561,row:H13,task:loopmaze,ROW_LISTS_TASK,"{""asListed"": ""LoopMaze""}"
+e562,row:H13,task:tetris,ROW_LISTS_TASK,"{""asListed"": ""Tetris""}"
+e563,work:li_facial_2020,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H13""]}"
+e564,work:li_facial_2020,chclass:implicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H13""]}"
+e565,work:li_facial_2020,form:binary,HAS_FORM,"{""asListed"": ""Binary"", ""scope"": ""work"", ""rows"": [""H13""]}"
+e566,work:li_facial_2020,channel:face,VIA_CHANNEL,"{""asListed"": ""Face, posed or unprompted; gestures (Leap Motion)"", ""elicitation"": ""posed or unprompted"", ""elicitationScope"": ""row"", ""scope"": ""work"", ""basis"": ""survey Sec. VI-A1 names facial expressions for every work of this row"", ""rows"": [""H13""]}"
+e567,work:li_facial_2020,channel:gesture,VIA_CHANNEL,"{""asListed"": ""Face, posed or unprompted; gestures (Leap Motion)"", ""scope"": ""row"", ""rows"": [""H13""]}"
+e568,work:li_facial_2020,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H13""]}"
+e569,work:li_facial_2020,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H13""]}"
+e570,work:li_facial_2020,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H13""]}"
+e571,work:li_facial_2020,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H13""]}"
+e572,work:li_facial_2020,task:infinite-mario,TESTED_ON,"{""scope"": ""work"", ""basis"": ""survey Sec. VI-A1"", ""detail"": ""offline replay"", ""asListed"": ""Infinite Mario"", ""setting"": ""sim"", ""rows"": [""H13""]}"
+e573,work:lin_human_2020,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H13""]}"
+e574,work:lin_human_2020,chclass:implicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H13""]}"
+e575,work:lin_human_2020,form:binary,HAS_FORM,"{""asListed"": ""Binary"", ""scope"": ""work"", ""rows"": [""H13""]}"
+e576,work:lin_human_2020,channel:face,VIA_CHANNEL,"{""asListed"": ""Face, posed or unprompted; gestures (Leap Motion)"", ""elicitation"": ""posed or unprompted"", ""elicitationScope"": ""row"", ""scope"": ""work"", ""basis"": ""survey Sec. VI-A1 names facial expressions for every work of this row"", ""rows"": [""H13""]}"
+e577,work:lin_human_2020,channel:gesture,VIA_CHANNEL,"{""asListed"": ""Face, posed or unprompted; gestures (Leap Motion)"", ""scope"": ""row"", ""rows"": [""H13""]}"
+e578,work:lin_human_2020,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H13""]}"
+e579,work:lin_human_2020,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H13""]}"
+e580,work:lin_human_2020,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H13""]}"
+e581,work:lin_human_2020,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H13""]}"
+e582,work:lin_human_2020,task:infinite-mario,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""detail"": ""offline replay"", ""asListed"": ""Infinite Mario"", ""setting"": ""sim"", ""rows"": [""H13""]}"
+e583,work:lin_human_2020,task:loopmaze,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""LoopMaze"", ""setting"": ""sim"", ""rows"": [""H13""]}"
+e584,work:lin_human_2020,task:tetris,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Tetris"", ""setting"": ""sim"", ""rows"": [""H13""]}"
+e585,work:churamani_icub_2020,row:H14,IN_ROW,{}
+e586,row:H14,task:h14:expression-learning,ROW_LISTS_TASK,"{""asListed"": ""Expression learning""}"
+e587,row:H14,robot:icub,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e588,work:churamani_icub_2020,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H14""]}"
+e589,work:churamani_icub_2020,chclass:implicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H14""]}"
+e590,work:churamani_icub_2020,form:scalar,HAS_FORM,"{""asListed"": ""Scalar [−2, 2]"", ""scope"": ""work"", ""rows"": [""H14""]}"
+e591,work:churamani_icub_2020,channel:face,VIA_CHANNEL,"{""asListed"": ""Face, instructed mimicry"", ""elicitation"": ""instructed mimicry"", ""elicitationScope"": ""work"", ""scope"": ""work"", ""rows"": [""H14""]}"
+e592,work:churamani_icub_2020,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H14""]}"
+e593,work:churamani_icub_2020,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H14""]}"
+e594,work:churamani_icub_2020,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H14""]}"
+e595,work:churamani_icub_2020,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H14""]}"
+e596,work:churamani_icub_2020,task:h14:expression-learning,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Expression learning"", ""setting"": ""real"", ""rows"": [""H14""]}"
+e597,work:churamani_icub_2020,robot:icub,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""single-work row"", ""useBasis"": ""Table I caption convention (no use printed)"", ""rows"": [""H14""]}"
+e598,work:wang_affective_2022,row:H15,IN_ROW,{}
+e599,work:veeriah_face_2016,row:H15,IN_ROW,{}
+e600,row:H15,task:h15:affective-routines,ROW_LISTS_TASK,"{""asListed"": ""Affective routines""}"
+e601,row:H15,task:h15:grip-selection,ROW_LISTS_TASK,"{""asListed"": ""grip selection""}"
+e602,row:H15,robot:haru,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e603,work:wang_affective_2022,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H15""]}"
+e604,work:wang_affective_2022,chclass:implicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H15""]}"
+e605,work:wang_affective_2022,form:binary,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H15""]}"
+e606,work:wang_affective_2022,form:scalar,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H15""]}"
+e607,work:wang_affective_2022,channel:face,VIA_CHANNEL,"{""asListed"": ""Face (Kinect, camera), instructed; button"", ""elicitation"": ""instructed"", ""elicitationScope"": ""row"", ""scope"": ""work"", ""basis"": ""survey Sec. VI-A1 names facial expressions for every work of this row"", ""rows"": [""H15""]}"
+e608,work:wang_affective_2022,channel:buttons,VIA_CHANNEL,"{""asListed"": ""Face (Kinect, camera), instructed; button"", ""scope"": ""row"", ""rows"": [""H15""]}"
+e609,work:wang_affective_2022,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H15""]}"
+e610,work:wang_affective_2022,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""RS (MF); VS (MB)"", ""scope"": ""row"", ""rows"": [""H15""]}"
+e611,work:wang_affective_2022,integ:VS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MF); VS (MB)"", ""scope"": ""row"", ""rows"": [""H15""]}"
+e612,work:wang_affective_2022,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""row"", ""rows"": [""H15""]}"
+e613,work:wang_affective_2022,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""row"", ""rows"": [""H15""]}"
+e614,work:wang_affective_2022,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H15""]}"
+e615,work:wang_affective_2022,task:h15:affective-routines,TESTED_ON,"{""scope"": ""work"", ""basis"": ""title; rows R053, R056"", ""asListed"": ""Affective routines"", ""setting"": ""real"", ""rows"": [""H15""]}"
+e616,work:veeriah_face_2016,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H15""]}"
+e617,work:veeriah_face_2016,chclass:implicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H15""]}"
+e618,work:veeriah_face_2016,form:binary,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H15""]}"
+e619,work:veeriah_face_2016,form:scalar,HAS_FORM,"{""asListed"": ""Binary / scalar"", ""scope"": ""row"", ""rows"": [""H15""]}"
+e620,work:veeriah_face_2016,channel:face,VIA_CHANNEL,"{""asListed"": ""Face (Kinect, camera), instructed; button"", ""elicitation"": ""instructed"", ""elicitationScope"": ""row"", ""scope"": ""work"", ""basis"": ""survey Sec. VI-A1 names facial expressions for every work of this row"", ""rows"": [""H15""]}"
+e621,work:veeriah_face_2016,channel:buttons,VIA_CHANNEL,"{""asListed"": ""Face (Kinect, camera), instructed; button"", ""scope"": ""row"", ""rows"": [""H15""]}"
+e622,work:veeriah_face_2016,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H15""]}"
+e623,work:veeriah_face_2016,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""RS (MF); VS (MB)"", ""scope"": ""row"", ""rows"": [""H15""]}"
+e624,work:veeriah_face_2016,integ:VS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MF); VS (MB)"", ""scope"": ""row"", ""rows"": [""H15""]}"
+e625,work:veeriah_face_2016,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""row"", ""rows"": [""H15""]}"
+e626,work:veeriah_face_2016,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""row"", ""rows"": [""H15""]}"
+e627,work:veeriah_face_2016,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H15""]}"
+e628,work:veeriah_face_2016,task:h15:grip-selection,TESTED_ON,"{""scope"": ""work"", ""basis"": ""survey Sec. VI-A1; rows R081"", ""asListed"": ""grip selection"", ""setting"": ""sim"", ""rows"": [""H15""]}"
+e629,work:wang_affective_2022,robot:haru,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""title; rows R053"", ""useBasis"": ""Table I caption convention (no use printed)"", ""rows"": [""H15""]}"
+e630,work:cui_empathic_2020,row:H16,IN_ROW,{}
+e631,row:H16,task:robotaxi,ROW_LISTS_TASK,"{""asListed"": ""Robotaxi""}"
+e632,row:H16,robot:h16:7-dof-arm,ROW_LISTS_ROBOT,"{""use"": ""ranking of recorded trajectories""}"
+e633,work:cui_empathic_2020,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H16""]}"
+e634,work:cui_empathic_2020,chclass:implicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H16""]}"
+e635,work:cui_empathic_2020,form:ternary,HAS_FORM,"{""asListed"": ""Ternary (reward class)"", ""scope"": ""work"", ""rows"": [""H16""]}"
+e636,work:cui_empathic_2020,channel:face,VIA_CHANNEL,"{""asListed"": ""Face, head pose (camera), unprompted"", ""elicitation"": ""unprompted"", ""elicitationScope"": ""work"", ""scope"": ""work"", ""rows"": [""H16""]}"
+e637,work:cui_empathic_2020,channel:headpose,VIA_CHANNEL,"{""asListed"": ""Face, head pose (camera), unprompted"", ""elicitation"": ""unprompted"", ""elicitationScope"": ""work"", ""scope"": ""work"", ""rows"": [""H16""]}"
+e638,work:cui_empathic_2020,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H16""]}"
+e639,work:cui_empathic_2020,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H16""]}"
+e640,work:cui_empathic_2020,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H16""]}"
+e641,work:cui_empathic_2020,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H16""]}"
+e642,work:cui_empathic_2020,task:robotaxi,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Robotaxi"", ""setting"": ""sim"", ""rows"": [""H16""]}"
+e643,work:cui_empathic_2020,robot:h16:7-dof-arm,RAN_ON_ROBOT,"{""use"": ""ranking of recorded trajectories"", ""online"": false, ""basis"": ""single-work row"", ""useBasis"": ""printed in Table I"", ""teachers"": ""reactions of 14 participants (survey Sec. IX draft)"", ""rows"": [""H16""]}"
+e644,work:kim_intrinsic_2017,row:H17,IN_ROW,{}
+e645,row:H17,task:h17:gesture-to-action-mapping,ROW_LISTS_TASK,"{""asListed"": ""Gesture-to-action mapping""}"
+e646,row:H17,robot:compi-6-dof-arm,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e647,work:kim_intrinsic_2017,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H17""]}"
+e648,work:kim_intrinsic_2017,chclass:implicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H17""]}"
+e649,work:kim_intrinsic_2017,form:binary,HAS_FORM,"{""asListed"": ""Binary"", ""scope"": ""work"", ""rows"": [""H17""]}"
+e650,work:kim_intrinsic_2017,channel:eeg,VIA_CHANNEL,"{""asListed"": ""EEG (ErrPs), involuntary"", ""elicitation"": ""involuntary"", ""elicitationScope"": ""work"", ""scope"": ""work"", ""rows"": [""H17""]}"
+e651,work:kim_intrinsic_2017,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H17""]}"
+e652,work:kim_intrinsic_2017,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""RS (MF)"", ""scope"": ""work"", ""rows"": [""H17""]}"
+e653,work:kim_intrinsic_2017,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H17""]}"
+e654,work:kim_intrinsic_2017,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H17""]}"
+e655,work:kim_intrinsic_2017,task:h17:gesture-to-action-mapping,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Gesture-to-action mapping"", ""setting"": ""real"", ""rows"": [""H17""]}"
+e656,work:kim_intrinsic_2017,robot:compi-6-dof-arm,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""single-work row"", ""useBasis"": ""Table I caption convention (no use printed)"", ""teachers"": ""n/r in sources"", ""rows"": [""H17""]}"
+e657,work:kim_learning_2007,row:H18,IN_ROW,{}
+e658,work:knierim_leveraging_2024,row:H18,IN_ROW,{}
+e659,row:H18,task:h18:waving,ROW_LISTS_TASK,"{""asListed"": ""Waving""}"
+e660,row:H18,task:grid-world,ROW_LISTS_TASK,"{""asListed"": ""grid world""}"
+e661,row:H18,robot:nico,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e662,work:kim_learning_2007,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H18""]}"
+e663,work:kim_learning_2007,chclass:implicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H18""]}"
+e664,work:kim_learning_2007,form:binary,HAS_FORM,"{""asListed"": ""Binary; word scaled by prosody"", ""scope"": ""work"", ""rows"": [""H18""]}"
+e665,work:kim_learning_2007,channel:prosody,VIA_CHANNEL,"{""asListed"": ""Prosody, instructed; live or recorded"", ""elicitation"": ""instructed"", ""elicitationScope"": ""row"", ""scope"": ""work"", ""rows"": [""H18""]}"
+e666,work:kim_learning_2007,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H18""]}"
+e667,work:kim_learning_2007,integ:RS,INTEGRATES_AS,"{""modeling"": [""MF"", ""MB""], ""asListed"": ""RS (MF); RS (MB)"", ""scope"": ""work"", ""rows"": [""H18""]}"
+e668,work:kim_learning_2007,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""row"", ""rows"": [""H18""]}"
+e669,work:kim_learning_2007,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""row"", ""rows"": [""H18""]}"
+e670,work:kim_learning_2007,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H18""]}"
+e671,work:kim_learning_2007,task:h18:waving,TESTED_ON,"{""scope"": ""work"", ""basis"": ""rows R135"", ""asListed"": ""Waving"", ""setting"": ""real"", ""rows"": [""H18""]}"
+e672,work:knierim_leveraging_2024,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H18""]}"
+e673,work:knierim_leveraging_2024,chclass:implicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H18""]}"
+e674,work:knierim_leveraging_2024,form:binary,HAS_FORM,"{""asListed"": ""Binary; word scaled by prosody"", ""scope"": ""work"", ""rows"": [""H18""]}"
+e675,work:knierim_leveraging_2024,channel:prosody,VIA_CHANNEL,"{""asListed"": ""Prosody, instructed; live or recorded"", ""elicitation"": ""instructed"", ""elicitationScope"": ""row"", ""scope"": ""work"", ""rows"": [""H18""]}"
+e676,work:knierim_leveraging_2024,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H18""]}"
+e677,work:knierim_leveraging_2024,integ:RS,INTEGRATES_AS,"{""modeling"": [""MF"", ""MB""], ""asListed"": ""RS (MF); RS (MB)"", ""scope"": ""work"", ""rows"": [""H18""]}"
+e678,work:knierim_leveraging_2024,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""row"", ""rows"": [""H18""]}"
+e679,work:knierim_leveraging_2024,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""row"", ""rows"": [""H18""]}"
+e680,work:knierim_leveraging_2024,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H18""]}"
+e681,work:knierim_leveraging_2024,task:h18:waving,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Waving"", ""setting"": ""real"", ""rows"": [""H18""]}"
+e682,work:knierim_leveraging_2024,task:grid-world,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""grid world"", ""setting"": ""sim"", ""rows"": [""H18""]}"
+e683,work:kim_learning_2007,robot:nico,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""rows R134, R139"", ""useBasis"": ""Table I caption convention (no use printed)"", ""rows"": [""H18""]}"
+e684,work:christiano_deep_2023,row:H19,IN_ROW,{}
+e685,work:lee_pebble_2021,row:H19,IN_ROW,{}
+e686,work:hejna_few-shot_2022,row:H19,IN_ROW,{}
+e687,row:H19,task:atari,ROW_LISTS_TASK,"{""asListed"": ""Atari""}"
+e688,row:H19,task:mujoco,ROW_LISTS_TASK,"{""asListed"": ""MuJoCo""}"
+e689,row:H19,task:dmcontrol,ROW_LISTS_TASK,"{""asListed"": ""DMControl""}"
+e690,row:H19,task:meta-world,ROW_LISTS_TASK,"{""asListed"": ""Meta-World""}"
+e691,row:H19,robot:franka-panda,ROW_LISTS_ROBOT,"{""use"": ""sim-to-real transfer""}"
+e692,work:christiano_deep_2023,level:preference,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H19""]}"
+e693,work:christiano_deep_2023,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H19""]}"
+e694,work:christiano_deep_2023,form:pairwise,HAS_FORM,"{""asListed"": ""Pairwise (+ tie / skip)"", ""scope"": ""work"", ""abstainOption"": true, ""rows"": [""H19""]}"
+e695,work:christiano_deep_2023,channel:gui,VIA_CHANNEL,"{""asListed"": ""GUI (video clips); mostly scripted labels"", ""scope"": ""row"", ""rows"": [""H19""]}"
+e696,work:christiano_deep_2023,channel:simulated,VIA_CHANNEL,"{""asListed"": ""GUI (video clips); mostly scripted labels"", ""scope"": ""row"", ""rows"": [""H19""]}"
+e697,work:christiano_deep_2023,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H19""]}"
+e698,work:christiano_deep_2023,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H19""]}"
+e699,work:christiano_deep_2023,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H19""]}"
+e700,work:christiano_deep_2023,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H19""]}"
+e701,work:christiano_deep_2023,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H19""]}"
+e702,work:christiano_deep_2023,task:atari,TESTED_ON,"{""scope"": ""work"", ""basis"": ""Section IX v4 (700 queries on MuJoCo, 5,500 on Atari)"", ""asListed"": ""Atari"", ""setting"": ""sim"", ""rows"": [""H19""]}"
+e703,work:christiano_deep_2023,task:mujoco,TESTED_ON,"{""scope"": ""work"", ""basis"": ""Section IX v4 (700 queries on MuJoCo, 5,500 on Atari)"", ""asListed"": ""MuJoCo"", ""setting"": ""sim"", ""rows"": [""H19""]}"
+e704,work:lee_pebble_2021,level:preference,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H19""]}"
+e705,work:lee_pebble_2021,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H19""]}"
+e706,work:lee_pebble_2021,form:pairwise,HAS_FORM,"{""asListed"": ""Pairwise (+ tie / skip)"", ""scope"": ""work"", ""abstainOption"": true, ""rows"": [""H19""]}"
+e707,work:lee_pebble_2021,channel:gui,VIA_CHANNEL,"{""asListed"": ""GUI (video clips); mostly scripted labels"", ""scope"": ""row"", ""rows"": [""H19""]}"
+e708,work:lee_pebble_2021,channel:simulated,VIA_CHANNEL,"{""asListed"": ""GUI (video clips); mostly scripted labels"", ""scope"": ""row"", ""rows"": [""H19""]}"
+e709,work:lee_pebble_2021,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H19""]}"
+e710,work:lee_pebble_2021,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H19""]}"
+e711,work:lee_pebble_2021,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H19""]}"
+e712,work:lee_pebble_2021,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H19""]}"
+e713,work:lee_pebble_2021,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H19""]}"
+e714,work:lee_pebble_2021,task:dmcontrol,TESTED_ON,"{""scope"": ""work"", ""basis"": ""rows R609"", ""asListed"": ""DMControl"", ""setting"": ""sim"", ""rows"": [""H19""]}"
+e715,work:lee_pebble_2021,task:meta-world,TESTED_ON,"{""scope"": ""work"", ""basis"": ""rows R609"", ""asListed"": ""Meta-World"", ""setting"": ""sim"", ""rows"": [""H19""]}"
+e716,work:hejna_few-shot_2022,level:preference,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H19""]}"
+e717,work:hejna_few-shot_2022,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H19""]}"
+e718,work:hejna_few-shot_2022,form:pairwise,HAS_FORM,"{""asListed"": ""Pairwise (+ tie / skip)"", ""scope"": ""work"", ""abstainOption"": true, ""rows"": [""H19""]}"
+e719,work:hejna_few-shot_2022,channel:gui,VIA_CHANNEL,"{""asListed"": ""GUI (video clips); mostly scripted labels"", ""scope"": ""row"", ""rows"": [""H19""]}"
+e720,work:hejna_few-shot_2022,channel:simulated,VIA_CHANNEL,"{""asListed"": ""GUI (video clips); mostly scripted labels"", ""scope"": ""row"", ""rows"": [""H19""]}"
+e721,work:hejna_few-shot_2022,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H19""]}"
+e722,work:hejna_few-shot_2022,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H19""]}"
+e723,work:hejna_few-shot_2022,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H19""]}"
+e724,work:hejna_few-shot_2022,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H19""]}"
+e725,work:hejna_few-shot_2022,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""H19""]}"
+e726,work:hejna_few-shot_2022,task:atari,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Atari"", ""setting"": ""sim"", ""rows"": [""H19""]}"
+e727,work:hejna_few-shot_2022,task:mujoco,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""MuJoCo"", ""setting"": ""sim"", ""rows"": [""H19""]}"
+e728,work:hejna_few-shot_2022,task:dmcontrol,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""DMControl"", ""setting"": ""sim"", ""rows"": [""H19""]}"
+e729,work:hejna_few-shot_2022,task:meta-world,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Meta-World"", ""setting"": ""sim"", ""rows"": [""H19""]}"
+e730,work:hejna_few-shot_2022,robot:franka-panda,RAN_ON_ROBOT,"{""use"": ""sim-to-real transfer"", ""online"": false, ""basis"": ""rows R626"", ""useBasis"": ""printed in Table I"", ""rows"": [""H19""]}"
+e731,work:cruz_interactive_2015,row:H20,IN_ROW,{}
+e732,work:cruz_training_2016,row:H20,IN_ROW,{}
+e733,work:cruz_multi-modal_2018,row:H20,IN_ROW,{}
+e734,work:moreira_deep_2020,row:H20,IN_ROW,{}
+e735,work:trick_interactive_2022,row:H20,IN_ROW,{}
+e736,row:H20,task:h20:table-cleaning,ROW_LISTS_TASK,"{""asListed"": ""Table cleaning""}"
+e737,row:H20,task:sorting,ROW_LISTS_TASK,"{""asListed"": ""sorting""}"
+e738,row:H20,task:grid-world,ROW_LISTS_TASK,"{""asListed"": ""grid world""}"
+e739,row:H20,robot:h20:7-dof-arm,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e740,work:cruz_interactive_2015,level:action,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H20""]}"
+e741,work:cruz_interactive_2015,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H20""]}"
+e742,work:cruz_interactive_2015,form:action-label,HAS_FORM,"{""asListed"": ""Action label"", ""scope"": ""work"", ""rows"": [""H20""]}"
+e743,work:cruz_interactive_2015,channel:speech,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e744,work:cruz_interactive_2015,channel:gesture,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e745,work:cruz_interactive_2015,channel:gui,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e746,work:cruz_interactive_2015,channel:agent,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e747,work:cruz_interactive_2015,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H20""]}"
+e748,work:cruz_interactive_2015,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H20""]}"
+e749,work:cruz_interactive_2015,integ:DB,INTEGRATES_AS,"{""asListed"": ""DB"", ""scope"": ""work"", ""rows"": [""H20""]}"
+e750,work:cruz_interactive_2015,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H20""]}"
+e751,work:cruz_interactive_2015,task:h20:table-cleaning,TESTED_ON,"{""scope"": ""work"", ""basis"": ""survey Sec. VI-B1"", ""asListed"": ""Table cleaning"", ""setting"": ""sim"", ""rows"": [""H20""]}"
+e752,work:cruz_training_2016,level:action,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H20""]}"
+e753,work:cruz_training_2016,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H20""]}"
+e754,work:cruz_training_2016,form:action-label,HAS_FORM,"{""asListed"": ""Action label"", ""scope"": ""work"", ""rows"": [""H20""]}"
+e755,work:cruz_training_2016,channel:speech,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e756,work:cruz_training_2016,channel:gesture,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e757,work:cruz_training_2016,channel:gui,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e758,work:cruz_training_2016,channel:agent,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e759,work:cruz_training_2016,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H20""]}"
+e760,work:cruz_training_2016,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H20""]}"
+e761,work:cruz_training_2016,integ:DB,INTEGRATES_AS,"{""asListed"": ""DB"", ""scope"": ""work"", ""rows"": [""H20""]}"
+e762,work:cruz_training_2016,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H20""]}"
+e763,work:cruz_training_2016,task:h20:table-cleaning,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Table cleaning"", ""setting"": ""sim"", ""rows"": [""H20""]}"
+e764,work:cruz_training_2016,task:sorting,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""sorting"", ""setting"": ""sim"", ""rows"": [""H20""]}"
+e765,work:cruz_training_2016,task:grid-world,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""grid world"", ""setting"": ""sim"", ""rows"": [""H20""]}"
+e766,work:cruz_multi-modal_2018,level:action,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H20""]}"
+e767,work:cruz_multi-modal_2018,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H20""]}"
+e768,work:cruz_multi-modal_2018,form:action-label,HAS_FORM,"{""asListed"": ""Action label"", ""scope"": ""work"", ""rows"": [""H20""]}"
+e769,work:cruz_multi-modal_2018,channel:speech,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e770,work:cruz_multi-modal_2018,channel:gesture,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e771,work:cruz_multi-modal_2018,channel:gui,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e772,work:cruz_multi-modal_2018,channel:agent,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e773,work:cruz_multi-modal_2018,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H20""]}"
+e774,work:cruz_multi-modal_2018,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H20""]}"
+e775,work:cruz_multi-modal_2018,integ:DB,INTEGRATES_AS,"{""asListed"": ""DB"", ""scope"": ""work"", ""rows"": [""H20""]}"
+e776,work:cruz_multi-modal_2018,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H20""]}"
+e777,work:cruz_multi-modal_2018,task:h20:table-cleaning,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Table cleaning"", ""setting"": ""sim"", ""rows"": [""H20""]}"
+e778,work:cruz_multi-modal_2018,task:sorting,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""sorting"", ""setting"": ""sim"", ""rows"": [""H20""]}"
+e779,work:cruz_multi-modal_2018,task:grid-world,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""grid world"", ""setting"": ""sim"", ""rows"": [""H20""]}"
+e780,work:moreira_deep_2020,level:action,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H20""]}"
+e781,work:moreira_deep_2020,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H20""]}"
+e782,work:moreira_deep_2020,form:action-label,HAS_FORM,"{""asListed"": ""Action label"", ""scope"": ""work"", ""rows"": [""H20""]}"
+e783,work:moreira_deep_2020,channel:speech,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e784,work:moreira_deep_2020,channel:gesture,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e785,work:moreira_deep_2020,channel:gui,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e786,work:moreira_deep_2020,channel:agent,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e787,work:moreira_deep_2020,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H20""]}"
+e788,work:moreira_deep_2020,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H20""]}"
+e789,work:moreira_deep_2020,integ:DB,INTEGRATES_AS,"{""asListed"": ""DB"", ""scope"": ""work"", ""rows"": [""H20""]}"
+e790,work:moreira_deep_2020,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H20""]}"
+e791,work:moreira_deep_2020,task:sorting,TESTED_ON,"{""scope"": ""work"", ""basis"": ""survey Sec. VI-B1"", ""asListed"": ""sorting"", ""setting"": ""sim"", ""rows"": [""H20""]}"
+e792,work:trick_interactive_2022,level:action,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H20""]}"
+e793,work:trick_interactive_2022,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H20""]}"
+e794,work:trick_interactive_2022,form:action-label,HAS_FORM,"{""asListed"": ""Action label"", ""scope"": ""work"", ""rows"": [""H20""]}"
+e795,work:trick_interactive_2022,channel:speech,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e796,work:trick_interactive_2022,channel:gesture,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e797,work:trick_interactive_2022,channel:gui,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e798,work:trick_interactive_2022,channel:agent,VIA_CHANNEL,"{""asListed"": ""Speech, gesture (recorded or live); GUI; agent trainer"", ""scope"": ""row"", ""rows"": [""H20""]}"
+e799,work:trick_interactive_2022,teacherkind:people,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H20""]}"
+e800,work:trick_interactive_2022,teacherkind:standin,TEACHER_KIND,"{""scope"": ""row"", ""basis"": ""Channel column"", ""rows"": [""H20""]}"
+e801,work:trick_interactive_2022,integ:DB,INTEGRATES_AS,"{""asListed"": ""DB"", ""scope"": ""work"", ""rows"": [""H20""]}"
+e802,work:trick_interactive_2022,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H20""]}"
+e803,work:trick_interactive_2022,task:grid-world,TESTED_ON,"{""scope"": ""work"", ""basis"": ""paper text (Trick et al. 2022, Sec. IV)"", ""asListed"": ""grid world"", ""setting"": ""sim"", ""rows"": [""H20""]}"
+e804,work:trick_interactive_2022,robot:h20:7-dof-arm,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""paper text (Trick et al. 2022, Sec. IV-C); Cruz 2015/2016/2018 and Moreira 2020 are simulated"", ""useBasis"": ""Table I caption convention (no use printed)"", ""teachers"": ""10 human subjects (paper text, Sec. IV)"", ""rows"": [""H20""]}"
+e805,work:bignold_persistent_2021,row:H21,IN_ROW,{}
+e806,row:H21,task:mountain-car,ROW_LISTS_TASK,"{""asListed"": ""Mountain Car""}"
+e807,row:H21,task:h21:self-driving-car,ROW_LISTS_TASK,"{""asListed"": ""self-driving car""}"
+e808,work:bignold_persistent_2021,level:action,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H21""]}"
+e809,work:bignold_persistent_2021,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H21""]}"
+e810,work:bignold_persistent_2021,form:rule,HAS_FORM,"{""asListed"": ""Rule"", ""scope"": ""work"", ""rows"": [""H21""]}"
+e811,work:bignold_persistent_2021,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Simulated users"", ""scope"": ""work"", ""rows"": [""H21""]}"
+e812,work:bignold_persistent_2021,teacherkind:standin,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H21""]}"
+e813,work:bignold_persistent_2021,integ:PS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""PS (MB)"", ""scope"": ""work"", ""rows"": [""H21""]}"
+e814,work:bignold_persistent_2021,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H21""]}"
+e815,work:bignold_persistent_2021,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H21""]}"
+e816,work:bignold_persistent_2021,task:mountain-car,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Mountain Car"", ""setting"": ""sim"", ""rows"": [""H21""]}"
+e817,work:bignold_persistent_2021,task:h21:self-driving-car,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""self-driving car"", ""setting"": ""sim"", ""rows"": [""H21""]}"
+e818,work:nguyen_towards_2023,row:H22,IN_ROW,{}
+e819,row:H22,task:cartpole,ROW_LISTS_TASK,"{""asListed"": ""Cart-pole""}"
+e820,row:H22,task:h22:webots-robot,ROW_LISTS_TASK,"{""asListed"": ""Webots robot""}"
+e821,work:nguyen_towards_2023,level:action,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H22""]}"
+e822,work:nguyen_towards_2023,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H22""]}"
+e823,work:nguyen_towards_2023,form:action-label,HAS_FORM,"{""asListed"": ""Action label (state clusters)"", ""scope"": ""work"", ""rows"": [""H22""]}"
+e824,work:nguyen_towards_2023,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Simulated users"", ""scope"": ""work"", ""rows"": [""H22""]}"
+e825,work:nguyen_towards_2023,teacherkind:standin,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H22""]}"
+e826,work:nguyen_towards_2023,integ:PS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""PS (MB)"", ""scope"": ""work"", ""rows"": [""H22""]}"
+e827,work:nguyen_towards_2023,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H22""]}"
+e828,work:nguyen_towards_2023,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H22""]}"
+e829,work:nguyen_towards_2023,task:cartpole,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Cart-pole"", ""setting"": ""sim"", ""rows"": [""H22""]}"
+e830,work:nguyen_towards_2023,task:h22:webots-robot,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Webots robot"", ""setting"": ""sim"", ""rows"": [""H22""]}"
+e831,work:celemin_fast_2019,row:H23,IN_ROW,{}
+e832,row:H23,task:cartpole,ROW_LISTS_TASK,"{""asListed"": ""Cart-pole""}"
+e833,row:H23,task:pendulum,ROW_LISTS_TASK,"{""asListed"": ""pendulum""}"
+e834,row:H23,robot:h23:pendulum,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e835,row:H23,robot:h23:inverted-wedge,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e836,row:H23,robot:h23:3-dof-arm,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e837,work:celemin_fast_2019,level:action,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H23""]}"
+e838,work:celemin_fast_2019,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H23""]}"
+e839,work:celemin_fast_2019,form:correction,HAS_FORM,"{""asListed"": ""Correction"", ""scope"": ""work"", ""rows"": [""H23""]}"
+e840,work:celemin_fast_2019,channel:keyboard,VIA_CHANNEL,"{""asListed"": ""Keyboard; simulated teacher"", ""scope"": ""work"", ""rows"": [""H23""]}"
+e841,work:celemin_fast_2019,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Keyboard; simulated teacher"", ""scope"": ""work"", ""rows"": [""H23""]}"
+e842,work:celemin_fast_2019,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H23""]}"
+e843,work:celemin_fast_2019,teacherkind:standin,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H23""]}"
+e844,work:celemin_fast_2019,integ:PS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""PS (MF)"", ""scope"": ""work"", ""rows"": [""H23""]}"
+e845,work:celemin_fast_2019,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H23""]}"
+e846,work:celemin_fast_2019,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H23""]}"
+e847,work:celemin_fast_2019,task:cartpole,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Cart-pole"", ""setting"": ""sim"", ""rows"": [""H23""]}"
+e848,work:celemin_fast_2019,task:pendulum,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""pendulum"", ""setting"": ""sim"", ""rows"": [""H23""]}"
+e849,work:celemin_fast_2019,robot:h23:pendulum,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""single-work row"", ""useBasis"": ""Table I caption convention (no use printed)"", ""teachers"": ""keyboard corrections from five participants (survey Sec. VI-B1)"", ""rows"": [""H23""]}"
+e850,work:celemin_fast_2019,robot:h23:inverted-wedge,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""single-work row"", ""useBasis"": ""Table I caption convention (no use printed)"", ""teachers"": ""keyboard corrections from five participants (survey Sec. VI-B1)"", ""rows"": [""H23""]}"
+e851,work:celemin_fast_2019,robot:h23:3-dof-arm,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""single-work row"", ""useBasis"": ""Table I caption convention (no use printed)"", ""teachers"": ""keyboard corrections from five participants (survey Sec. VI-B1)"", ""rows"": [""H23""]}"
+e852,work:millan_human_2019,row:H24,IN_ROW,{}
+e853,work:millan-arias_robust_2020,row:H24,IN_ROW,{}
+e854,row:H24,task:cartpole,ROW_LISTS_TASK,"{""asListed"": ""Cart-pole""}"
+e855,row:H24,task:h24:6-dof-arm,ROW_LISTS_TASK,"{""asListed"": ""6-DoF arm""}"
+e856,work:millan_human_2019,level:action,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H24""]}"
+e857,work:millan_human_2019,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H24""]}"
+e858,work:millan_human_2019,form:correction,HAS_FORM,"{""asListed"": ""Correction (sign); target position"", ""scope"": ""row"", ""rows"": [""H24""]}"
+e859,work:millan_human_2019,form:target-position,HAS_FORM,"{""asListed"": ""Correction (sign); target position"", ""scope"": ""row"", ""rows"": [""H24""]}"
+e860,work:millan_human_2019,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Simulated oracle"", ""scope"": ""work"", ""rows"": [""H24""]}"
+e861,work:millan_human_2019,teacherkind:standin,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H24""]}"
+e862,work:millan_human_2019,integ:DB,INTEGRATES_AS,"{""asListed"": ""DB"", ""scope"": ""work"", ""rows"": [""H24""]}"
+e863,work:millan_human_2019,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H24""]}"
+e864,work:millan_human_2019,task:cartpole,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Cart-pole"", ""setting"": ""sim"", ""rows"": [""H24""]}"
+e865,work:millan_human_2019,task:h24:6-dof-arm,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""6-DoF arm"", ""setting"": ""sim"", ""rows"": [""H24""]}"
+e866,work:millan-arias_robust_2020,level:action,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H24""]}"
+e867,work:millan-arias_robust_2020,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H24""]}"
+e868,work:millan-arias_robust_2020,form:correction,HAS_FORM,"{""asListed"": ""Correction (sign); target position"", ""scope"": ""row"", ""rows"": [""H24""]}"
+e869,work:millan-arias_robust_2020,form:target-position,HAS_FORM,"{""asListed"": ""Correction (sign); target position"", ""scope"": ""row"", ""rows"": [""H24""]}"
+e870,work:millan-arias_robust_2020,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Simulated oracle"", ""scope"": ""work"", ""rows"": [""H24""]}"
+e871,work:millan-arias_robust_2020,teacherkind:standin,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H24""]}"
+e872,work:millan-arias_robust_2020,integ:DB,INTEGRATES_AS,"{""asListed"": ""DB"", ""scope"": ""work"", ""rows"": [""H24""]}"
+e873,work:millan-arias_robust_2020,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H24""]}"
+e874,work:millan-arias_robust_2020,task:cartpole,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Cart-pole"", ""setting"": ""sim"", ""rows"": [""H24""]}"
+e875,work:millan-arias_robust_2020,task:h24:6-dof-arm,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""6-DoF arm"", ""setting"": ""sim"", ""rows"": [""H24""]}"
+e876,work:goyal_using_2019,row:H25,IN_ROW,{}
+e877,row:H25,task:montezuma-s-revenge,ROW_LISTS_TASK,"{""asListed"": ""Montezuma's Revenge""}"
+e878,work:goyal_using_2019,level:action,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H25""]}"
+e879,work:goyal_using_2019,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H25""]}"
+e880,work:goyal_using_2019,form:free-form,HAS_FORM,"{""asListed"": ""Free-form instruction"", ""scope"": ""work"", ""rows"": [""H25""]}"
+e881,work:goyal_using_2019,channel:typed,VIA_CHANNEL,"{""asListed"": ""Typed language (before training)"", ""scope"": ""work"", ""rows"": [""H25""]}"
+e882,work:goyal_using_2019,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""asListed"": ""RS (MB)"", ""scope"": ""work"", ""rows"": [""H25""]}"
+e883,work:goyal_using_2019,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H25""]}"
+e884,work:goyal_using_2019,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H25""]}"
+e885,work:goyal_using_2019,task:montezuma-s-revenge,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Montezuma's Revenge"", ""setting"": ""sim"", ""rows"": [""H25""]}"
+e886,work:najar_interactively_2020,row:H26,IN_ROW,{}
+e887,row:H26,task:sorting,ROW_LISTS_TASK,"{""asListed"": ""Sorting""}"
+e888,row:H26,task:maze,ROW_LISTS_TASK,"{""asListed"": ""maze""}"
+e889,row:H26,robot:baxter,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e890,work:najar_interactively_2020,level:action,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H26""]}"
+e891,work:najar_interactively_2020,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H26""]}"
+e892,work:najar_interactively_2020,form:unlabeled-gesture,HAS_FORM,"{""asListed"": ""Unlabeled gesture + binary rating"", ""scope"": ""work"", ""rows"": [""H26""]}"
+e893,work:najar_interactively_2020,form:binary,HAS_FORM,"{""asListed"": ""Unlabeled gesture + binary rating"", ""scope"": ""work"", ""rows"": [""H26""]}"
+e894,work:najar_interactively_2020,channel:gesture,VIA_CHANNEL,"{""asListed"": ""Gestures, head nod (Kinect); simulated (sim)"", ""scope"": ""work"", ""rows"": [""H26""]}"
+e895,work:najar_interactively_2020,channel:simulated,VIA_CHANNEL,"{""asListed"": ""Gestures, head nod (Kinect); simulated (sim)"", ""scope"": ""work"", ""rows"": [""H26""]}"
+e896,work:najar_interactively_2020,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H26""]}"
+e897,work:najar_interactively_2020,teacherkind:standin,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H26""]}"
+e898,work:najar_interactively_2020,integ:PS,INTEGRATES_AS,"{""modeling"": ""MF"", ""asListed"": ""PS (MF); DB / VS"", ""scope"": ""work"", ""rows"": [""H26""]}"
+e899,work:najar_interactively_2020,integ:DB,INTEGRATES_AS,"{""asListed"": ""PS (MF); DB / VS"", ""scope"": ""work"", ""rows"": [""H26""]}"
+e900,work:najar_interactively_2020,integ:VS,INTEGRATES_AS,"{""asListed"": ""PS (MF); DB / VS"", ""scope"": ""work"", ""rows"": [""H26""]}"
+e901,work:najar_interactively_2020,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""H26""]}"
+e902,work:najar_interactively_2020,env:used,USES_ENV_REWARD,"{""asListed"": ""Present / absent"", ""scope"": ""work"", ""note"": ""tested with and without"", ""rows"": [""H26""]}"
+e903,work:najar_interactively_2020,env:notused,USES_ENV_REWARD,"{""asListed"": ""Present / absent"", ""scope"": ""work"", ""note"": ""tested with and without"", ""rows"": [""H26""]}"
+e904,work:najar_interactively_2020,task:sorting,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Sorting"", ""setting"": ""sim"", ""rows"": [""H26""]}"
+e905,work:najar_interactively_2020,task:maze,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""maze"", ""setting"": ""sim"", ""rows"": [""H26""]}"
+e906,work:najar_interactively_2020,level:rating,USES_LEVEL,"{""role"": ""secondary (form column: Unlabeled gesture + binary rating)"", ""rows"": [""H26""]}"
+e907,work:najar_interactively_2020,robot:baxter,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""single-work row"", ""useBasis"": ""Table I caption convention (no use printed)"", ""teachers"": ""one of the authors (survey Sec. VI-B1)"", ""rows"": [""H26""]}"
+e908,work:tarakli_interactive_2024,row:H27,IN_ROW,{}
+e909,row:H27,task:h27:pick-and-place,ROW_LISTS_TASK,"{""asListed"": ""Pick and place""}"
+e910,row:H27,robot:vector,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e911,work:tarakli_interactive_2024,level:action,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H27""]}"
+e912,work:tarakli_interactive_2024,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H27""]}"
+e913,work:tarakli_interactive_2024,form:free-form,HAS_FORM,"{""asListed"": ""Free-form advice + critique"", ""scope"": ""work"", ""rows"": [""H27""]}"
+e914,work:tarakli_interactive_2024,channel:speech,VIA_CHANNEL,"{""asListed"": ""Speech, via an LLM"", ""scope"": ""work"", ""rows"": [""H27""]}"
+e915,work:tarakli_interactive_2024,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H27""]}"
+e916,work:tarakli_interactive_2024,integ:VS,INTEGRATES_AS,"{""asListed"": ""VS; DB"", ""scope"": ""work"", ""rows"": [""H27""]}"
+e917,work:tarakli_interactive_2024,integ:DB,INTEGRATES_AS,"{""asListed"": ""VS; DB"", ""scope"": ""work"", ""rows"": [""H27""]}"
+e918,work:tarakli_interactive_2024,env:nr,USES_ENV_REWARD,"{""asListed"": ""n/r"", ""scope"": ""work"", ""rows"": [""H27""]}"
+e919,work:tarakli_interactive_2024,task:h27:pick-and-place,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Pick and place"", ""setting"": ""real"", ""rows"": [""H27""]}"
+e920,work:tarakli_interactive_2024,level:rating,USES_LEVEL,"{""role"": ""secondary (form column: Free-form advice + critique)"", ""rows"": [""H27""]}"
+e921,work:tarakli_interactive_2024,robot:vector,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""single-work row"", ""useBasis"": ""Table I caption convention (no use printed)"", ""rows"": [""H27""]}"
+e922,work:thomaz_reinforcement_2006-1,row:H28,IN_ROW,{}
+e923,work:thomaz_teachable_2008,row:H28,IN_ROW,{}
+e924,work:suay_effect_2011,row:H28,IN_ROW,{}
+e925,row:H28,task:sophie-s-kitchen,ROW_LISTS_TASK,"{""asListed"": ""Sophie's Kitchen""}"
+e926,row:H28,robot:nao,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e927,work:thomaz_reinforcement_2006-1,level:goal,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H28""]}"
+e928,work:thomaz_reinforcement_2006-1,form:target,HAS_FORM,"{""asListed"": ""Target (object or region) + rating"", ""scope"": ""work"", ""rows"": [""H28""]}"
+e929,work:thomaz_reinforcement_2006-1,integ:DB,INTEGRATES_AS,"{""asListed"": ""DB"", ""scope"": ""work"", ""rows"": [""H28""]}"
+e930,work:thomaz_teachable_2008,level:goal,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H28""]}"
+e931,work:thomaz_teachable_2008,form:target,HAS_FORM,"{""asListed"": ""Target (object or region) + rating"", ""scope"": ""work"", ""rows"": [""H28""]}"
+e932,work:thomaz_teachable_2008,integ:DB,INTEGRATES_AS,"{""asListed"": ""DB"", ""scope"": ""work"", ""rows"": [""H28""]}"
+e933,work:suay_effect_2011,level:goal,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""H28""]}"
+e934,work:suay_effect_2011,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H28""]}"
+e935,work:suay_effect_2011,form:target,HAS_FORM,"{""asListed"": ""Target (object or region) + rating"", ""scope"": ""work"", ""rows"": [""H28""]}"
+e936,work:suay_effect_2011,channel:mouse,VIA_CHANNEL,"{""asListed"": ""Mouse"", ""scope"": ""work"", ""rows"": [""H28""]}"
+e937,work:suay_effect_2011,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H28""]}"
+e938,work:suay_effect_2011,integ:DB,INTEGRATES_AS,"{""asListed"": ""DB"", ""scope"": ""work"", ""rows"": [""H28""]}"
+e939,work:suay_effect_2011,env:notused,USES_ENV_REWARD,"{""asListed"": ""Present / absent"", ""scope"": ""work"", ""basis"": ""survey Sec. VI-B2 (\""with the human reward as the only reward\"")"", ""rows"": [""H28""]}"
+e940,work:suay_effect_2011,task:sophie-s-kitchen,TESTED_ON,"{""scope"": ""row"", ""basis"": ""shared row, unresolved"", ""asListed"": ""Sophie's Kitchen"", ""setting"": ""sim"", ""rows"": [""H28""]}"
+e941,work:suay_effect_2011,level:rating,USES_LEVEL,"{""role"": ""secondary (form column: Target (object or region) + rating)"", ""rows"": [""H28""]}"
+e942,work:suay_effect_2011,robot:nao,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""survey Sec. VI-B2"", ""useBasis"": ""Table I caption convention (no use printed)"", ""teachers"": ""one of the authors (survey Sec. VI-B2)"", ""rows"": [""H28""]}"
+e943,work:krening_interaction_2018,row:H29,IN_ROW,{}
+e944,work:bignold_human_2023,row:H29,IN_ROW,{}
+e945,work:koert_multi-channel_2020,row:H29,IN_ROW,{}
+e946,row:H29,task:radiation-world,ROW_LISTS_TASK,"{""asListed"": ""Radiation World""}"
+e947,row:H29,task:mountain-car,ROW_LISTS_TASK,"{""asListed"": ""Mountain Car""}"
+e948,row:H29,task:h29:cocktail,ROW_LISTS_TASK,"{""asListed"": ""cocktail""}"
+e949,row:H29,task:h29:weight-sorting,ROW_LISTS_TASK,"{""asListed"": ""weight sorting""}"
+e950,row:H29,robot:kobo-arm,ROW_LISTS_ROBOT,"{""use"": ""online learning (unmarked: Table I gives a use only when the robot did not learn online)""}"
+e951,work:krening_interaction_2018,level:rating,USES_LEVEL,"{""role"": ""compared (evaluative vs informative study)"", ""rows"": [""H29""]}"
+e952,work:krening_interaction_2018,level:action,USES_LEVEL,"{""role"": ""compared (evaluative vs informative study)"", ""rows"": [""H29""]}"
+e953,work:krening_interaction_2018,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H29""]}"
+e954,work:krening_interaction_2018,channel:speech,VIA_CHANNEL,"{""asListed"": ""Speech; keyboard; touch display"", ""scope"": ""row"", ""rows"": [""H29""]}"
+e955,work:krening_interaction_2018,channel:keyboard,VIA_CHANNEL,"{""asListed"": ""Speech; keyboard; touch display"", ""scope"": ""row"", ""rows"": [""H29""]}"
+e956,work:krening_interaction_2018,channel:touch,VIA_CHANNEL,"{""asListed"": ""Speech; keyboard; touch display"", ""scope"": ""row"", ""rows"": [""H29""]}"
+e957,work:krening_interaction_2018,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H29""]}"
+e958,work:krening_interaction_2018,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H29""]}"
+e959,work:krening_interaction_2018,task:radiation-world,TESTED_ON,"{""scope"": ""work"", ""basis"": ""rows R346"", ""asListed"": ""Radiation World"", ""setting"": ""sim"", ""rows"": [""H29""]}"
+e960,work:bignold_human_2023,level:rating,USES_LEVEL,"{""role"": ""compared (evaluative vs informative study)"", ""rows"": [""H29""]}"
+e961,work:bignold_human_2023,level:action,USES_LEVEL,"{""role"": ""compared (evaluative vs informative study)"", ""rows"": [""H29""]}"
+e962,work:bignold_human_2023,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H29""]}"
+e963,work:bignold_human_2023,channel:speech,VIA_CHANNEL,"{""asListed"": ""Speech; keyboard; touch display"", ""scope"": ""row"", ""rows"": [""H29""]}"
+e964,work:bignold_human_2023,channel:keyboard,VIA_CHANNEL,"{""asListed"": ""Speech; keyboard; touch display"", ""scope"": ""row"", ""rows"": [""H29""]}"
+e965,work:bignold_human_2023,channel:touch,VIA_CHANNEL,"{""asListed"": ""Speech; keyboard; touch display"", ""scope"": ""row"", ""rows"": [""H29""]}"
+e966,work:bignold_human_2023,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H29""]}"
+e967,work:bignold_human_2023,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H29""]}"
+e968,work:bignold_human_2023,task:mountain-car,TESTED_ON,"{""scope"": ""work"", ""basis"": ""survey Sec. VI-C; rows R355"", ""asListed"": ""Mountain Car"", ""setting"": ""sim"", ""rows"": [""H29""]}"
+e969,work:koert_multi-channel_2020,level:rating,USES_LEVEL,"{""role"": ""compared (evaluative vs informative study)"", ""rows"": [""H29""]}"
+e970,work:koert_multi-channel_2020,level:action,USES_LEVEL,"{""role"": ""compared (evaluative vs informative study)"", ""rows"": [""H29""]}"
+e971,work:koert_multi-channel_2020,chclass:explicit,CHANNEL_CLASS,"{""basis"": ""table block"", ""rows"": [""H29""]}"
+e972,work:koert_multi-channel_2020,channel:speech,VIA_CHANNEL,"{""asListed"": ""Speech; keyboard; touch display"", ""scope"": ""row"", ""rows"": [""H29""]}"
+e973,work:koert_multi-channel_2020,channel:keyboard,VIA_CHANNEL,"{""asListed"": ""Speech; keyboard; touch display"", ""scope"": ""row"", ""rows"": [""H29""]}"
+e974,work:koert_multi-channel_2020,channel:touch,VIA_CHANNEL,"{""asListed"": ""Speech; keyboard; touch display"", ""scope"": ""row"", ""rows"": [""H29""]}"
+e975,work:koert_multi-channel_2020,teacherkind:people,TEACHER_KIND,"{""scope"": ""work"", ""basis"": ""Channel column"", ""rows"": [""H29""]}"
+e976,work:koert_multi-channel_2020,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""H29""]}"
+e977,work:koert_multi-channel_2020,task:h29:cocktail,TESTED_ON,"{""scope"": ""work"", ""basis"": ""survey Sec. VI-C; rows R374 (weight sorting)"", ""asListed"": ""cocktail"", ""setting"": ""real"", ""rows"": [""H29""]}"
+e978,work:koert_multi-channel_2020,task:h29:weight-sorting,TESTED_ON,"{""scope"": ""work"", ""basis"": ""survey Sec. VI-C; rows R374 (weight sorting)"", ""asListed"": ""weight sorting"", ""setting"": ""real"", ""rows"": [""H29""]}"
+e979,work:koert_multi-channel_2020,robot:kobo-arm,RAN_ON_ROBOT,"{""use"": ""online learning"", ""online"": true, ""basis"": ""survey Sec. VI-C; rows R365"", ""useBasis"": ""Table I caption convention (no use printed)"", ""teachers"": ""twenty inexperienced users (survey Sec. VI-C)"", ""rows"": [""H29""]}"
+e980,work:rocamonde_vision-language_2023,row:F01,IN_ROW,{}
+e981,work:rocamonde_vision-language_2023,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F01""]}"
+e982,work:rocamonde_vision-language_2023,form:similarity,HAS_FORM,"{""asListed"": ""Similarity"", ""scope"": ""work"", ""rows"": [""F01""]}"
+e983,work:rocamonde_vision-language_2023,model:clip-vit-bigg-14,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II"", ""asListed"": ""Contrastive, frozen (CLIP ViT-bigG-14)"", ""rows"": [""F01""]}"
+e984,work:rocamonde_vision-language_2023,input:image,SEES,"{""asListed"": ""Rendered image + prompt"", ""rows"": [""F01""]}"
+e985,work:rocamonde_vision-language_2023,regime:online,JUDGES,"{""timing"": ""Own; every step"", ""rows"": [""F01""]}"
+e986,work:rocamonde_vision-language_2023,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""conversion"": ""Direct, projection"", ""asListed"": ""Direct, projection → RS (MF)"", ""scope"": ""work"", ""rows"": [""F01""]}"
+e987,work:rocamonde_vision-language_2023,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""F01""]}"
+e988,work:rocamonde_vision-language_2023,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""F01""]}"
+e989,row:F01,task:cartpole,ROW_LISTS_TASK,"{""asListed"": ""CartPole""}"
+e990,work:rocamonde_vision-language_2023,task:cartpole,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""CartPole"", ""setting"": ""sim"", ""rows"": [""F01""]}"
+e991,row:F01,task:mountain-car,ROW_LISTS_TASK,"{""asListed"": ""Mountain Car""}"
+e992,work:rocamonde_vision-language_2023,task:mountain-car,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Mountain Car"", ""setting"": ""sim"", ""rows"": [""F01""]}"
+e993,row:F01,task:f01:humanoid-poses,ROW_LISTS_TASK,"{""asListed"": ""Humanoid poses""}"
+e994,work:rocamonde_vision-language_2023,task:f01:humanoid-poses,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Humanoid poses"", ""setting"": ""sim"", ""rows"": [""F01""]}"
+e995,work:fu_furl_2024,row:F02,IN_ROW,{}
+e996,work:fu_furl_2024,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F02""]}"
+e997,work:fu_furl_2024,form:similarity,HAS_FORM,"{""asListed"": ""Similarity"", ""scope"": ""work"", ""rows"": [""F02""]}"
+e998,work:fu_furl_2024,model:liv,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""projection heads fine-tuned on rollouts"", ""basis"": ""Table II"", ""asListed"": ""Contrastive, heads FT on rollouts (LIV)"", ""rows"": [""F02""]}"
+e999,work:fu_furl_2024,input:image,SEES,"{""asListed"": ""Image + instruction"", ""rows"": [""F02""]}"
+e1000,work:fu_furl_2024,regime:online,JUDGES,"{""timing"": ""Own; every step"", ""rows"": [""F02""]}"
+e1001,work:fu_furl_2024,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""conversion"": ""Aligned heads, relay"", ""asListed"": ""Aligned heads, relay → RS (MB)"", ""scope"": ""work"", ""rows"": [""F02""]}"
+e1002,work:fu_furl_2024,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""F02""]}"
+e1003,work:fu_furl_2024,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""F02""]}"
+e1004,row:F02,task:meta-world,ROW_LISTS_TASK,"{""asListed"": ""Meta-World""}"
+e1005,work:fu_furl_2024,task:meta-world,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Meta-World"", ""setting"": ""sim"", ""rows"": [""F02""]}"
+e1006,work:zhou_marvl_2026,row:F03,IN_ROW,{}
+e1007,work:zhou_marvl_2026,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F03""]}"
+e1008,work:zhou_marvl_2026,form:similarity,HAS_FORM,"{""asListed"": ""Similarity"", ""scope"": ""work"", ""rows"": [""F03""]}"
+e1009,work:zhou_marvl_2026,model:clip-vit-b-32,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""scene encoder fine-tuned once"", ""basis"": ""Table II (fact-checked wording in data.json)"", ""asListed"": ""Contrastive, scene encoder fine-tuned once (CLIP ViT-B/32)"", ""rows"": [""F03""]}"
+e1010,work:zhou_marvl_2026,input:image,SEES,"{""asListed"": ""Image, sub-task text, goal images"", ""rows"": [""F03""]}"
+e1011,work:zhou_marvl_2026,regime:online,JUDGES,"{""timing"": ""Own; every step"", ""rows"": [""F03""]}"
+e1012,work:zhou_marvl_2026,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""conversion"": ""Projection, sigmoid gate"", ""asListed"": ""Projection, sigmoid gate → RS (MB)"", ""scope"": ""work"", ""rows"": [""F03""]}"
+e1013,work:zhou_marvl_2026,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""F03""]}"
+e1014,work:zhou_marvl_2026,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""F03""]}"
+e1015,row:F03,task:meta-world,ROW_LISTS_TASK,"{""asListed"": ""Meta-World""}"
+e1016,work:zhou_marvl_2026,task:meta-world,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Meta-World"", ""setting"": ""sim"", ""rows"": [""F03""]}"
+e1017,row:F03,task:panda-gym,ROW_LISTS_TASK,"{""asListed"": ""Panda-Gym""}"
+e1018,work:zhou_marvl_2026,task:panda-gym,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Panda-Gym"", ""setting"": ""sim"", ""rows"": [""F03""]}"
+e1019,work:kwon_reward_2023,row:F04,IN_ROW,{}
+e1020,work:kwon_reward_2023,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F04""]}"
+e1021,work:kwon_reward_2023,form:binary,HAS_FORM,"{""asListed"": ""Binary"", ""scope"": ""work"", ""rows"": [""F04""]}"
+e1022,work:kwon_reward_2023,model:text-davinci-002,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II (GPT-3); rows F655-F677 (text-davinci-002)"", ""asListed"": ""API LLM, frozen (GPT-3)"", ""rows"": [""F04""]}"
+e1023,work:kwon_reward_2023,input:text,SEES,"{""asListed"": ""Episode text + examples"", ""rows"": [""F04""]}"
+e1024,work:kwon_reward_2023,regime:online,JUDGES,"{""timing"": ""Own; per episode"", ""rows"": [""F04""]}"
+e1025,work:kwon_reward_2023,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""conversion"": ""Parsed 0/1"", ""asListed"": ""Parsed 0/1 → RS (MF)"", ""scope"": ""work"", ""rows"": [""F04""]}"
+e1026,work:kwon_reward_2023,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""F04""]}"
+e1027,work:kwon_reward_2023,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""F04""]}"
+e1028,row:F04,task:f04:ultimatum-game,ROW_LISTS_TASK,"{""asListed"": ""Ultimatum""}"
+e1029,work:kwon_reward_2023,task:f04:ultimatum-game,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Ultimatum"", ""setting"": ""text"", ""rows"": [""F04""]}"
+e1030,row:F04,task:f04:matrix-games,ROW_LISTS_TASK,"{""asListed"": ""matrix games""}"
+e1031,work:kwon_reward_2023,task:f04:matrix-games,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""matrix games"", ""setting"": ""text"", ""rows"": [""F04""]}"
+e1032,row:F04,task:f04:negotiation,ROW_LISTS_TASK,"{""asListed"": ""negotiation""}"
+e1033,work:kwon_reward_2023,task:f04:negotiation,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""negotiation"", ""setting"": ""text"", ""rows"": [""F04""]}"
+e1034,work:chu_accelerating_2023,row:F05,IN_ROW,{}
+e1035,work:chu_accelerating_2023,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F05""]}"
+e1036,work:chu_accelerating_2023,form:binary,HAS_FORM,"{""asListed"": ""Binary (±1)"", ""scope"": ""work"", ""rows"": [""F05""]}"
+e1037,work:chu_accelerating_2023,model:vicuna-13b,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II"", ""asListed"": ""Open LLM, frozen (Vicuna-13B)"", ""rows"": [""F05""]}"
+e1038,work:chu_accelerating_2023,input:text,SEES,"{""asListed"": ""Transition text with coordinates"", ""rows"": [""F05""]}"
+e1039,work:chu_accelerating_2023,regime:online,JUDGES,"{""timing"": ""Own; every 4 steps"", ""rows"": [""F05""]}"
+e1040,work:chu_accelerating_2023,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""conversion"": ""Parsed ±1"", ""asListed"": ""Parsed ±1 → RS (MF)"", ""scope"": ""work"", ""rows"": [""F05""]}"
+e1041,work:chu_accelerating_2023,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""F05""]}"
+e1042,work:chu_accelerating_2023,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""F05""]}"
+e1043,row:F05,task:rlbench,ROW_LISTS_TASK,"{""asListed"": ""RLBench""}"
+e1044,work:chu_accelerating_2023,task:rlbench,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""RLBench"", ""setting"": ""sim"", ""rows"": [""F05""]}"
+e1045,work:luu_enhancing_2025,row:F06,IN_ROW,{}
+e1046,work:luu_enhancing_2025,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F06""]}"
+e1047,work:luu_enhancing_2025,form:nclass,HAS_FORM,"{""asListed"": ""Class (3)"", ""scope"": ""work"", ""rows"": [""F06""]}"
+e1048,work:luu_enhancing_2025,model:gemini-1.5-pro,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II"", ""asListed"": ""API VLM, frozen (Gemini-1.5-Pro)"", ""rows"": [""F06""]}"
+e1049,work:luu_enhancing_2025,input:image,SEES,"{""asListed"": ""Image or segment + actions"", ""rows"": [""F06""]}"
+e1050,work:luu_enhancing_2025,regime:online,JUDGES,"{""timing"": ""Replay buffer; 50 q / 5k steps"", ""rows"": [""F06""]}"
+e1051,work:luu_enhancing_2025,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""conversion"": ""Rating RM, MAE + stratified"", ""asListed"": ""Rating RM, MAE + stratified → RS (MB)"", ""scope"": ""work"", ""rows"": [""F06""]}"
+e1052,work:luu_enhancing_2025,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""F06""]}"
+e1053,work:luu_enhancing_2025,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""F06""]}"
+e1054,row:F06,task:meta-world,ROW_LISTS_TASK,"{""asListed"": ""Meta-World""}"
+e1055,work:luu_enhancing_2025,task:meta-world,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Meta-World"", ""setting"": ""sim"", ""rows"": [""F06""]}"
+e1056,row:F06,task:alfred,ROW_LISTS_TASK,"{""asListed"": ""ALFRED""}"
+e1057,work:luu_enhancing_2025,task:alfred,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""ALFRED"", ""setting"": ""sim"", ""rows"": [""F06""]}"
+e1058,row:F06,robot:sawyer,ROW_LISTS_ROBOT,"{""use"": ""offline RL""}"
+e1059,work:luu_enhancing_2025,robot:sawyer,RAN_ON_ROBOT,"{""use"": ""offline RL"", ""online"": false, ""basis"": ""single-work row"", ""useBasis"": ""printed in Table II"", ""rows"": [""F06""]}"
+e1060,work:zhao_training-free_2025,row:F07,IN_ROW,{}
+e1061,work:zhao_training-free_2025,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F07""]}"
+e1062,work:zhao_training-free_2025,form:binary,HAS_FORM,"{""asListed"": ""Binary per subgoal"", ""scope"": ""work"", ""rows"": [""F07""]}"
+e1063,work:zhao_training-free_2025,model:qwen2-vl-72b,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II"", ""asListed"": ""API VLM, frozen (Qwen2-VL-72B) + SAM 2"", ""rows"": [""F07""]}"
+e1064,work:zhao_training-free_2025,model:sam-2,TEACHER_MODEL,"{""role"": ""auxiliary"", ""basis"": ""Table II"", ""asListed"": ""API VLM, frozen (Qwen2-VL-72B) + SAM 2"", ""rows"": [""F07""]}"
+e1065,work:zhao_training-free_2025,input:image,SEES,"{""asListed"": ""Initial image + task text"", ""rows"": [""F07""]}"
+e1066,work:zhao_training-free_2025,regime:online,JUDGES,"{""timing"": ""Own; per episode"", ""rows"": [""F07""]}"
+e1067,work:zhao_training-free_2025,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""conversion"": ""Progress difference (particle filter)"", ""asListed"": ""Progress difference (particle filter) → RS (MF)"", ""scope"": ""work"", ""rows"": [""F07""]}"
+e1068,work:zhao_training-free_2025,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""F07""]}"
+e1069,work:zhao_training-free_2025,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""F07""]}"
+e1070,row:F07,task:cliport,ROW_LISTS_TASK,"{""asListed"": ""CLIPort""}"
+e1071,work:zhao_training-free_2025,task:cliport,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""CLIPort"", ""setting"": ""sim"", ""rows"": [""F07""]}"
+e1072,row:F07,task:calvin,ROW_LISTS_TASK,"{""asListed"": ""CALVIN""}"
+e1073,work:zhao_training-free_2025,task:calvin,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""CALVIN"", ""setting"": ""sim"", ""rows"": [""F07""]}"
+e1074,row:F07,robot:ur-arm,ROW_LISTS_ROBOT,"{""use"": ""reward accuracy check only""}"
+e1075,work:zhao_training-free_2025,robot:ur-arm,RAN_ON_ROBOT,"{""use"": ""reward accuracy check only"", ""online"": false, ""basis"": ""single-work row"", ""useBasis"": ""printed in Table II"", ""rows"": [""F07""]}"
+e1076,work:lin_autoskill_2025,row:F08,IN_ROW,"{""module"": ""reward""}"
+e1077,work:lin_autoskill_2025,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""module"": ""reward"", ""rows"": [""F08""]}"
+e1078,work:lin_autoskill_2025,form:binary,HAS_FORM,"{""asListed"": ""Binary + progress"", ""scope"": ""work"", ""module"": ""reward"", ""rows"": [""F08""]}"
+e1079,work:lin_autoskill_2025,model:gemini-pro-vision,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""survey Sec. VII-A1 (Table II says \""Gemini\"")"", ""module"": ""reward"", ""asListed"": ""API VLM, frozen (Gemini) + encoder FT"", ""rows"": [""F08""]}"
+e1080,work:lin_autoskill_2025,model:ego4d-encoder,TEACHER_MODEL,"{""role"": ""auxiliary"", ""adaptation"": ""fine-tuned for the tabletop domain"", ""basis"": ""Table II (encoder FT); rows F258"", ""module"": ""reward"", ""asListed"": ""API VLM, frozen (Gemini) + encoder FT"", ""rows"": [""F08""]}"
+e1081,work:lin_autoskill_2025,input:image,SEES,"{""asListed"": ""Images s₀, sₜ + skill text"", ""module"": ""reward"", ""rows"": [""F08""]}"
+e1082,work:lin_autoskill_2025,regime:online,JUDGES,"{""timing"": ""Own; every step"", ""module"": ""reward"", ""rows"": [""F08""]}"
+e1083,work:lin_autoskill_2025,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF; MB"", ""conversion"": ""Weighted sum"", ""asListed"": ""Weighted sum → RS (MF; MB)"", ""scope"": ""work"", ""module"": ""reward"", ""rows"": [""F08""]}"
+e1084,work:lin_autoskill_2025,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""module"": ""reward"", ""rows"": [""F08""]}"
+e1085,work:lin_autoskill_2025,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""module"": ""reward"", ""rows"": [""F08""]}"
+e1086,work:lin_autoskill_2025,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""module"": ""reward"", ""rows"": [""F08""]}"
+e1087,row:F08,task:frankakitchen,ROW_LISTS_TASK,"{""asListed"": ""FrankaKitchen""}"
+e1088,work:lin_autoskill_2025,task:frankakitchen,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""FrankaKitchen"", ""setting"": ""sim"", ""rows"": [""F08""]}"
+e1089,row:F08,task:robosuite,ROW_LISTS_TASK,"{""asListed"": ""robosuite""}"
+e1090,work:lin_autoskill_2025,task:robosuite,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""robosuite"", ""setting"": ""sim"", ""rows"": [""F08""]}"
+e1091,row:F08,robot:ur3,ROW_LISTS_ROBOT,"{""use"": ""sim-to-real transfer""}"
+e1092,work:lin_autoskill_2025,robot:ur3,RAN_ON_ROBOT,"{""use"": ""sim-to-real transfer"", ""online"": false, ""basis"": ""single-work row"", ""useBasis"": ""printed in Table II"", ""modules"": ""reward and planner"", ""rows"": [""F08""]}"
+e1093,work:sharony_vlm-guided_2026,row:F09,IN_ROW,{}
+e1094,work:sharony_vlm-guided_2026,level:rating,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F09""]}"
+e1095,work:sharony_vlm-guided_2026,form:binary,HAS_FORM,"{""asListed"": ""Binary"", ""scope"": ""work"", ""rows"": [""F09""]}"
+e1096,work:sharony_vlm-guided_2026,model:perception-lm-1b,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II; survey Sec. VII-A1 (1B)"", ""asListed"": ""Video-QA, frozen (Perception-LM)"", ""rows"": [""F09""]}"
+e1097,work:sharony_vlm-guided_2026,input:clip,SEES,"{""asListed"": ""32-frame clip"", ""rows"": [""F09""]}"
+e1098,work:sharony_vlm-guided_2026,regime:online,JUDGES,"{""timing"": ""Own; every clip, asynchronous"", ""rows"": [""F09""]}"
+e1099,work:sharony_vlm-guided_2026,integ:EG,INTEGRATES_AS,"{""conversion"": ""Threshold"", ""asListed"": ""Threshold → replay priority (EG)"", ""scope"": ""work"", ""rows"": [""F09""]}"
+e1100,work:sharony_vlm-guided_2026,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""F09""]}"
+e1101,row:F09,task:minigrid,ROW_LISTS_TASK,"{""asListed"": ""MiniGrid""}"
+e1102,work:sharony_vlm-guided_2026,task:minigrid,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""MiniGrid"", ""setting"": ""sim"", ""rows"": [""F09""]}"
+e1103,row:F09,task:ogbench,ROW_LISTS_TASK,"{""asListed"": ""OGBench""}"
+e1104,work:sharony_vlm-guided_2026,task:ogbench,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""OGBench"", ""setting"": ""sim"", ""rows"": [""F09""]}"
+e1105,work:wang_rl-vlm-f_2024,row:F10,IN_ROW,{}
+e1106,work:wang_rl-vlm-f_2024,level:preference,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F10""]}"
+e1107,work:wang_rl-vlm-f_2024,form:pairwise,HAS_FORM,"{""asListed"": ""Pairwise (+ unsure)"", ""scope"": ""work"", ""abstainOption"": true, ""rows"": [""F10""]}"
+e1108,work:wang_rl-vlm-f_2024,model:gemini-pro,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II"", ""asListed"": ""API VLM, frozen (Gemini-Pro, GPT-4V)"", ""rows"": [""F10""]}"
+e1109,work:wang_rl-vlm-f_2024,model:gpt-4v,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II (cloth folding)"", ""asListed"": ""API VLM, frozen (Gemini-Pro, GPT-4V)"", ""rows"": [""F10""]}"
+e1110,work:wang_rl-vlm-f_2024,input:image,SEES,"{""asListed"": ""Two images"", ""rows"": [""F10""]}"
+e1111,work:wang_rl-vlm-f_2024,regime:online,JUDGES,"{""timing"": ""Own; 40–100 q / 1k–5k steps"", ""rows"": [""F10""]}"
+e1112,work:wang_rl-vlm-f_2024,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""conversion"": ""BT RM"", ""asListed"": ""BT RM → RS (MB)"", ""scope"": ""work"", ""rows"": [""F10""]}"
+e1113,work:wang_rl-vlm-f_2024,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""F10""]}"
+e1114,work:wang_rl-vlm-f_2024,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""F10""]}"
+e1115,row:F10,task:cartpole,ROW_LISTS_TASK,"{""asListed"": ""CartPole""}"
+e1116,work:wang_rl-vlm-f_2024,task:cartpole,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""CartPole"", ""setting"": ""sim"", ""rows"": [""F10""]}"
+e1117,row:F10,task:meta-world,ROW_LISTS_TASK,"{""asListed"": ""Meta-World""}"
+e1118,work:wang_rl-vlm-f_2024,task:meta-world,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Meta-World"", ""setting"": ""sim"", ""rows"": [""F10""]}"
+e1119,row:F10,task:softgym,ROW_LISTS_TASK,"{""asListed"": ""SoftGym""}"
+e1120,work:wang_rl-vlm-f_2024,task:softgym,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""SoftGym"", ""setting"": ""sim"", ""rows"": [""F10""]}"
+e1121,work:zakharov_goalladder_2025,row:F11,IN_ROW,{}
+e1122,work:zakharov_goalladder_2025,level:preference,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F11""]}"
+e1123,work:zakharov_goalladder_2025,form:pairwise,HAS_FORM,"{""asListed"": ""Pairwise (+ refusal)"", ""scope"": ""work"", ""abstainOption"": true, ""rows"": [""F11""]}"
+e1124,work:zakharov_goalladder_2025,model:gemini-2.0-flash,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II"", ""asListed"": ""API VLM, frozen (Gemini 2.0 Flash)"", ""rows"": [""F11""]}"
+e1125,work:zakharov_goalladder_2025,input:image,SEES,"{""asListed"": ""Two images"", ""rows"": [""F11""]}"
+e1126,work:zakharov_goalladder_2025,regime:online,JUDGES,"{""timing"": ""Own; 5+5 q / 0.5k–2k steps"", ""rows"": [""F11""]}"
+e1127,work:zakharov_goalladder_2025,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""conversion"": ""Elo → goal; latent distance"", ""asListed"": ""Elo → goal; latent distance → RS (MF)"", ""scope"": ""work"", ""rows"": [""F11""]}"
+e1128,work:zakharov_goalladder_2025,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""F11""]}"
+e1129,work:zakharov_goalladder_2025,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""F11""]}"
+e1130,row:F11,task:cartpole,ROW_LISTS_TASK,"{""asListed"": ""CartPole""}"
+e1131,work:zakharov_goalladder_2025,task:cartpole,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""CartPole"", ""setting"": ""sim"", ""rows"": [""F11""]}"
+e1132,row:F11,task:mountain-car,ROW_LISTS_TASK,"{""asListed"": ""Mountain Car""}"
+e1133,work:zakharov_goalladder_2025,task:mountain-car,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Mountain Car"", ""setting"": ""sim"", ""rows"": [""F11""]}"
+e1134,row:F11,task:meta-world,ROW_LISTS_TASK,"{""asListed"": ""Meta-World""}"
+e1135,work:zakharov_goalladder_2025,task:meta-world,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Meta-World"", ""setting"": ""sim"", ""rows"": [""F11""]}"
+e1136,work:klissarov_motif_2023,row:F12,IN_ROW,{}
+e1137,work:klissarov_motif_2023,level:preference,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F12""]}"
+e1138,work:klissarov_motif_2023,form:pairwise,HAS_FORM,"{""asListed"": ""Pairwise (+ none)"", ""scope"": ""work"", ""abstainOption"": true, ""rows"": [""F12""]}"
+e1139,work:klissarov_motif_2023,model:llama-2-70b,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II"", ""asListed"": ""Open LLM, frozen (Llama 2 70B)"", ""rows"": [""F12""]}"
+e1140,work:klissarov_motif_2023,input:text,SEES,"{""asListed"": ""Caption pairs (game messages)"", ""rows"": [""F12""]}"
+e1141,work:klissarov_motif_2023,regime:offline,JUDGES,"{""timing"": ""Pre-collected dataset; once"", ""rows"": [""F12""]}"
+e1142,work:klissarov_motif_2023,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""conversion"": ""BT RM, threshold"", ""asListed"": ""BT RM, threshold → RS (MB)"", ""scope"": ""work"", ""rows"": [""F12""]}"
+e1143,work:klissarov_motif_2023,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""F12""]}"
+e1144,work:klissarov_motif_2023,env:used,USES_ENV_REWARD,"{""asListed"": ""Both"", ""scope"": ""work"", ""note"": ""intrinsic reward alone and combined"", ""rows"": [""F12""]}"
+e1145,work:klissarov_motif_2023,env:notused,USES_ENV_REWARD,"{""asListed"": ""Both"", ""scope"": ""work"", ""note"": ""intrinsic reward alone and combined"", ""rows"": [""F12""]}"
+e1146,row:F12,task:nethack,ROW_LISTS_TASK,"{""asListed"": ""NetHack""}"
+e1147,work:klissarov_motif_2023,task:nethack,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""NetHack"", ""setting"": ""sim"", ""rows"": [""F12""]}"
+e1148,work:klissarov_modeling_2024,row:F13,IN_ROW,{}
+e1149,work:klissarov_modeling_2024,level:preference,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F13""]}"
+e1150,work:klissarov_modeling_2024,form:pairwise,HAS_FORM,"{""asListed"": ""Pairwise (+ none)"", ""scope"": ""work"", ""abstainOption"": true, ""rows"": [""F13""]}"
+e1151,work:klissarov_modeling_2024,model:llama-3,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II"", ""asListed"": ""LLM/VLM, frozen; PaliGemma fine-tuned for Meta-World (Llama 3, PaliGemma)"", ""rows"": [""F13""]}"
+e1152,work:klissarov_modeling_2024,model:paligemma,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""fine-tuned for Meta-World"", ""basis"": ""Table II (fact-checked wording in data.json)"", ""asListed"": ""LLM/VLM, frozen; PaliGemma fine-tuned for Meta-World (Llama 3, PaliGemma)"", ""rows"": [""F13""]}"
+e1153,work:klissarov_modeling_2024,input:text,SEES,"{""asListed"": ""Text or image pairs"", ""rows"": [""F13""]}"
+e1154,work:klissarov_modeling_2024,input:image,SEES,"{""asListed"": ""Text or image pairs"", ""rows"": [""F13""]}"
+e1155,work:klissarov_modeling_2024,regime:offline,JUDGES,"{""timing"": ""Dataset; once (online variant)"", ""rows"": [""F13""]}"
+e1156,work:klissarov_modeling_2024,regime:online,JUDGES,"{""timing"": ""Dataset; once (online variant)"", ""variant"": ""online variant"", ""rows"": [""F13""]}"
+e1157,work:klissarov_modeling_2024,integ:RS,INTEGRATES_AS,"{""modeling"": ""MB"", ""conversion"": ""BT RM"", ""asListed"": ""BT RM → RS (MB)"", ""scope"": ""work"", ""rows"": [""F13""]}"
+e1158,work:klissarov_modeling_2024,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""F13""]}"
+e1159,work:klissarov_modeling_2024,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""F13""]}"
+e1160,row:F13,task:miniwob,ROW_LISTS_TASK,"{""asListed"": ""MiniWob""}"
+e1161,work:klissarov_modeling_2024,task:miniwob,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""MiniWob"", ""setting"": ""sim"", ""rows"": [""F13""]}"
+e1162,row:F13,task:wordle,ROW_LISTS_TASK,"{""asListed"": ""Wordle""}"
+e1163,work:klissarov_modeling_2024,task:wordle,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Wordle"", ""setting"": ""sim"", ""rows"": [""F13""]}"
+e1164,row:F13,task:nethack,ROW_LISTS_TASK,"{""asListed"": ""NetHack""}"
+e1165,work:klissarov_modeling_2024,task:nethack,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""NetHack"", ""setting"": ""sim"", ""rows"": [""F13""]}"
+e1166,row:F13,task:meta-world,ROW_LISTS_TASK,"{""asListed"": ""Meta-World""}"
+e1167,work:klissarov_modeling_2024,task:meta-world,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Meta-World"", ""setting"": ""sim"", ""rows"": [""F13""]}"
+e1168,work:lin_navigating_2024,row:F14,IN_ROW,{}
+e1169,work:lin_navigating_2024,level:preference,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F14""]}"
+e1170,work:lin_navigating_2024,form:pairwise,HAS_FORM,"{""asListed"": ""Binary pairwise"", ""scope"": ""work"", ""abstainOption"": false, ""rows"": [""F14""]}"
+e1171,work:lin_navigating_2024,model:gpt-4,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II"", ""asListed"": ""LLMs, frozen (GPT-4, Llama-3, Mixtral)"", ""rows"": [""F14""]}"
+e1172,work:lin_navigating_2024,model:llama-3-8b,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""rows F527"", ""asListed"": ""LLMs, frozen (GPT-4, Llama-3, Mixtral)"", ""rows"": [""F14""]}"
+e1173,work:lin_navigating_2024,model:llama-3-70b,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""rows F527"", ""asListed"": ""LLMs, frozen (GPT-4, Llama-3, Mixtral)"", ""rows"": [""F14""]}"
+e1174,work:lin_navigating_2024,model:mixtral,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II"", ""asListed"": ""LLMs, frozen (GPT-4, Llama-3, Mixtral)"", ""rows"": [""F14""]}"
+e1175,work:lin_navigating_2024,input:text,SEES,"{""asListed"": ""Two state captions"", ""rows"": [""F14""]}"
+e1176,work:lin_navigating_2024,regime:offline,JUDGES,"{""timing"": ""Random pairs; once, ×5"", ""rows"": [""F14""]}"
+e1177,work:lin_navigating_2024,integ:PB,INTEGRATES_AS,"{""modeling"": ""MB"", ""conversion"": ""BT potential difference"", ""asListed"": ""BT potential difference → PB (MB)"", ""scope"": ""work"", ""rows"": [""F14""]}"
+e1178,work:lin_navigating_2024,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""F14""]}"
+e1179,work:lin_navigating_2024,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""F14""]}"
+e1180,row:F14,task:grid-world,ROW_LISTS_TASK,"{""asListed"": ""Grid worlds""}"
+e1181,work:lin_navigating_2024,task:grid-world,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Grid worlds"", ""setting"": ""sim"", ""rows"": [""F14""]}"
+e1182,row:F14,task:mujoco,ROW_LISTS_TASK,"{""asListed"": ""MuJoCo""}"
+e1183,work:lin_navigating_2024,task:mujoco,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""MuJoCo"", ""setting"": ""sim"", ""rows"": [""F14""]}"
+e1184,work:zhang_improving_2024,row:F15,IN_ROW,{}
+e1185,work:zhang_improving_2024,level:preference,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F15""]}"
+e1186,work:zhang_improving_2024,form:pairwise,HAS_FORM,"{""asListed"": ""Pairwise (+ tie)"", ""scope"": ""work"", ""abstainOption"": true, ""rows"": [""F15""]}"
+e1187,work:zhang_improving_2024,model:gpt-4,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II"", ""asListed"": ""API LLM, frozen (GPT-4)"", ""rows"": [""F15""]}"
+e1188,work:zhang_improving_2024,input:text,SEES,"{""asListed"": ""Segment captions, task hidden"", ""rows"": [""F15""]}"
+e1189,work:zhang_improving_2024,regime:offline,JUDGES,"{""timing"": ""Exploration data; once"", ""rows"": [""F15""]}"
+e1190,work:zhang_improving_2024,integ:PB,INTEGRATES_AS,"{""modeling"": ""MB"", ""conversion"": ""BT potential"", ""asListed"": ""BT potential → PB (MB)"", ""scope"": ""work"", ""rows"": [""F15""]}"
+e1191,work:zhang_improving_2024,modeling:MB,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""F15""]}"
+e1192,work:zhang_improving_2024,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""F15""]}"
+e1193,row:F15,task:minigrid,ROW_LISTS_TASK,"{""asListed"": ""Minigrid""}"
+e1194,work:zhang_improving_2024,task:minigrid,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Minigrid"", ""setting"": ""sim"", ""rows"": [""F15""]}"
+e1195,row:F15,task:crafter,ROW_LISTS_TASK,"{""asListed"": ""Crafter""}"
+e1196,work:zhang_improving_2024,task:crafter,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Crafter"", ""setting"": ""sim"", ""rows"": [""F15""]}"
+e1197,work:merler_guiding_2025,row:F16,IN_ROW,{}
+e1198,work:merler_guiding_2025,level:action,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F16""]}"
+e1199,work:merler_guiding_2025,form:action-label,HAS_FORM,"{""asListed"": ""Action label"", ""scope"": ""work"", ""rows"": [""F16""]}"
+e1200,work:merler_guiding_2025,model:gemma-3-4b,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II"", ""asListed"": ""Open VLM, frozen (Gemma-3-4B)"", ""rows"": [""F16""]}"
+e1201,work:merler_guiding_2025,input:image,SEES,"{""asListed"": ""Image + task text"", ""rows"": [""F16""]}"
+e1202,work:merler_guiding_2025,regime:none,JUDGES,"{""timing"": ""None; on demand (entropy)"", ""rows"": [""F16""]}"
+e1203,work:merler_guiding_2025,integ:DB,INTEGRATES_AS,"{""conversion"": ""Override"", ""asListed"": ""Override → Decision Biasing"", ""scope"": ""work"", ""rows"": [""F16""]}"
+e1204,work:merler_guiding_2025,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""F16""]}"
+e1205,row:F16,task:frozenlake,ROW_LISTS_TASK,"{""asListed"": ""FrozenLake""}"
+e1206,work:merler_guiding_2025,task:frozenlake,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""FrozenLake"", ""setting"": ""sim"", ""rows"": [""F16""]}"
+e1207,work:du_guiding_2023,row:F17,IN_ROW,{}
+e1208,work:du_guiding_2023,level:goal,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F17""]}"
+e1209,work:du_guiding_2023,form:goal-list,HAS_FORM,"{""asListed"": ""Goal list"", ""scope"": ""work"", ""rows"": [""F17""]}"
+e1210,work:du_guiding_2023,model:codex,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II"", ""asListed"": ""API LLM, frozen (Codex; text-davinci-002 on Housekeep) + SBERT"", ""rows"": [""F17""]}"
+e1211,work:du_guiding_2023,model:text-davinci-002,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""data.json (Housekeep only)"", ""asListed"": ""API LLM, frozen (Codex; text-davinci-002 on Housekeep) + SBERT"", ""rows"": [""F17""]}"
+e1212,work:du_guiding_2023,model:sbert,TEACHER_MODEL,"{""role"": ""auxiliary"", ""basis"": ""Table II"", ""asListed"": ""API LLM, frozen (Codex; text-davinci-002 on Housekeep) + SBERT"", ""rows"": [""F17""]}"
+e1213,work:du_guiding_2023,input:text,SEES,"{""asListed"": ""State caption (template or captioner)"", ""rows"": [""F17""]}"
+e1214,work:du_guiding_2023,regime:online,JUDGES,"{""timing"": ""Own; every step, cached"", ""rows"": [""F17""]}"
+e1215,work:du_guiding_2023,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""conversion"": ""Similarity"", ""asListed"": ""Similarity → RS (MF)"", ""scope"": ""work"", ""rows"": [""F17""]}"
+e1216,work:du_guiding_2023,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""F17""]}"
+e1217,work:du_guiding_2023,env:notused,USES_ENV_REWARD,"{""asListed"": ""Absent"", ""scope"": ""work"", ""rows"": [""F17""]}"
+e1218,row:F17,task:crafter,ROW_LISTS_TASK,"{""asListed"": ""Crafter""}"
+e1219,work:du_guiding_2023,task:crafter,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Crafter"", ""setting"": ""sim"", ""rows"": [""F17""]}"
+e1220,row:F17,task:housekeep,ROW_LISTS_TASK,"{""asListed"": ""Housekeep""}"
+e1221,work:du_guiding_2023,task:housekeep,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""Housekeep"", ""setting"": ""sim"", ""rows"": [""F17""]}"
+e1222,work:ruiz-gonzalez_words_2024,row:F18,IN_ROW,{}
+e1223,work:ruiz-gonzalez_words_2024,level:goal,USES_LEVEL,"{""role"": ""primary (table block)"", ""rows"": [""F18""]}"
+e1224,work:ruiz-gonzalez_words_2024,form:goal-list,HAS_FORM,"{""asListed"": ""Subgoal list (targets)"", ""scope"": ""work"", ""rows"": [""F18""]}"
+e1225,work:ruiz-gonzalez_words_2024,model:llama-3-70b,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II"", ""asListed"": ""Open LLMs, frozen (Llama-3-70B)"", ""rows"": [""F18""]}"
+e1226,work:ruiz-gonzalez_words_2024,input:text,SEES,"{""asListed"": ""Text grid of s₀"", ""rows"": [""F18""]}"
+e1227,work:ruiz-gonzalez_words_2024,regime:none,JUDGES,"{""timing"": ""None; per episode or once"", ""rows"": [""F18""]}"
+e1228,work:ruiz-gonzalez_words_2024,integ:RS,INTEGRATES_AS,"{""modeling"": ""MF"", ""conversion"": ""Subgoal reward"", ""asListed"": ""Subgoal reward → RS (MF), goal-conditioned"", ""scope"": ""work"", ""rows"": [""F18""]}"
+e1229,work:ruiz-gonzalez_words_2024,modeling:MF,FEEDBACK_MODEL,"{""scope"": ""work"", ""rows"": [""F18""]}"
+e1230,work:ruiz-gonzalez_words_2024,env:used,USES_ENV_REWARD,"{""asListed"": ""Present"", ""scope"": ""work"", ""rows"": [""F18""]}"
+e1231,row:F18,task:minigrid,ROW_LISTS_TASK,"{""asListed"": ""MiniGrid""}"
+e1232,work:ruiz-gonzalez_words_2024,task:minigrid,TESTED_ON,"{""scope"": ""work"", ""basis"": ""single-work row"", ""asListed"": ""MiniGrid"", ""setting"": ""sim"", ""rows"": [""F18""]}"
+e1233,work:lin_autoskill_2025,row:F19,IN_ROW,"{""module"": ""planner""}"
+e1234,work:lin_autoskill_2025,level:goal,USES_LEVEL,"{""role"": ""primary (table block)"", ""module"": ""planner"", ""detail"": ""Goal (skill)"", ""rows"": [""F19""]}"
+e1235,work:lin_autoskill_2025,form:skill-chain,HAS_FORM,"{""asListed"": ""Skill chain + sketch"", ""scope"": ""work"", ""module"": ""planner"", ""rows"": [""F19""]}"
+e1236,work:lin_autoskill_2025,model:gemini-pro,TEACHER_MODEL,"{""role"": ""teacher"", ""adaptation"": ""frozen"", ""basis"": ""Table II"", ""module"": ""planner"", ""asListed"": ""API LLM, frozen (Gemini-Pro)"", ""rows"": [""F19""]}"
+e1237,work:lin_autoskill_2025,input:text,SEES,"{""asListed"": ""Task text + skill library"", ""module"": ""planner"", ""rows"": [""F19""]}"
+e1238,work:lin_autoskill_2025,regime:none,JUDGES,"{""timing"": ""None; once per task, N-vote"", ""module"": ""planner"", ""rows"": [""F19""]}"
+e1239,work:lin_autoskill_2025,integ:TP,INTEGRATES_AS,"{""asListed"": ""→ Task proposal"", ""scope"": ""work"", ""module"": ""planner"", ""rows"": [""F19""]}"
+e1240,work:lin_autoskill_2025,env:na,USES_ENV_REWARD,"{""asListed"": ""n/a"", ""scope"": ""work"", ""module"": ""planner"", ""rows"": [""F19""]}"
+e1241,row:F19,task:frankakitchen,ROW_LISTS_TASK,"{""asListed"": ""FrankaKitchen""}"
+e1242,row:F19,task:robosuite,ROW_LISTS_TASK,"{""asListed"": ""robosuite""}"
+e1243,row:F19,robot:ur3,ROW_LISTS_ROBOT,"{""use"": ""sim-to-real transfer""}"
+e1244,work:warnell_deep_2018,work:bradley_knox_tamer_2008,BUILDS_ON,"{""how"": ""extends"", ""certainty"": ""stated"", ""evidence"": ""Warnell et al. extended this paradigm to high-dimensional visual domains with Deep TAMER"", ""where"": ""Sec. VI-A1"", ""crossesTeacherTypes"": false}"
+e1245,work:arumugam_deep_2019,work:macglashan_interactive_2023,BUILDS_ON,"{""how"": ""extends"", ""certainty"": ""stated"", ""evidence"": ""COACH and its deep extension Deep COACH"", ""where"": ""Sec. VI-A1"", ""crossesTeacherTypes"": false}"
+e1246,work:cruz_training_2016,work:cruz_interactive_2015,BUILDS_ON,"{""how"": ""extends"", ""certainty"": ""stated"", ""evidence"": ""later added contextual affordances that predict failed states"", ""where"": ""Sec. VI-B1"", ""crossesTeacherTypes"": false}"
+e1247,work:cruz_multi-modal_2018,work:cruz_training_2016,BUILDS_ON,"{""how"": ""extends"", ""certainty"": ""stated"", ""evidence"": ""and combined them with recorded speech and hand gestures"", ""where"": ""Sec. VI-B1"", ""crossesTeacherTypes"": false}"
+e1248,work:nguyen_towards_2023,work:bignold_persistent_2021,BUILDS_ON,"{""how"": ""extends"", ""certainty"": ""stated"", ""evidence"": ""Building on this, Broad-Persistent Advising (BPA) extends advice retention to continuous state spaces"", ""where"": ""Sec. VI-B1"", ""crossesTeacherTypes"": false}"
+e1249,work:suay_effect_2011,work:thomaz_reinforcement_2006-1,BUILDS_ON,"{""how"": ""applies"", ""certainty"": ""stated"", ""evidence"": ""Suay and Chernova applied this guidance to a Nao robot"", ""where"": ""Sec. VI-B2"", ""crossesTeacherTypes"": false}"
+e1250,work:suay_effect_2011,work:thomaz_teachable_2008,BUILDS_ON,"{""how"": ""applies"", ""certainty"": ""stated"", ""evidence"": ""Suay and Chernova applied this guidance to a Nao robot"", ""where"": ""Sec. VI-B2"", ""crossesTeacherTypes"": false}"
+e1251,work:li_facial_2020,work:bradley_knox_tamer_2008,BUILDS_ON,"{""how"": ""uses"", ""certainty"": ""stated"", ""evidence"": ""conducted a large-scale TAMER study on Infinite Mario"", ""where"": ""Sec. VI-A1"", ""crossesTeacherTypes"": false}"
+e1252,work:lin_human_2020,work:bradley_knox_tamer_2008,BUILDS_ON,"{""how"": ""uses"", ""certainty"": ""stated"", ""evidence"": ""let users train a TAMER agent"", ""where"": ""Sec. VI-A1"", ""crossesTeacherTypes"": false}"
+e1253,work:luu_enhancing_2025,work:white_rating-based_2024,BUILDS_ON,"{""how"": ""extends"", ""certainty"": ""stated"", ""evidence"": ""ERL-VLM extends rating-based RL"", ""where"": ""Sec. VII intro"", ""crossesTeacherTypes"": true}"
+e1254,work:wang_rl-vlm-f_2024,work:lee_pebble_2021,BUILDS_ON,"{""how"": ""follows"", ""certainty"": ""stated"", ""evidence"": ""RL-VLM-F follows PEBBLE"", ""where"": ""Sec. VII intro"", ""crossesTeacherTypes"": true}"
+e1255,work:klissarov_motif_2023,work:christiano_deep_2023,BUILDS_ON,"{""how"": ""same reward model"", ""certainty"": ""stated"", ""evidence"": ""Motif and Lin et al. fit Bradley-Terry reward models as Christiano et al. did"", ""where"": ""Sec. VII intro"", ""crossesTeacherTypes"": true}"
+e1256,work:lin_navigating_2024,work:christiano_deep_2023,BUILDS_ON,"{""how"": ""same reward model"", ""certainty"": ""stated"", ""evidence"": ""Motif and Lin et al. fit Bradley-Terry reward models as Christiano et al. did"", ""where"": ""Sec. VII intro"", ""crossesTeacherTypes"": true}"
+e1257,work:knox_combining_2010,work:bradley_knox_tamer_2008,BUILDS_ON,"{""how"": ""extends"", ""certainty"": ""implied"", ""evidence"": ""TAMER+RL combined two recorded human reward models with SARSA(lambda)"", ""where"": ""Sec. VI-A1 (name)"", ""crossesTeacherTypes"": false}"
+e1258,work:arakawa_dqn-tamer_2018,work:bradley_knox_tamer_2008,BUILDS_ON,"{""how"": ""extends"", ""certainty"": ""implied"", ""evidence"": ""DQN-TAMER adds the learned human reward to the DQN's action values"", ""where"": ""Sec. VI-A1 (name)"", ""crossesTeacherTypes"": false}"
+e1259,work:li_interactive_2018,work:bradley_knox_tamer_2008,BUILDS_ON,"{""how"": ""extends"", ""certainty"": ""implied"", ""evidence"": ""Li et al. combined a learned model of human reward with planning and with human demonstrations"", ""where"": ""Sec. VI-A1 (TAMER paragraph)"", ""crossesTeacherTypes"": false}"
+e1260,work:li_improving_2019,work:bradley_knox_tamer_2008,BUILDS_ON,"{""how"": ""extends"", ""certainty"": ""implied"", ""evidence"": ""Li et al. combined a learned model of human reward with planning and with human demonstrations"", ""where"": ""Sec. VI-A1 (TAMER paragraph)"", ""crossesTeacherTypes"": false}"
+e1261,work:moreira_deep_2020,work:cruz_interactive_2015,BUILDS_ON,"{""how"": ""extends"", ""certainty"": ""implied"", ""evidence"": ""Moreira et al. carried the same scheme to a deep Q-network (scheme of the Cruz et al. works; target paper not named)"", ""where"": ""Sec. VI-B1"", ""crossesTeacherTypes"": false}"
+e1262,work:arakawa_dqn-tamer_2018,work:warnell_deep_2018,COMPARED_WITH,"{""evidence"": ""learned faster and reached higher final performance than DQN or Deep TAMER"", ""where"": ""Sec. VI-A1""}"
+e1263,work:zakharov_goalladder_2025,work:lee_pebble_2021,COMPARED_WITH,"{""evidence"": ""about 4,500 VLM queries where PEBBLE needed about 15,000 ground-truth preference labels"", ""where"": ""Sec. VII-A2"", ""note"": ""PEBBLE run with ground-truth (scripted) preference labels, not human labels""}"
+e1264,work:fu_furl_2024,work:rocamonde_vision-language_2023,COMPARED_WITH,"{""evidence"": ""VLM-RM's reward alone solved none of ten Meta-World tasks"", ""where"": ""Sec. VII-A1""}"
+e1265,work:luu_enhancing_2025,work:wang_rl-vlm-f_2024,COMPARED_WITH,"{""evidence"": ""under the ALFRED budget, RL-VLM-F received about 75 preferences per task and almost failed to learn"", ""where"": ""Sec. IX draft""}"
+e1266,work:zhou_marvl_2026,work:fu_furl_2024,COMPARED_WITH,"{""evidence"": ""after LIV and FuRL adaptation they stayed strictly negative"", ""where"": ""Sec. IX draft""}"
+e1267,work:knox_learning_2012,line:tamer,MEMBER_OF,"{""basis"": ""survey text (\""In the TAMER line\"")""}"
+e1268,work:bradley_knox_tamer_2008,line:tamer,MEMBER_OF,"{""basis"": ""survey text (Knox and Stone)""}"
+e1269,work:knox_framing_2015,line:tamer,MEMBER_OF,"{""basis"": ""survey text (Knox and Stone)""}"
+e1270,work:hutchison_training_2013,line:tamer,MEMBER_OF,"{""basis"": ""survey text (Knox et al.)""}"
+e1271,work:knox_combining_2010,line:tamer,MEMBER_OF,"{""basis"": ""first author Knox (data.json)""}"
+e1272,work:li_facial_2020,line:facial,MEMBER_OF,"{""basis"": ""survey text (\""one facial-feedback line\"")""}"
+e1273,work:wang_affective_2022,line:facial,MEMBER_OF,"{""basis"": ""survey text (\""in the facial-feedback line, Wang et al.\"")""}"
+e1274,work:li_learning_2014,line:facial,MEMBER_OF,"{""basis"": ""project rule (first author Li)""}"
+e1275,work:li_using_2016,line:facial,MEMBER_OF,"{""basis"": ""project rule (first author Li)""}"
+e1276,work:li_social_2018,line:facial,MEMBER_OF,"{""basis"": ""project rule (first author Li; same study as li_learning_2014)""}"
+e1277,work:li_interactive_2018,line:facial,MEMBER_OF,"{""basis"": ""project rule (first author Li)""}"
+e1278,work:li_improving_2019,line:facial,MEMBER_OF,"{""basis"": ""project rule (first author Li)""}"
+e1279,work:lin_human_2020,line:facial,MEMBER_OF,"{""basis"": ""project rule (first author Lin)""}"
+e1280,survey:li_human-centered_2019,line:facial,MEMBER_OF,"{""basis"": ""project rule (named survey)""}"
+e1281,survey:lin_review_2020,line:facial,MEMBER_OF,"{""basis"": ""project rule (named survey)""}"
+e1282,work:bignold_persistent_2021,line:simuser,MEMBER_OF,"{""basis"": ""survey text (\""the persistent-advice line\"")""}"
+e1283,work:nguyen_towards_2023,line:simuser,MEMBER_OF,"{""basis"": ""survey text (\""the persistent-advice line\"")""}"
+e1284,work:millan_human_2019,line:simuser,MEMBER_OF,"{""basis"": ""survey text (\""two studies from one group\"")""}"
+e1285,work:millan-arias_robust_2020,line:simuser,MEMBER_OF,"{""basis"": ""survey text (\""two studies from one group\"")""}"
+e1286,work:bignold_evaluation_2021,line:simuser,MEMBER_OF,"{""basis"": ""project rule (first author Bignold)""}"
+e1287,work:bignold_human_2023,line:simuser,MEMBER_OF,"{""basis"": ""project rule (first author Bignold)""}"
+e1288,work:cruz_interactive_2015,line:simuser,MEMBER_OF,"{""basis"": ""project rule (first author Cruz)""}"
+e1289,work:cruz_training_2016,line:simuser,MEMBER_OF,"{""basis"": ""project rule (first author Cruz)""}"
+e1290,work:cruz_multi-modal_2018,line:simuser,MEMBER_OF,"{""basis"": ""project rule (first author Cruz)""}"
+e1291,work:cruz_improving_2018,line:simuser,MEMBER_OF,"{""basis"": ""project rule (first author Cruz)""}"
+e1292,work:thomaz_reinforcement_2006,line:thomaz,MEMBER_OF,"{""basis"": ""survey text (Thomaz et al.)""}"
+e1293,work:thomaz_reinforcement_2006-1,line:thomaz,MEMBER_OF,"{""basis"": ""survey text (Thomaz and Breazeal)""}"
+e1294,work:thomaz_teachable_2008,line:thomaz,MEMBER_OF,"{""basis"": ""survey text (Thomaz and Breazeal)""}"
+e1295,work:klissarov_motif_2023,line:klissarov,MEMBER_OF,"{""basis"": ""survey text (Klissarov et al.)""}"
+e1296,work:klissarov_modeling_2024,line:klissarov,MEMBER_OF,"{""basis"": ""survey text (Klissarov et al.)""}"
+e1297,challenge:human-1,teacher:human,ABOUT_TEACHER,{}
+e1298,work:loftin_learning_2016,challenge:human-1,SUPPORTS,"{""role"": ""quote and evidence"", ""citations"": 3}"
+e1299,work:cruz_training_2016,challenge:human-1,SUPPORTS,"{""role"": ""quote"", ""citations"": 1}"
+e1300,work:griffith_policy_2013,challenge:human-1,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1301,work:najar_interactively_2020,challenge:human-1,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1302,work:thomaz_reinforcement_2006,challenge:human-1,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1303,work:li_improving_2019,challenge:human-1,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1304,work:christiano_deep_2023,challenge:human-1,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1305,survey:cruz_survey_2021,challenge:human-1,SUPPORTS,"{""role"": ""quote"", ""citations"": 1}"
+e1306,challenge:human-2,teacher:human,ABOUT_TEACHER,{}
+e1307,work:lee_pebble_2021,challenge:human-2,SUPPORTS,"{""role"": ""quote"", ""citations"": 1}"
+e1308,work:christiano_deep_2023,challenge:human-2,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1309,work:hejna_few-shot_2022,challenge:human-2,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1310,survey:kaufmann_survey_2025,challenge:human-2,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1311,work:li_facial_2020,challenge:human-2,SUPPORTS,"{""role"": ""quote"", ""citations"": 1}"
+e1312,work:bradley_knox_tamer_2008,challenge:human-2,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1313,survey:cruz_survey_2021,challenge:human-2,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1314,work:white_rating-based_2024,challenge:human-2,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1315,work:celemin_fast_2019,challenge:human-2,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1316,work:yu_learning_2018,challenge:human-2,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1317,challenge:human-3,teacher:human,ABOUT_TEACHER,{}
+e1318,survey:li_human-centered_2019,challenge:human-3,SUPPORTS,"{""role"": ""quote"", ""citations"": 1}"
+e1319,work:macglashan_interactive_2023,challenge:human-3,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1320,work:thomaz_reinforcement_2006,challenge:human-3,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1321,work:knox_framing_2015,challenge:human-3,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1322,work:knox_learning_2012,challenge:human-3,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1323,work:cui_empathic_2020,challenge:human-3,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1324,work:knierim_leveraging_2024,challenge:human-3,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1325,challenge:human-4,teacher:human,ABOUT_TEACHER,{}
+e1326,work:hutchison_training_2013,challenge:human-4,SUPPORTS,"{""role"": ""quote and evidence"", ""citations"": 2}"
+e1327,work:macglashan_interactive_2023,challenge:human-4,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1328,work:warnell_deep_2018,challenge:human-4,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1329,work:li_facial_2020,challenge:human-4,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1330,work:wang_affective_2022,challenge:human-4,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1331,work:cruz_interactive_2015,challenge:human-4,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1332,work:lin_human_2020,challenge:human-4,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1333,work:cui_empathic_2020,challenge:human-4,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1334,challenge:human-5,teacher:human,ABOUT_TEACHER,{}
+e1335,work:bignold_evaluation_2021,challenge:human-5,SUPPORTS,"{""role"": ""quote"", ""citations"": 1}"
+e1336,survey:cruz_survey_2021,challenge:human-5,SUPPORTS,"{""role"": ""quote"", ""citations"": 1}"
+e1337,work:griffith_policy_2013,challenge:human-5,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1338,work:lee_pebble_2021,challenge:human-5,SUPPORTS,"{""role"": ""evidence"", ""citations"": 2}"
+e1339,work:christiano_deep_2023,challenge:human-5,SUPPORTS,"{""role"": ""evidence"", ""citations"": 2}"
+e1340,work:bignold_human_2023,challenge:human-5,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1341,work:knierim_leveraging_2024,challenge:human-5,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1342,work:krening_interaction_2018,challenge:human-5,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1343,work:hutchison_training_2013,challenge:human-5,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1344,work:koert_multi-channel_2020,challenge:human-5,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1345,challenge:fm-1,teacher:fm,ABOUT_TEACHER,{}
+e1346,work:lin_navigating_2024,challenge:fm-1,SUPPORTS,"{""role"": ""evidence"", ""citations"": 2}"
+e1347,work:merler_guiding_2025,challenge:fm-1,SUPPORTS,"{""role"": ""quote"", ""citations"": 1}"
+e1348,survey:schoepp_evolving_2025,challenge:fm-1,SUPPORTS,"{""role"": ""quote"", ""citations"": 1}"
+e1349,work:luu_enhancing_2025,challenge:fm-1,SUPPORTS,"{""role"": ""evidence"", ""citations"": 2}"
+e1350,work:li_how_2025,challenge:fm-1,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1351,work:du_guiding_2023,challenge:fm-1,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1352,work:zakharov_goalladder_2025,challenge:fm-1,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1353,work:ruiz-gonzalez_words_2024,challenge:fm-1,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1354,challenge:fm-2,teacher:fm,ABOUT_TEACHER,{}
+e1355,work:zhao_training-free_2025,challenge:fm-2,SUPPORTS,"{""role"": ""quote and evidence"", ""citations"": 3}"
+e1356,work:lin_autoskill_2025,challenge:fm-2,SUPPORTS,"{""role"": ""quote"", ""citations"": 1}"
+e1357,work:rocamonde_vision-language_2023,challenge:fm-2,SUPPORTS,"{""role"": ""quote"", ""citations"": 2}"
+e1358,work:li_how_2025,challenge:fm-2,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1359,work:ruiz-gonzalez_words_2024,challenge:fm-2,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1360,work:zhou_marvl_2026,challenge:fm-2,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1361,challenge:fm-3,teacher:fm,ABOUT_TEACHER,{}
+e1362,work:rocamonde_vision-language_2023,challenge:fm-3,SUPPORTS,"{""role"": ""quote"", ""citations"": 1}"
+e1363,survey:schoepp_evolving_2025,challenge:fm-3,SUPPORTS,"{""role"": ""quote"", ""citations"": 1}"
+e1364,work:kwon_reward_2023,challenge:fm-3,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1365,work:du_guiding_2023,challenge:fm-3,SUPPORTS,"{""role"": ""evidence"", ""citations"": 2}"
+e1366,work:klissarov_motif_2023,challenge:fm-3,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1367,work:lin_navigating_2024,challenge:fm-3,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1368,work:klissarov_modeling_2024,challenge:fm-3,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1369,challenge:fm-4,teacher:fm,ABOUT_TEACHER,{}
+e1370,work:zhao_training-free_2025,challenge:fm-4,SUPPORTS,"{""role"": ""quote and evidence"", ""citations"": 2}"
+e1371,survey:schoepp_evolving_2025,challenge:fm-4,SUPPORTS,"{""role"": ""quote"", ""citations"": 1}"
+e1372,work:du_guiding_2023,challenge:fm-4,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1373,work:lin_navigating_2024,challenge:fm-4,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1374,work:klissarov_motif_2023,challenge:fm-4,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1375,work:sharony_vlm-guided_2026,challenge:fm-4,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1376,work:merler_guiding_2025,challenge:fm-4,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1377,challenge:fm-5,teacher:fm,ABOUT_TEACHER,{}
+e1378,survey:schoepp_evolving_2025,challenge:fm-5,SUPPORTS,"{""role"": ""quote"", ""citations"": 1}"
+e1379,work:rocamonde_vision-language_2023,challenge:fm-5,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1380,work:wang_rl-vlm-f_2024,challenge:fm-5,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1381,work:du_guiding_2023,challenge:fm-5,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1382,work:lin_navigating_2024,challenge:fm-5,SUPPORTS,"{""role"": ""quote"", ""citations"": 1}"
+e1383,work:lin_autoskill_2025,challenge:fm-5,SUPPORTS,"{""role"": ""quote and evidence"", ""citations"": 2}"
+e1384,work:luu_enhancing_2025,challenge:fm-5,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1385,work:zhao_training-free_2025,challenge:fm-5,SUPPORTS,"{""role"": ""evidence"", ""citations"": 1}"
+e1386,detail:human-1,teacher:human,ABOUT_TEACHER,{}
+e1387,work:griffith_policy_2013,detail:human-1,SUPPORTS_DETAIL,{}
+e1388,work:najar_interactively_2020,detail:human-1,SUPPORTS_DETAIL,{}
+e1389,work:cruz_improving_2018,detail:human-1,SUPPORTS_DETAIL,{}
+e1390,work:loftin_learning_2016,detail:human-1,SUPPORTS_DETAIL,{}
+e1391,work:christiano_deep_2023,detail:human-1,SUPPORTS_DETAIL,{}
+e1392,detail:human-2,teacher:human,ABOUT_TEACHER,{}
+e1393,work:thomaz_reinforcement_2006,detail:human-2,SUPPORTS_DETAIL,{}
+e1394,work:bignold_human_2023,detail:human-2,SUPPORTS_DETAIL,{}
+e1395,work:loftin_learning_2016,detail:human-2,SUPPORTS_DETAIL,{}
+e1396,work:li_facial_2020,detail:human-2,SUPPORTS_DETAIL,{}
+e1397,work:wang_affective_2022,detail:human-2,SUPPORTS_DETAIL,{}
+e1398,detail:human-3,teacher:human,ABOUT_TEACHER,{}
+e1399,work:macglashan_interactive_2023,detail:human-3,SUPPORTS_DETAIL,{}
+e1400,work:thomaz_reinforcement_2006,detail:human-3,SUPPORTS_DETAIL,{}
+e1401,survey:zhang_leveraging_2019,detail:human-3,SUPPORTS_DETAIL,{}
+e1402,detail:human-4,teacher:human,ABOUT_TEACHER,{}
+e1403,work:kim_intrinsic_2017,detail:human-4,SUPPORTS_DETAIL,{}
+e1404,work:arakawa_dqn-tamer_2018,detail:human-4,SUPPORTS_DETAIL,{}
+e1405,work:li_facial_2020,detail:human-4,SUPPORTS_DETAIL,{}
+e1406,work:wang_affective_2022,detail:human-4,SUPPORTS_DETAIL,{}
+e1407,detail:human-5,teacher:human,ABOUT_TEACHER,{}
+e1408,work:cui_empathic_2020,detail:human-5,SUPPORTS_DETAIL,{}
+e1409,work:veeriah_face_2016,detail:human-5,SUPPORTS_DETAIL,{}
+e1410,work:li_facial_2020,detail:human-5,SUPPORTS_DETAIL,{}
+e1411,work:kim_intrinsic_2017,detail:human-5,SUPPORTS_DETAIL,{}
+e1412,detail:human-6,teacher:human,ABOUT_TEACHER,{}
+e1413,work:tenorio-gonzalez_dynamic_2010,detail:human-6,SUPPORTS_DETAIL,{}
+e1414,work:lin_human_2020,detail:human-6,SUPPORTS_DETAIL,{}
+e1415,work:najar_interactively_2020,detail:human-6,SUPPORTS_DETAIL,{}
+e1416,work:yang_trajectory_2024,detail:human-6,SUPPORTS_DETAIL,{}
+e1417,detail:human-7,teacher:human,ABOUT_TEACHER,{}
+e1418,work:cruz_multi-modal_2018,detail:human-7,SUPPORTS_DETAIL,{}
+e1419,work:trick_interactive_2022,detail:human-7,SUPPORTS_DETAIL,{}
+e1420,work:li_facial_2020,detail:human-7,SUPPORTS_DETAIL,{}
+e1421,detail:human-8,teacher:human,ABOUT_TEACHER,{}
+e1422,work:arakawa_dqn-tamer_2018,detail:human-8,SUPPORTS_DETAIL,{}
+e1423,work:macglashan_interactive_2023,detail:human-8,SUPPORTS_DETAIL,{}
+e1424,work:warnell_deep_2018,detail:human-8,SUPPORTS_DETAIL,{}
+e1425,work:hutchison_training_2013,detail:human-8,SUPPORTS_DETAIL,{}
+e1426,detail:human-9,teacher:human,ABOUT_TEACHER,{}
+e1427,work:white_rating-based_2024,detail:human-9,SUPPORTS_DETAIL,{}
+e1428,work:loftin_learning_2016,detail:human-9,SUPPORTS_DETAIL,{}
+e1429,work:yang_trajectory_2024,detail:human-9,SUPPORTS_DETAIL,{}
+e1430,work:christiano_deep_2023,detail:human-9,SUPPORTS_DETAIL,{}
+e1431,work:arzate_cruz_mariomix_2020,detail:human-9,SUPPORTS_DETAIL,{}
+e1432,detail:human-10,teacher:human,ABOUT_TEACHER,{}
+e1433,work:bradley_knox_tamer_2008,detail:human-10,SUPPORTS_DETAIL,{}
+e1434,work:celemin_fast_2019,detail:human-10,SUPPORTS_DETAIL,{}
+e1435,work:millan_human_2019,detail:human-10,SUPPORTS_DETAIL,{}
+e1436,work:millan-arias_robust_2020,detail:human-10,SUPPORTS_DETAIL,{}
+e1437,detail:human-11,teacher:human,ABOUT_TEACHER,{}
+e1438,work:knox_learning_2012,detail:human-11,SUPPORTS_DETAIL,{}
+e1439,work:knox_framing_2015,detail:human-11,SUPPORTS_DETAIL,{}
+e1440,work:griffith_policy_2013,detail:human-11,SUPPORTS_DETAIL,{}
+e1441,work:hutchison_training_2013,detail:human-11,SUPPORTS_DETAIL,{}
+e1442,work:christiano_deep_2023,detail:human-11,SUPPORTS_DETAIL,{}
+e1443,detail:human-12,teacher:human,ABOUT_TEACHER,{}
+e1444,work:arakawa_dqn-tamer_2018,detail:human-12,SUPPORTS_DETAIL,{}
+e1445,work:cui_empathic_2020,detail:human-12,SUPPORTS_DETAIL,{}
+e1446,work:knierim_leveraging_2024,detail:human-12,SUPPORTS_DETAIL,{}
+e1447,work:veeriah_face_2016,detail:human-12,SUPPORTS_DETAIL,{}
+e1448,detail:human-13,teacher:human,ABOUT_TEACHER,{}
+e1449,work:griffith_policy_2013,detail:human-13,SUPPORTS_DETAIL,{}
+e1450,work:knox_combining_2010,detail:human-13,SUPPORTS_DETAIL,{}
+e1451,work:xiao_fresh_2020,detail:human-13,SUPPORTS_DETAIL,{}
+e1452,work:koert_multi-channel_2020,detail:human-13,SUPPORTS_DETAIL,{}
+e1453,detail:human-14,teacher:human,ABOUT_TEACHER,{}
+e1454,work:bignold_persistent_2021,detail:human-14,SUPPORTS_DETAIL,{}
+e1455,work:nguyen_towards_2023,detail:human-14,SUPPORTS_DETAIL,{}
+e1456,work:xiao_fresh_2020,detail:human-14,SUPPORTS_DETAIL,{}
+e1457,work:li_facial_2020,detail:human-14,SUPPORTS_DETAIL,{}
+e1458,work:li_using_2016,detail:human-14,SUPPORTS_DETAIL,{}
+e1459,work:li_social_2018,detail:human-14,SUPPORTS_DETAIL,{}
+e1460,work:veeriah_face_2016,detail:human-14,SUPPORTS_DETAIL,{}
+e1461,work:cui_empathic_2020,detail:human-14,SUPPORTS_DETAIL,{}
+e1462,work:knierim_leveraging_2024,detail:human-14,SUPPORTS_DETAIL,{}
+e1463,detail:human-15,teacher:human,ABOUT_TEACHER,{}
+e1464,work:trick_interactive_2022,detail:human-15,SUPPORTS_DETAIL,{}
+e1465,work:koert_multi-channel_2020,detail:human-15,SUPPORTS_DETAIL,{}
+e1466,work:yu_learning_2018,detail:human-15,SUPPORTS_DETAIL,{}
+e1467,work:kim_learning_2007,detail:human-15,SUPPORTS_DETAIL,{}
+e1468,work:wang_affective_2022,detail:human-15,SUPPORTS_DETAIL,{}
+e1469,work:warnell_deep_2018,detail:human-15,SUPPORTS_DETAIL,{}
+e1470,detail:human-16,teacher:human,ABOUT_TEACHER,{}
+e1471,work:christiano_deep_2023,detail:human-16,SUPPORTS_DETAIL,{}
+e1472,work:lee_pebble_2021,detail:human-16,SUPPORTS_DETAIL,{}
+e1473,work:hejna_few-shot_2022,detail:human-16,SUPPORTS_DETAIL,{}
+e1474,work:zhang_dual_2023,detail:human-16,SUPPORTS_DETAIL,{}
+e1475,detail:human-17,teacher:human,ABOUT_TEACHER,{}
+e1476,work:bradley_knox_tamer_2008,detail:human-17,SUPPORTS_DETAIL,{}
+e1477,work:li_facial_2020,detail:human-17,SUPPORTS_DETAIL,{}
+e1478,work:thomaz_reinforcement_2006,detail:human-17,SUPPORTS_DETAIL,{}
+e1479,work:wang_affective_2022,detail:human-17,SUPPORTS_DETAIL,{}
+e1480,work:zhang_dual_2023,detail:human-17,SUPPORTS_DETAIL,{}
+e1481,detail:human-18,teacher:human,ABOUT_TEACHER,{}
+e1482,work:hutchison_training_2013,detail:human-18,SUPPORTS_DETAIL,{}
+e1483,work:arumugam_deep_2019,detail:human-18,SUPPORTS_DETAIL,{}
+e1484,work:li_using_2016,detail:human-18,SUPPORTS_DETAIL,{}
+e1485,detail:human-19,teacher:human,ABOUT_TEACHER,{}
+e1486,work:griffith_policy_2013,detail:human-19,SUPPORTS_DETAIL,{}
+e1487,work:lee_pebble_2021,detail:human-19,SUPPORTS_DETAIL,{}
+e1488,work:cruz_training_2016,detail:human-19,SUPPORTS_DETAIL,{}
+e1489,work:bignold_persistent_2021,detail:human-19,SUPPORTS_DETAIL,{}
+e1490,work:nguyen_towards_2023,detail:human-19,SUPPORTS_DETAIL,{}
+e1491,work:christiano_deep_2023,detail:human-19,SUPPORTS_DETAIL,{}
+e1492,work:bignold_human_2023,detail:human-19,SUPPORTS_DETAIL,{}
+e1493,work:knierim_leveraging_2024,detail:human-19,SUPPORTS_DETAIL,{}
+e1494,work:hutchison_training_2013,detail:human-19,SUPPORTS_DETAIL,{}
+e1495,detail:human-20,teacher:human,ABOUT_TEACHER,{}
+e1496,work:christiano_deep_2023,detail:human-20,SUPPORTS_DETAIL,{}
+e1497,work:lee_pebble_2021,detail:human-20,SUPPORTS_DETAIL,{}
+e1498,work:zhang_atari-head_2020,detail:human-20,SUPPORTS_DETAIL,{}
+e1499,work:nguyen_towards_2023,detail:human-20,SUPPORTS_DETAIL,{}
+e1500,work:krening_interaction_2018,detail:human-20,SUPPORTS_DETAIL,{}
+e1501,survey:zhang_leveraging_2019,detail:human-20,SUPPORTS_DETAIL,{}
+e1502,detail:human-21,teacher:human,ABOUT_TEACHER,{}
+e1503,work:hutchison_training_2013,detail:human-21,SUPPORTS_DETAIL,{}
+e1504,work:cui_empathic_2020,detail:human-21,SUPPORTS_DETAIL,{}
+e1505,work:koert_multi-channel_2020,detail:human-21,SUPPORTS_DETAIL,{}
+e1506,work:zhang_deep_2020,detail:human-21,SUPPORTS_DETAIL,{}
+e1507,detail:human-22,teacher:human,ABOUT_TEACHER,{}
+e1508,work:li_interactive_2018,detail:human-22,SUPPORTS_DETAIL,{}
+e1509,work:hiranaka_primitive_2023,detail:human-22,SUPPORTS_DETAIL,{}
+e1510,work:cui_empathic_2020,detail:human-22,SUPPORTS_DETAIL,{}
+e1511,work:knierim_leveraging_2024,detail:human-22,SUPPORTS_DETAIL,{}
+e1512,detail:fm-1,teacher:fm,ABOUT_TEACHER,{}
+e1513,work:kwon_reward_2023,detail:fm-1,SUPPORTS_DETAIL,{}
+e1514,work:du_guiding_2023,detail:fm-1,SUPPORTS_DETAIL,{}
+e1515,work:li_how_2025,detail:fm-1,SUPPORTS_DETAIL,{}
+e1516,work:klissarov_motif_2023,detail:fm-1,SUPPORTS_DETAIL,{}
+e1517,work:lin_navigating_2024,detail:fm-1,SUPPORTS_DETAIL,{}
+e1518,work:rocamonde_vision-language_2023,detail:fm-1,SUPPORTS_DETAIL,{}
+e1519,detail:fm-2,teacher:fm,ABOUT_TEACHER,{}
+e1520,work:lin_navigating_2024,detail:fm-2,SUPPORTS_DETAIL,{}
+e1521,work:klissarov_motif_2023,detail:fm-2,SUPPORTS_DETAIL,{}
+e1522,work:zhao_training-free_2025,detail:fm-2,SUPPORTS_DETAIL,{}
+e1523,work:sharony_vlm-guided_2026,detail:fm-2,SUPPORTS_DETAIL,{}
+e1524,work:rocamonde_vision-language_2023,detail:fm-2,SUPPORTS_DETAIL,{}
+e1525,detail:fm-3,teacher:fm,ABOUT_TEACHER,{}
+e1526,work:zhou_marvl_2026,detail:fm-3,SUPPORTS_DETAIL,{}
+e1527,work:lin_autoskill_2025,detail:fm-3,SUPPORTS_DETAIL,{}
+e1528,work:klissarov_modeling_2024,detail:fm-3,SUPPORTS_DETAIL,{}
+e1529,work:zhao_training-free_2025,detail:fm-3,SUPPORTS_DETAIL,{}
+e1530,work:rocamonde_vision-language_2023,detail:fm-3,SUPPORTS_DETAIL,{}
+e1531,detail:fm-4,teacher:fm,ABOUT_TEACHER,{}
+e1532,work:zhao_training-free_2025,detail:fm-4,SUPPORTS_DETAIL,{}
+e1533,work:rocamonde_vision-language_2023,detail:fm-4,SUPPORTS_DETAIL,{}
+e1534,work:fu_furl_2024,detail:fm-4,SUPPORTS_DETAIL,{}
+e1535,work:sharony_vlm-guided_2026,detail:fm-4,SUPPORTS_DETAIL,{}
+e1536,work:luu_enhancing_2025,detail:fm-4,SUPPORTS_DETAIL,{}
+e1537,detail:fm-5,teacher:fm,ABOUT_TEACHER,{}
+e1538,work:rocamonde_vision-language_2023,detail:fm-5,SUPPORTS_DETAIL,{}
+e1539,work:sharony_vlm-guided_2026,detail:fm-5,SUPPORTS_DETAIL,{}
+e1540,work:zhou_marvl_2026,detail:fm-5,SUPPORTS_DETAIL,{}
+e1541,work:wang_rl-vlm-f_2024,detail:fm-5,SUPPORTS_DETAIL,{}
+e1542,work:luu_enhancing_2025,detail:fm-5,SUPPORTS_DETAIL,{}
+e1543,work:zakharov_goalladder_2025,detail:fm-5,SUPPORTS_DETAIL,{}
+e1544,detail:fm-6,teacher:fm,ABOUT_TEACHER,{}
+e1545,work:li_how_2025,detail:fm-6,SUPPORTS_DETAIL,{}
+e1546,work:klissarov_modeling_2024,detail:fm-6,SUPPORTS_DETAIL,{}
+e1547,work:wang_rl-vlm-f_2024,detail:fm-6,SUPPORTS_DETAIL,{}
+e1548,work:zakharov_goalladder_2025,detail:fm-6,SUPPORTS_DETAIL,{}
+e1549,work:klissarov_motif_2023,detail:fm-6,SUPPORTS_DETAIL,{}
+e1550,work:sharony_vlm-guided_2026,detail:fm-6,SUPPORTS_DETAIL,{}
+e1551,work:luu_enhancing_2025,detail:fm-6,SUPPORTS_DETAIL,{}
+e1552,detail:fm-7,teacher:fm,ABOUT_TEACHER,{}
+e1553,work:du_guiding_2023,detail:fm-7,SUPPORTS_DETAIL,{}
+e1554,work:chu_accelerating_2023,detail:fm-7,SUPPORTS_DETAIL,{}
+e1555,work:klissarov_motif_2023,detail:fm-7,SUPPORTS_DETAIL,{}
+e1556,work:li_how_2025,detail:fm-7,SUPPORTS_DETAIL,{}
+e1557,work:wang_rl-vlm-f_2024,detail:fm-7,SUPPORTS_DETAIL,{}
+e1558,work:lin_autoskill_2025,detail:fm-7,SUPPORTS_DETAIL,{}
+e1559,work:fu_furl_2024,detail:fm-7,SUPPORTS_DETAIL,{}
+e1560,detail:fm-8,teacher:fm,ABOUT_TEACHER,{}
+e1561,work:du_guiding_2023,detail:fm-8,SUPPORTS_DETAIL,{}
+e1562,work:kwon_reward_2023,detail:fm-8,SUPPORTS_DETAIL,{}
+e1563,work:klissarov_motif_2023,detail:fm-8,SUPPORTS_DETAIL,{}
+e1564,work:zhou_marvl_2026,detail:fm-8,SUPPORTS_DETAIL,{}
+e1565,work:fu_furl_2024,detail:fm-8,SUPPORTS_DETAIL,{}
+e1566,detail:fm-9,teacher:fm,ABOUT_TEACHER,{}
+e1567,work:du_guiding_2023,detail:fm-9,SUPPORTS_DETAIL,{}
+e1568,work:ruiz-gonzalez_words_2024,detail:fm-9,SUPPORTS_DETAIL,{}
+e1569,work:kwon_reward_2023,detail:fm-9,SUPPORTS_DETAIL,{}
+e1570,work:klissarov_modeling_2024,detail:fm-9,SUPPORTS_DETAIL,{}
+e1571,work:li_how_2025,detail:fm-9,SUPPORTS_DETAIL,{}
+e1572,detail:fm-10,teacher:fm,ABOUT_TEACHER,{}
+e1573,work:luu_enhancing_2025,detail:fm-10,SUPPORTS_DETAIL,{}
+e1574,work:li_how_2025,detail:fm-10,SUPPORTS_DETAIL,{}
+e1575,work:zakharov_goalladder_2025,detail:fm-10,SUPPORTS_DETAIL,{}
+e1576,work:klissarov_motif_2023,detail:fm-10,SUPPORTS_DETAIL,{}
+e1577,work:kwon_reward_2023,detail:fm-10,SUPPORTS_DETAIL,{}
+e1578,work:chu_accelerating_2023,detail:fm-10,SUPPORTS_DETAIL,{}
+e1579,work:ruiz-gonzalez_words_2024,detail:fm-10,SUPPORTS_DETAIL,{}
+e1580,detail:fm-11,teacher:fm,ABOUT_TEACHER,{}
+e1581,work:zhou_marvl_2026,detail:fm-11,SUPPORTS_DETAIL,{}
+e1582,work:fu_furl_2024,detail:fm-11,SUPPORTS_DETAIL,{}
+e1583,work:du_guiding_2023,detail:fm-11,SUPPORTS_DETAIL,{}
+e1584,work:luu_enhancing_2025,detail:fm-11,SUPPORTS_DETAIL,{}
+e1585,work:sharony_vlm-guided_2026,detail:fm-11,SUPPORTS_DETAIL,{}
+e1586,work:merler_guiding_2025,detail:fm-11,SUPPORTS_DETAIL,{}
+e1587,work:kwon_reward_2023,detail:fm-11,SUPPORTS_DETAIL,{}
+e1588,detail:fm-12,teacher:fm,ABOUT_TEACHER,{}
+e1589,work:klissarov_motif_2023,detail:fm-12,SUPPORTS_DETAIL,{}
+e1590,work:du_guiding_2023,detail:fm-12,SUPPORTS_DETAIL,{}
+e1591,work:lin_navigating_2024,detail:fm-12,SUPPORTS_DETAIL,{}
+e1592,detail:fm-13,teacher:fm,ABOUT_TEACHER,{}
+e1593,work:klissarov_motif_2023,detail:fm-13,SUPPORTS_DETAIL,{}
+e1594,work:klissarov_modeling_2024,detail:fm-13,SUPPORTS_DETAIL,{}
+e1595,work:zhang_improving_2024,detail:fm-13,SUPPORTS_DETAIL,{}
+e1596,work:zakharov_goalladder_2025,detail:fm-13,SUPPORTS_DETAIL,{}
+e1597,detail:fm-14,teacher:fm,ABOUT_TEACHER,{}
+e1598,work:klissarov_motif_2023,detail:fm-14,SUPPORTS_DETAIL,{}
+e1599,work:merler_guiding_2025,detail:fm-14,SUPPORTS_DETAIL,{}
+e1600,work:sharony_vlm-guided_2026,detail:fm-14,SUPPORTS_DETAIL,{}
+e1601,detail:fm-15,teacher:fm,ABOUT_TEACHER,{}
+e1602,work:fu_furl_2024,detail:fm-15,SUPPORTS_DETAIL,{}
+e1603,work:zhou_marvl_2026,detail:fm-15,SUPPORTS_DETAIL,{}
+e1604,work:klissarov_motif_2023,detail:fm-15,SUPPORTS_DETAIL,{}
+e1605,work:sharony_vlm-guided_2026,detail:fm-15,SUPPORTS_DETAIL,{}
+e1606,work:luu_enhancing_2025,detail:fm-15,SUPPORTS_DETAIL,{}
+e1607,work:lin_autoskill_2025,detail:fm-15,SUPPORTS_DETAIL,{}
+e1608,detail:fm-16,teacher:fm,ABOUT_TEACHER,{}
+e1609,work:li_how_2025,detail:fm-16,SUPPORTS_DETAIL,{}
+e1610,work:merler_guiding_2025,detail:fm-16,SUPPORTS_DETAIL,{}
+e1611,work:wang_rl-vlm-f_2024,detail:fm-16,SUPPORTS_DETAIL,{}
+e1612,work:du_guiding_2023,detail:fm-16,SUPPORTS_DETAIL,{}
+e1613,work:lin_autoskill_2025,detail:fm-16,SUPPORTS_DETAIL,{}
+e1614,work:fu_furl_2024,detail:fm-16,SUPPORTS_DETAIL,{}
+e1615,detail:fm-17,teacher:fm,ABOUT_TEACHER,{}
+e1616,work:zhao_training-free_2025,detail:fm-17,SUPPORTS_DETAIL,{}
+e1617,work:du_guiding_2023,detail:fm-17,SUPPORTS_DETAIL,{}
+e1618,work:wang_rl-vlm-f_2024,detail:fm-17,SUPPORTS_DETAIL,{}
+e1619,work:zakharov_goalladder_2025,detail:fm-17,SUPPORTS_DETAIL,{}
+e1620,work:zhang_improving_2024,detail:fm-17,SUPPORTS_DETAIL,{}
+e1621,work:luu_enhancing_2025,detail:fm-17,SUPPORTS_DETAIL,{}
+e1622,work:kwon_reward_2023,detail:fm-17,SUPPORTS_DETAIL,{}
+e1623,work:ruiz-gonzalez_words_2024,detail:fm-17,SUPPORTS_DETAIL,{}
+e1624,work:chu_accelerating_2023,detail:fm-17,SUPPORTS_DETAIL,{}
+e1625,work:merler_guiding_2025,detail:fm-17,SUPPORTS_DETAIL,{}
+e1626,detail:fm-18,teacher:fm,ABOUT_TEACHER,{}
+e1627,work:luu_enhancing_2025,detail:fm-18,SUPPORTS_DETAIL,{}
+e1628,work:zhao_training-free_2025,detail:fm-18,SUPPORTS_DETAIL,{}
+e1629,work:lin_autoskill_2025,detail:fm-18,SUPPORTS_DETAIL,{}
+e1630,work:lin_navigating_2024,detail:fm-18,SUPPORTS_DETAIL,{}
+e1631,work:ruiz-gonzalez_words_2024,detail:fm-18,SUPPORTS_DETAIL,{}
+e1632,detail:fm-19,teacher:fm,ABOUT_TEACHER,{}
+e1633,work:ruiz-gonzalez_words_2024,detail:fm-19,SUPPORTS_DETAIL,{}
+e1634,work:du_guiding_2023,detail:fm-19,SUPPORTS_DETAIL,{}
+e1635,work:li_how_2025,detail:fm-19,SUPPORTS_DETAIL,{}
+e1636,work:lin_navigating_2024,detail:fm-19,SUPPORTS_DETAIL,{}
+e1637,work:rocamonde_vision-language_2023,detail:fm-19,SUPPORTS_DETAIL,{}
+e1638,work:lin_autoskill_2025,detail:fm-19,SUPPORTS_DETAIL,{}
+e1639,work:sharony_vlm-guided_2026,detail:fm-19,SUPPORTS_DETAIL,{}
+e1640,detail:fm-20,teacher:fm,ABOUT_TEACHER,{}
+e1641,work:chu_accelerating_2023,detail:fm-20,SUPPORTS_DETAIL,{}
+e1642,work:merler_guiding_2025,detail:fm-20,SUPPORTS_DETAIL,{}
+e1643,work:du_guiding_2023,detail:fm-20,SUPPORTS_DETAIL,{}
+e1644,work:lin_navigating_2024,detail:fm-20,SUPPORTS_DETAIL,{}
+e1645,work:klissarov_modeling_2024,detail:fm-20,SUPPORTS_DETAIL,{}
+e1646,work:kwon_reward_2023,detail:fm-20,SUPPORTS_DETAIL,{}
+e1647,detail:fm-21,teacher:fm,ABOUT_TEACHER,{}
+e1648,work:du_guiding_2023,detail:fm-21,SUPPORTS_DETAIL,{}
+e1649,work:wang_rl-vlm-f_2024,detail:fm-21,SUPPORTS_DETAIL,{}
+e1650,work:luu_enhancing_2025,detail:fm-21,SUPPORTS_DETAIL,{}
+e1651,work:zakharov_goalladder_2025,detail:fm-21,SUPPORTS_DETAIL,{}
+e1652,work:li_how_2025,detail:fm-21,SUPPORTS_DETAIL,{}
+e1653,work:fu_furl_2024,detail:fm-21,SUPPORTS_DETAIL,{}
+e1654,work:rocamonde_vision-language_2023,detail:fm-21,SUPPORTS_DETAIL,{}
+e1655,work:zhou_marvl_2026,detail:fm-21,SUPPORTS_DETAIL,{}
