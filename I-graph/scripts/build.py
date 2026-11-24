@@ -1,6 +1,6 @@
 """Rebuild the site from data/graph.json.
 
-Run from the repository root:  python scripts/build.py
+Run from the repository root: python3 I-graph/scripts/build.py
 Writes index.html (graph data inlined, so the page also works when opened from disk)
 and the downloads in data/: nodes.csv, edges.csv, import.cypher, graph.graphml.
 """
@@ -16,12 +16,13 @@ SECTIONS = G['meta']['sections']
 
 # ---------- index.html ----------
 KEEP_NODE_PROPS = {
-    'Work': ['key', 'short', 'authorYear', 'year', 'title', 'teacher', 'scope', 'discussedIn', 'teachersNote', 'note'],
-    'Challenge': ['teacher', 'order', 'statement', 'openQuestion'],
-    'DetailedChallenge': ['teacher', 'stage', 'problem', 'openQuestion'],
+    'Work': ['key', 'short', 'authorYear', 'year', 'title', 'teacher', 'scope', 'discussedIn', 'teachersNote', 'note', 'sourceUrl', 'sourceId', 'reviewStatus'],
+    'Challenge': ['teacher', 'order', 'statement', 'openQuestion', 'sourceUrl', 'locator', 'reviewedAt'],
+    'DetailedChallenge': ['teacher', 'stage', 'problem', 'openQuestion', 'sourceUrl', 'locator', 'reviewedAt'],
 }
 KEEP_EDGE_PROPS = ['asListed', 'scope', 'use', 'online', 'teachers', 'role', 'adaptation', 'timing', 'how', 'certainty',
-                   'evidence', 'where', 'modeling', 'conversion', 'setting', 'citations', 'term', 'relation', 'basis']
+                   'evidence', 'where', 'modeling', 'conversion', 'setting', 'citations', 'term', 'relation', 'basis',
+                   'sourceUrl', 'locator', 'reviewedAt', 'note', 'rows', 'module', 'evidenceStatus', 'legacyUse']
 nodes = []
 for n in G['nodes']:
     if n['type'] == 'TableRow':
@@ -38,10 +39,8 @@ edges = []
 for e in G['edges']:
     if e['source'] in ids and e['target'] in ids:
         p = {k: e['properties'][k] for k in KEEP_EDGE_PROPS if k in e['properties']}
-        if isinstance(p.get('basis'), str) and len(p['basis']) > 160:
-            p['basis'] = p['basis'][:157] + '...'
         edges.append({'id': e['id'], 's': e['source'], 't': e['target'], 'r': e['type'], 'p': p})
-blob = json.dumps({'nodes': nodes, 'edges': edges}, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+blob = json.dumps({'meta': G['meta'], 'nodes': nodes, 'edges': edges}, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
 tpl = (ROOT / 'src/template.html').read_text(encoding='utf-8')
 (ROOT / 'index.html').write_text(tpl.replace('__GRAPH__', blob), encoding='utf-8')
 
@@ -52,12 +51,12 @@ def flat(v):
 
 
 with open(ROOT / 'data/nodes.csv', 'w', newline='', encoding='utf-8') as f:
-    w = csv.writer(f)
+    w = csv.writer(f, lineterminator='\n')
     w.writerow(['id', 'type', 'label', 'properties_json'])
     for n in G['nodes']:
         w.writerow([n['id'], n['type'], n['label'], json.dumps(n['properties'], ensure_ascii=False)])
 with open(ROOT / 'data/edges.csv', 'w', newline='', encoding='utf-8') as f:
-    w = csv.writer(f)
+    w = csv.writer(f, lineterminator='\n')
     w.writerow(['id', 'source', 'target', 'type', 'properties_json'])
     for e in G['edges']:
         w.writerow([e['id'], e['source'], e['target'], e['type'], json.dumps(e['properties'], ensure_ascii=False)])
