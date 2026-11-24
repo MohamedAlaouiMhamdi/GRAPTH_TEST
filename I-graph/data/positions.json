@@ -1,1 +1,2534 @@
-{"level:rating":[-43,-35],"level:preference":[308,299],"level:action":[265,-121],"level:goal":[4,138],"integ:RS":[-33,83],"integ:VS":[30,-175],"integ:PS":[121,-181],"integ:DB":[311,-79],"integ:PB":[397,355],"integ:EG":[-115,-142],"integ:TP":[-156,455],"work:thomaz_reinforcement_2006":[69,108],"work:thomaz_reinforcement_2006-1":[178,89],"work:thomaz_teachable_2008":[128,58],"work:tenorio-gonzalez_dynamic_2010":[-206,132],"work:zhang_deep_2020":[-187,195],"work:bignold_evaluation_2021":[-126,172],"work:bradley_knox_tamer_2008":[23,-92],"work:hutchison_training_2013":[-156,-97],"work:li_learning_2014":[-173,20],"work:li_using_2016":[-130,72],"work:li_social_2018":[-223,65],"work:warnell_deep_2018":[133,-102],"work:knox_framing_2015":[-223,-6],"work:li_interactive_2018":[-144,-32],"work:li_improving_2019":[-59,51],"work:knox_combining_2010":[158,3],"work:yu_learning_2018":[166,-45],"work:macglashan_interactive_2023":[106,-300],"work:arumugam_deep_2019":[-39,-269],"work:griffith_policy_2013":[-33,-191],"work:loftin_learning_2016":[21,-282],"work:peng_need_2016":[-159,-266],"work:white_rating-based_2024":[86,19],"work:xiao_fresh_2020":[116,-30],"work:guan_widening_2021":[-136,-199],"work:hiranaka_primitive_2023":[45,-341],"work:zhang_dual_2023":[-92,-319],"work:broekens_emotion_2007":[-77,-165],"work:arakawa_dqn-tamer_2018":[48,58],"work:li_facial_2020":[187,-143],"work:lin_human_2020":[-180,-159],"work:churamani_icub_2020":[-253,185],"work:wang_affective_2022":[-84,-84],"work:veeriah_face_2016":[58,-40],"work:cui_empathic_2020":[-220,-117],"work:kim_intrinsic_2017":[-275,113],"work:kim_learning_2007":[-284,30],"work:knierim_leveraging_2024":[-194,-54],"work:christiano_deep_2023":[149,132],"work:lee_pebble_2021":[229,130],"work:hejna_few-shot_2022":[209,172],"work:cruz_interactive_2015":[216,-288],"work:cruz_training_2016":[326,-182],"work:cruz_multi-modal_2018":[423,19],"work:moreira_deep_2020":[393,-295],"work:trick_interactive_2022":[459,-201],"work:bignold_persistent_2021":[378,-234],"work:nguyen_towards_2023":[278,-335],"work:celemin_fast_2019":[394,-136],"work:millan_human_2019":[465,-75],"work:millan-arias_robust_2020":[304,-261],"work:goyal_using_2019":[254,61],"work:najar_interactively_2020":[217,-212],"work:tarakli_interactive_2024":[155,-238],"work:suay_effect_2011":[207,20],"work:krening_interaction_2018":[85,-229],"work:bignold_human_2023":[82,-134],"work:koert_multi-channel_2020":[212,-74],"work:rocamonde_vision-language_2023":[0,208],"work:fu_furl_2024":[-82,122],"work:zhou_marvl_2026":[-68,201],"work:kwon_reward_2023":[-157,111],"work:chu_accelerating_2023":[-282,-54],"work:luu_enhancing_2025":[59,194],"work:zhao_training-free_2025":[-33,252],"work:lin_autoskill_2025":[-133,247],"work:sharony_vlm-guided_2026":[-98,12],"work:wang_rl-vlm-f_2024":[93,312],"work:zakharov_goalladder_2025":[211,249],"work:klissarov_motif_2023":[158,294],"work:klissarov_modeling_2024":[155,217],"work:lin_navigating_2024":[214,346],"work:zhang_improving_2024":[302,476],"work:merler_guiding_2025":[300,120],"work:du_guiding_2023":[-88,308],"work:ruiz-gonzalez_words_2024":[-26,329],"work:cruz_improving_2018":[-572,-368],"work:yang_trajectory_2024":[-518,-368],"work:arzate_cruz_mariomix_2020":[-572,-314],"work:knox_learning_2012":[-27,-372],"work:zhang_atari-head_2020":[-518,-314],"work:li_how_2025":[1,517],"robot:nexi":[-314,-193],"robot:turtlebot":[113,-483],"robot:franka-emika-arm":[13,-517],"robot:h11:robot-arm":[-114,-487],"robot:gopigo3":[101,252],"robot:icub":[-323,340],"robot:haru":[-98,-252],"robot:h16:7-dof-arm":[-406,-149],"robot:compi-6-dof-arm":[-387,247],"robot:nico":[-453,19],"robot:franka-panda":[412,213],"robot:h20:7-dof-arm":[506,-366],"robot:h23:pendulum":[558,-36],"robot:h23:inverted-wedge":[572,-141],"robot:h23:3-dof-arm":[551,-244],"robot:baxter":[258,-414],"robot:vector":[167,-403],"robot:nao":[277,222],"robot:kobo-arm":[381,-47],"robot:sawyer":[336,183],"robot:ur-arm":[-58,435],"robot:ur3":[-240,405],"challenge:human-1":[100,-84],"challenge:human-2":[274,-6],"challenge:human-3":[-28,-121],"challenge:human-4":[4,-220],"challenge:human-5":[10,12],"challenge:fm-1":[119,373],"challenge:fm-2":[-142,376],"challenge:fm-3":[32,285],"challenge:fm-4":[94,167],"challenge:fm-5":[30,397],"teacher:human":[61,-95],"teacher:fm":[-9,286],"teacherkind:people":[35,-123],"teacherkind:standin":[185,-38],"ftype:evaluative":[58,119],"ftype:informative":[206,-37],"chclass:explicit":[73,7],"chclass:implicit":[-134,-70],"modeling:MF":[23,55],"modeling:MB":[-48,25],"env:used":[155,-93],"env:notused":[3,109],"env:nr":[81,-280],"env:na":[-41,227],"regime:online":[-56,216],"regime:offline":[201,285],"regime:none":[91,269],"input:image":[-17,215],"input:clip":[-44,-42],"input:text":[12,338],"form:binary":[-124,-94],"form:ternary":[7,-202],"form:nclass":[32,134],"form:scalar":[-42,-50],"form:pairwise":[224,317],"form:similarity":[-123,154],"form:action-label":[419,-202],"form:correction":[351,-71],"form:target-position":[371,-206],"form:rule":[421,-211],"form:target":[115,71],"form:free-form":[241,-144],"form:unlabeled-gesture":[230,-137],"form:goal-list":[-124,266],"form:skill-chain":[-40,239],"channel:mouse":[-10,127],"channel:keyboard":[-9,-133],"channel:buttons":[-37,23],"channel:gui":[43,-47],"channel:wii":[107,-233],"channel:touch":[98,-24],"channel:speech":[92,-133],"channel:typed":[202,45],"channel:gesture":[191,-139],"channel:face":[-53,-114],"channel:headpose":[-152,-31],"channel:prosody":[-273,-64],"channel:eeg":[-123,-3],"channel:simulated":[56,6],"channel:recorded":[150,-36],"channel:agent":[403,-161],"survey:najar_reinforcement_2021":[9,-11],"survey:cruz_survey_2021":[154,-41],"survey:li_human-centered_2019":[37,77],"survey:lin_review_2020":[-90,-92],"survey:schoepp_evolving_2025":[184,222],"survey:kaufmann_survey_2025":[244,20],"survey:wirth_survey_2017":[315,251],"task:sophie-s-kitchen":[178,117],"task:navigation":[-271,117],"task:h01:auv-path-following":[-121,158],"task:mountain-car":[26,111],"task:tetris":[-179,-117],"task:atari":[63,8],"task:grid-world":[-7,-20],"task:pac-man":[94,-169],"task:cartpole":[255,54],"task:cliff-world":[43,-341],"task:minecraft":[118,-298],"task:frogger":[-91,-117],"task:h07:virtual-dog":[-72,-314],"task:dmcontrol":[211,141],"task:pixel-taxi":[-194,-200],"task:reaching":[27,-375],"task:stacking":[38,-265],"task:lunar-lander":[-142,-388],"task:placing":[1,-302],"task:maze":[98,-56],"task:taxi":[61,11],"task:infinite-mario":[29,-99],"task:loopmaze":[-243,-183],"task:h14:expression-learning":[-183,157],"task:h15:affective-routines":[-121,-7],"task:h15:grip-selection":[31,-130],"task:robotaxi":[-186,-96],"task:h17:gesture-to-action-mapping":[-323,123],"task:h18:waving":[-205,-59],"task:mujoco":[199,283],"task:meta-world":[43,150],"task:h20:table-cleaning":[406,-153],"task:sorting":[272,-102],"task:h21:self-driving-car":[380,-274],"task:h22:webots-robot":[309,-297],"task:pendulum":[336,-144],"task:h24:6-dof-arm":[440,-206],"task:montezuma-s-revenge":[236,135],"task:h27:pick-and-place":[113,-312],"task:radiation-world":[174,-199],"task:h29:cocktail":[175,-58],"task:h29:weight-sorting":[231,-119],"model:clip-vit-bigg-14":[19,263],"model:liv":[-141,91],"model:clip-vit-b-32":[5,182],"model:text-davinci-002":[-169,280],"model:vicuna-13b":[-296,-147],"model:gemini-1.5-pro":[90,219],"model:qwen2-vl-72b":[-82,255],"model:gemini-pro-vision":[-93,205],"model:perception-lm-1b":[-99,79],"model:gemini-pro":[-71,222],"model:gpt-4v":[177,321],"model:gemini-2.0-flash":[135,305],"model:llama-2-70b":[166,255],"model:llama-3":[180,259],"model:paligemma":[99,201],"model:gpt-4":[318,381],"model:llama-3-8b":[187,417],"model:llama-3-70b":[63,258],"model:mixtral":[299,388],"model:gemma-3-4b":[262,131],"model:codex":[-62,266],"model:sam-2":[-22,309],"model:sbert":[-142,269],"model:ego4d-encoder":[-58,239],"task:f01:humanoid-poses":[-56,272],"task:panda-gym":[-70,107],"task:f04:ultimatum-game":[-129,140],"task:f04:matrix-games":[-206,108],"task:f04:negotiation":[-111,74],"task:rlbench":[-292,12],"task:alfred":[17,130],"task:cliport":[49,272],"task:calvin":[-116,297],"task:frankakitchen":[-120,209],"task:robosuite":[-114,292],"task:minigrid":[6,249],"task:ogbench":[-34,-10],"task:softgym":[56,378],"task:nethack":[137,173],"task:miniwob":[233,269],"task:wordle":[115,223],"task:crafter":[138,354],"task:frozenlake":[304,178],"task:housekeep":[-136,262],"line:tamer":[31,-111],"line:facial":[-150,33],"line:simuser":[188,-262],"line:thomaz":[149,117],"line:klissarov":[109,246],"detail:human-1":[24,-199],"detail:human-2":[37,-41],"detail:human-3":[45,-164],"detail:human-4":[66,1],"detail:human-5":[-126,-23],"detail:human-6":[-107,-176],"detail:human-7":[296,-58],"detail:human-8":[-11,-138],"detail:human-9":[-63,-164],"detail:human-10":[204,-71],"detail:human-11":[-47,-190],"detail:human-12":[21,13],"detail:human-13":[63,-77],"detail:human-14":[67,-125],"detail:human-15":[91,-24],"detail:human-16":[70,-49],"detail:human-17":[102,-92],"detail:human-18":[-137,-51],"detail:human-19":[135,-197],"detail:human-20":[66,-83],"detail:human-21":[-104,-54],"detail:human-22":[-37,-151],"detail:fm-1":[-10,357],"detail:fm-2":[15,161],"detail:fm-3":[59,276],"detail:fm-4":[-119,200],"detail:fm-5":[49,175],"detail:fm-6":[78,309],"detail:fm-7":[-88,217],"detail:fm-8":[26,217],"detail:fm-9":[-74,349],"detail:fm-10":[-3,156],"detail:fm-11":[44,240],"detail:fm-12":[29,304],"detail:fm-13":[203,276],"detail:fm-14":[76,235],"detail:fm-15":[-59,136],"detail:fm-16":[84,295],"detail:fm-17":[-43,271],"detail:fm-18":[47,188],"detail:fm-19":[-3,319],"detail:fm-20":[-24,168],"detail:fm-21":[69,251],"survey:zhang_leveraging_2019":[21,-67],"excl:reward-code":[-900,900],"excl:fm-policy":[-830,900],"survey:li_design_2024":[-760,900],"work:ma_eureka_2024":[-690,900],"work:xie_text2reward_2024":[-620,900],"work:yu_language_2023":[-550,900],"work:turcato_towards_2025":[-900,970],"work:song_self-refined_2023":[-830,970],"work:zhang_progress_2025":[-760,970],"work:carta_grounding_2026":[-690,970],"work:sikchi_rlzero_2024":[-620,970]}
+{
+ "level:rating": [
+  -43,
+  -35
+ ],
+ "level:preference": [
+  308,
+  299
+ ],
+ "level:action": [
+  265,
+  -121
+ ],
+ "level:goal": [
+  4,
+  138
+ ],
+ "integ:RS": [
+  -33,
+  83
+ ],
+ "integ:VS": [
+  30,
+  -175
+ ],
+ "integ:PS": [
+  121,
+  -181
+ ],
+ "integ:DB": [
+  311,
+  -79
+ ],
+ "integ:PB": [
+  397,
+  355
+ ],
+ "integ:EG": [
+  -115,
+  -142
+ ],
+ "integ:TP": [
+  -156,
+  455
+ ],
+ "work:thomaz_reinforcement_2006": [
+  69,
+  108
+ ],
+ "work:thomaz_reinforcement_2006-1": [
+  178,
+  89
+ ],
+ "work:thomaz_teachable_2008": [
+  128,
+  58
+ ],
+ "work:tenorio-gonzalez_dynamic_2010": [
+  -206,
+  132
+ ],
+ "work:zhang_deep_2020": [
+  -187,
+  195
+ ],
+ "work:bignold_evaluation_2021": [
+  -126,
+  172
+ ],
+ "work:bradley_knox_tamer_2008": [
+  23,
+  -92
+ ],
+ "work:hutchison_training_2013": [
+  -156,
+  -97
+ ],
+ "work:li_learning_2014": [
+  -173,
+  20
+ ],
+ "work:li_using_2016": [
+  -130,
+  72
+ ],
+ "work:li_social_2018": [
+  -223,
+  65
+ ],
+ "work:warnell_deep_2018": [
+  133,
+  -102
+ ],
+ "work:knox_framing_2015": [
+  -223,
+  -6
+ ],
+ "work:li_interactive_2018": [
+  -144,
+  -32
+ ],
+ "work:li_improving_2019": [
+  -59,
+  51
+ ],
+ "work:knox_combining_2010": [
+  158,
+  3
+ ],
+ "work:yu_learning_2018": [
+  166,
+  -45
+ ],
+ "work:macglashan_interactive_2023": [
+  106,
+  -300
+ ],
+ "work:arumugam_deep_2019": [
+  -39,
+  -269
+ ],
+ "work:griffith_policy_2013": [
+  -33,
+  -191
+ ],
+ "work:loftin_learning_2016": [
+  21,
+  -282
+ ],
+ "work:peng_need_2016": [
+  -159,
+  -266
+ ],
+ "work:white_rating-based_2024": [
+  86,
+  19
+ ],
+ "work:xiao_fresh_2020": [
+  116,
+  -30
+ ],
+ "work:guan_widening_2021": [
+  -136,
+  -199
+ ],
+ "work:hiranaka_primitive_2023": [
+  45,
+  -341
+ ],
+ "work:zhang_dual_2023": [
+  -92,
+  -319
+ ],
+ "work:broekens_emotion_2007": [
+  -77,
+  -165
+ ],
+ "work:arakawa_dqn-tamer_2018": [
+  48,
+  58
+ ],
+ "work:li_facial_2020": [
+  187,
+  -143
+ ],
+ "work:lin_human_2020": [
+  -180,
+  -159
+ ],
+ "work:churamani_icub_2020": [
+  -253,
+  185
+ ],
+ "work:wang_affective_2022": [
+  -84,
+  -84
+ ],
+ "work:veeriah_face_2016": [
+  58,
+  -40
+ ],
+ "work:cui_empathic_2020": [
+  -220,
+  -117
+ ],
+ "work:kim_intrinsic_2017": [
+  -275,
+  113
+ ],
+ "work:kim_learning_2007": [
+  -284,
+  30
+ ],
+ "work:knierim_leveraging_2024": [
+  -194,
+  -54
+ ],
+ "work:christiano_deep_2023": [
+  149,
+  132
+ ],
+ "work:lee_pebble_2021": [
+  229,
+  130
+ ],
+ "work:hejna_few-shot_2022": [
+  209,
+  172
+ ],
+ "work:cruz_interactive_2015": [
+  216,
+  -288
+ ],
+ "work:cruz_training_2016": [
+  326,
+  -182
+ ],
+ "work:cruz_multi-modal_2018": [
+  423,
+  19
+ ],
+ "work:moreira_deep_2020": [
+  393,
+  -295
+ ],
+ "work:trick_interactive_2022": [
+  459,
+  -201
+ ],
+ "work:bignold_persistent_2021": [
+  378,
+  -234
+ ],
+ "work:nguyen_towards_2023": [
+  278,
+  -335
+ ],
+ "work:celemin_fast_2019": [
+  394,
+  -136
+ ],
+ "work:millan_human_2019": [
+  465,
+  -75
+ ],
+ "work:millan-arias_robust_2020": [
+  304,
+  -261
+ ],
+ "work:goyal_using_2019": [
+  254,
+  61
+ ],
+ "work:najar_interactively_2020": [
+  217,
+  -212
+ ],
+ "work:tarakli_interactive_2024": [
+  155,
+  -238
+ ],
+ "work:suay_effect_2011": [
+  207,
+  20
+ ],
+ "work:krening_interaction_2018": [
+  85,
+  -229
+ ],
+ "work:bignold_human_2023": [
+  82,
+  -134
+ ],
+ "work:koert_multi-channel_2020": [
+  212,
+  -74
+ ],
+ "work:rocamonde_vision-language_2023": [
+  0,
+  208
+ ],
+ "work:fu_furl_2024": [
+  -82,
+  122
+ ],
+ "work:zhou_marvl_2026": [
+  -68,
+  201
+ ],
+ "work:kwon_reward_2023": [
+  -157,
+  111
+ ],
+ "work:chu_accelerating_2023": [
+  -282,
+  -54
+ ],
+ "work:luu_enhancing_2025": [
+  59,
+  194
+ ],
+ "work:zhao_training-free_2025": [
+  -33,
+  252
+ ],
+ "work:lin_autoskill_2025": [
+  -133,
+  247
+ ],
+ "work:sharony_vlm-guided_2026": [
+  -98,
+  12
+ ],
+ "work:wang_rl-vlm-f_2024": [
+  93,
+  312
+ ],
+ "work:zakharov_goalladder_2025": [
+  211,
+  249
+ ],
+ "work:klissarov_motif_2023": [
+  158,
+  294
+ ],
+ "work:klissarov_modeling_2024": [
+  155,
+  217
+ ],
+ "work:lin_navigating_2024": [
+  214,
+  346
+ ],
+ "work:zhang_improving_2024": [
+  302,
+  476
+ ],
+ "work:merler_guiding_2025": [
+  300,
+  120
+ ],
+ "work:du_guiding_2023": [
+  -88,
+  308
+ ],
+ "work:ruiz-gonzalez_words_2024": [
+  -26,
+  329
+ ],
+ "work:cruz_improving_2018": [
+  -572,
+  -368
+ ],
+ "work:yang_trajectory_2024": [
+  -518,
+  -368
+ ],
+ "work:arzate_cruz_mariomix_2020": [
+  -572,
+  -314
+ ],
+ "work:knox_learning_2012": [
+  -27,
+  -372
+ ],
+ "work:zhang_atari-head_2020": [
+  -518,
+  -314
+ ],
+ "work:li_how_2025": [
+  1,
+  517
+ ],
+ "robot:nexi": [
+  -314,
+  -193
+ ],
+ "robot:turtlebot": [
+  113,
+  -483
+ ],
+ "robot:franka-emika-arm": [
+  13,
+  -517
+ ],
+ "robot:h11:robot-arm": [
+  -114,
+  -487
+ ],
+ "robot:gopigo3": [
+  101,
+  252
+ ],
+ "robot:icub": [
+  -323,
+  340
+ ],
+ "robot:haru": [
+  -98,
+  -252
+ ],
+ "robot:h16:7-dof-arm": [
+  -406,
+  -149
+ ],
+ "robot:compi-6-dof-arm": [
+  -387,
+  247
+ ],
+ "robot:nico": [
+  -453,
+  19
+ ],
+ "robot:franka-panda": [
+  412,
+  213
+ ],
+ "robot:h20:7-dof-arm": [
+  506,
+  -366
+ ],
+ "robot:h23:pendulum": [
+  558,
+  -36
+ ],
+ "robot:h23:inverted-wedge": [
+  572,
+  -141
+ ],
+ "robot:h23:3-dof-arm": [
+  551,
+  -244
+ ],
+ "robot:baxter": [
+  258,
+  -414
+ ],
+ "robot:vector": [
+  167,
+  -403
+ ],
+ "robot:nao": [
+  277,
+  222
+ ],
+ "robot:kobo-arm": [
+  381,
+  -47
+ ],
+ "robot:sawyer": [
+  336,
+  183
+ ],
+ "robot:ur-arm": [
+  -58,
+  435
+ ],
+ "robot:ur3": [
+  -240,
+  405
+ ],
+ "challenge:human-1": [
+  100,
+  -84
+ ],
+ "challenge:human-2": [
+  274,
+  -6
+ ],
+ "challenge:human-3": [
+  -28,
+  -121
+ ],
+ "challenge:human-4": [
+  4,
+  -220
+ ],
+ "challenge:human-5": [
+  10,
+  12
+ ],
+ "challenge:fm-1": [
+  119,
+  373
+ ],
+ "challenge:fm-2": [
+  -142,
+  376
+ ],
+ "challenge:fm-3": [
+  32,
+  285
+ ],
+ "challenge:fm-4": [
+  94,
+  167
+ ],
+ "challenge:fm-5": [
+  30,
+  397
+ ],
+ "teacher:human": [
+  61,
+  -95
+ ],
+ "teacher:fm": [
+  -9,
+  286
+ ],
+ "teacherkind:people": [
+  35,
+  -123
+ ],
+ "teacherkind:standin": [
+  185,
+  -38
+ ],
+ "ftype:evaluative": [
+  58,
+  119
+ ],
+ "ftype:informative": [
+  206,
+  -37
+ ],
+ "chclass:explicit": [
+  73,
+  7
+ ],
+ "chclass:implicit": [
+  -134,
+  -70
+ ],
+ "modeling:MF": [
+  23,
+  55
+ ],
+ "modeling:MB": [
+  -48,
+  25
+ ],
+ "env:used": [
+  155,
+  -93
+ ],
+ "env:notused": [
+  3,
+  109
+ ],
+ "env:nr": [
+  81,
+  -280
+ ],
+ "env:na": [
+  -41,
+  227
+ ],
+ "regime:online": [
+  -56,
+  216
+ ],
+ "regime:offline": [
+  201,
+  285
+ ],
+ "regime:none": [
+  91,
+  269
+ ],
+ "input:image": [
+  -17,
+  215
+ ],
+ "input:clip": [
+  -44,
+  -42
+ ],
+ "input:text": [
+  12,
+  338
+ ],
+ "form:binary": [
+  -124,
+  -94
+ ],
+ "form:ternary": [
+  7,
+  -202
+ ],
+ "form:nclass": [
+  32,
+  134
+ ],
+ "form:scalar": [
+  -42,
+  -50
+ ],
+ "form:pairwise": [
+  224,
+  317
+ ],
+ "form:similarity": [
+  -123,
+  154
+ ],
+ "form:action-label": [
+  419,
+  -202
+ ],
+ "form:correction": [
+  351,
+  -71
+ ],
+ "form:target-position": [
+  371,
+  -206
+ ],
+ "form:rule": [
+  421,
+  -211
+ ],
+ "form:target": [
+  115,
+  71
+ ],
+ "form:free-form": [
+  241,
+  -144
+ ],
+ "form:unlabeled-gesture": [
+  230,
+  -137
+ ],
+ "form:goal-list": [
+  -124,
+  266
+ ],
+ "form:skill-chain": [
+  -40,
+  239
+ ],
+ "channel:mouse": [
+  -10,
+  127
+ ],
+ "channel:keyboard": [
+  -9,
+  -133
+ ],
+ "channel:buttons": [
+  -37,
+  23
+ ],
+ "channel:gui": [
+  43,
+  -47
+ ],
+ "channel:wii": [
+  107,
+  -233
+ ],
+ "channel:touch": [
+  98,
+  -24
+ ],
+ "channel:speech": [
+  92,
+  -133
+ ],
+ "channel:typed": [
+  202,
+  45
+ ],
+ "channel:gesture": [
+  191,
+  -139
+ ],
+ "channel:face": [
+  -53,
+  -114
+ ],
+ "channel:headpose": [
+  -152,
+  -31
+ ],
+ "channel:prosody": [
+  -273,
+  -64
+ ],
+ "channel:eeg": [
+  -123,
+  -3
+ ],
+ "channel:simulated": [
+  56,
+  6
+ ],
+ "channel:recorded": [
+  150,
+  -36
+ ],
+ "channel:agent": [
+  403,
+  -161
+ ],
+ "survey:najar_reinforcement_2021": [
+  9,
+  -11
+ ],
+ "survey:cruz_survey_2021": [
+  154,
+  -41
+ ],
+ "survey:li_human-centered_2019": [
+  37,
+  77
+ ],
+ "survey:lin_review_2020": [
+  -90,
+  -92
+ ],
+ "survey:schoepp_evolving_2025": [
+  184,
+  222
+ ],
+ "survey:kaufmann_survey_2025": [
+  244,
+  20
+ ],
+ "survey:wirth_survey_2017": [
+  315,
+  251
+ ],
+ "task:sophie-s-kitchen": [
+  178,
+  117
+ ],
+ "task:navigation": [
+  -271,
+  117
+ ],
+ "task:h01:auv-path-following": [
+  -121,
+  158
+ ],
+ "task:mountain-car": [
+  26,
+  111
+ ],
+ "task:tetris": [
+  -179,
+  -117
+ ],
+ "task:atari": [
+  63,
+  8
+ ],
+ "task:grid-world": [
+  -7,
+  -20
+ ],
+ "task:pac-man": [
+  94,
+  -169
+ ],
+ "task:cartpole": [
+  255,
+  54
+ ],
+ "task:cliff-world": [
+  43,
+  -341
+ ],
+ "task:minecraft": [
+  118,
+  -298
+ ],
+ "task:frogger": [
+  -91,
+  -117
+ ],
+ "task:h07:virtual-dog": [
+  -72,
+  -314
+ ],
+ "task:dmcontrol": [
+  211,
+  141
+ ],
+ "task:pixel-taxi": [
+  -194,
+  -200
+ ],
+ "task:reaching": [
+  27,
+  -375
+ ],
+ "task:stacking": [
+  38,
+  -265
+ ],
+ "task:lunar-lander": [
+  -142,
+  -388
+ ],
+ "task:placing": [
+  1,
+  -302
+ ],
+ "task:maze": [
+  98,
+  -56
+ ],
+ "task:taxi": [
+  61,
+  11
+ ],
+ "task:infinite-mario": [
+  29,
+  -99
+ ],
+ "task:loopmaze": [
+  -243,
+  -183
+ ],
+ "task:h14:expression-learning": [
+  -183,
+  157
+ ],
+ "task:h15:affective-routines": [
+  -121,
+  -7
+ ],
+ "task:h15:grip-selection": [
+  31,
+  -130
+ ],
+ "task:robotaxi": [
+  -186,
+  -96
+ ],
+ "task:h17:gesture-to-action-mapping": [
+  -323,
+  123
+ ],
+ "task:h18:waving": [
+  -205,
+  -59
+ ],
+ "task:mujoco": [
+  199,
+  283
+ ],
+ "task:meta-world": [
+  43,
+  150
+ ],
+ "task:h20:table-cleaning": [
+  406,
+  -153
+ ],
+ "task:sorting": [
+  272,
+  -102
+ ],
+ "task:h21:self-driving-car": [
+  380,
+  -274
+ ],
+ "task:h22:webots-robot": [
+  309,
+  -297
+ ],
+ "task:pendulum": [
+  336,
+  -144
+ ],
+ "task:h24:6-dof-arm": [
+  440,
+  -206
+ ],
+ "task:montezuma-s-revenge": [
+  236,
+  135
+ ],
+ "task:h27:pick-and-place": [
+  113,
+  -312
+ ],
+ "task:radiation-world": [
+  174,
+  -199
+ ],
+ "task:h29:cocktail": [
+  175,
+  -58
+ ],
+ "task:h29:weight-sorting": [
+  231,
+  -119
+ ],
+ "model:clip-vit-bigg-14": [
+  19,
+  263
+ ],
+ "model:liv": [
+  -141,
+  91
+ ],
+ "model:clip-vit-b-32": [
+  5,
+  182
+ ],
+ "model:text-davinci-002": [
+  -169,
+  280
+ ],
+ "model:vicuna-13b": [
+  -296,
+  -147
+ ],
+ "model:gemini-1.5-pro": [
+  90,
+  219
+ ],
+ "model:qwen2-vl-72b": [
+  -82,
+  255
+ ],
+ "model:gemini-pro-vision": [
+  -93,
+  205
+ ],
+ "model:perception-lm-1b": [
+  -99,
+  79
+ ],
+ "model:gemini-pro": [
+  -71,
+  222
+ ],
+ "model:gpt-4v": [
+  177,
+  321
+ ],
+ "model:gemini-2.0-flash": [
+  135,
+  305
+ ],
+ "model:llama-2-70b": [
+  166,
+  255
+ ],
+ "model:llama-3": [
+  180,
+  259
+ ],
+ "model:paligemma": [
+  99,
+  201
+ ],
+ "model:gpt-4": [
+  318,
+  381
+ ],
+ "model:llama-3-8b": [
+  187,
+  417
+ ],
+ "model:llama-3-70b": [
+  63,
+  258
+ ],
+ "model:mixtral": [
+  299,
+  388
+ ],
+ "model:gemma-3-4b": [
+  262,
+  131
+ ],
+ "model:codex": [
+  -62,
+  266
+ ],
+ "model:sam-2": [
+  -22,
+  309
+ ],
+ "model:sbert": [
+  -142,
+  269
+ ],
+ "model:ego4d-encoder": [
+  -58,
+  239
+ ],
+ "task:f01:humanoid-poses": [
+  -56,
+  272
+ ],
+ "task:panda-gym": [
+  -70,
+  107
+ ],
+ "task:f04:ultimatum-game": [
+  -129,
+  140
+ ],
+ "task:f04:matrix-games": [
+  -206,
+  108
+ ],
+ "task:f04:negotiation": [
+  -111,
+  74
+ ],
+ "task:rlbench": [
+  -292,
+  12
+ ],
+ "task:alfred": [
+  17,
+  130
+ ],
+ "task:cliport": [
+  49,
+  272
+ ],
+ "task:calvin": [
+  -116,
+  297
+ ],
+ "task:frankakitchen": [
+  -120,
+  209
+ ],
+ "task:robosuite": [
+  -114,
+  292
+ ],
+ "task:minigrid": [
+  6,
+  249
+ ],
+ "task:ogbench": [
+  -34,
+  -10
+ ],
+ "task:softgym": [
+  56,
+  378
+ ],
+ "task:nethack": [
+  137,
+  173
+ ],
+ "task:miniwob": [
+  233,
+  269
+ ],
+ "task:wordle": [
+  115,
+  223
+ ],
+ "task:crafter": [
+  138,
+  354
+ ],
+ "task:frozenlake": [
+  304,
+  178
+ ],
+ "task:housekeep": [
+  -136,
+  262
+ ],
+ "line:tamer": [
+  31,
+  -111
+ ],
+ "line:facial": [
+  -150,
+  33
+ ],
+ "line:simuser": [
+  188,
+  -262
+ ],
+ "line:thomaz": [
+  149,
+  117
+ ],
+ "line:klissarov": [
+  109,
+  246
+ ],
+ "detail:human-1": [
+  24,
+  -199
+ ],
+ "detail:human-2": [
+  37,
+  -41
+ ],
+ "detail:human-3": [
+  45,
+  -164
+ ],
+ "detail:human-4": [
+  66,
+  1
+ ],
+ "detail:human-5": [
+  -126,
+  -23
+ ],
+ "detail:human-6": [
+  -107,
+  -176
+ ],
+ "detail:human-7": [
+  296,
+  -58
+ ],
+ "detail:human-8": [
+  -11,
+  -138
+ ],
+ "detail:human-9": [
+  -63,
+  -164
+ ],
+ "detail:human-10": [
+  204,
+  -71
+ ],
+ "detail:human-11": [
+  -47,
+  -190
+ ],
+ "detail:human-12": [
+  21,
+  13
+ ],
+ "detail:human-13": [
+  63,
+  -77
+ ],
+ "detail:human-14": [
+  67,
+  -125
+ ],
+ "detail:human-15": [
+  91,
+  -24
+ ],
+ "detail:human-16": [
+  70,
+  -49
+ ],
+ "detail:human-17": [
+  102,
+  -92
+ ],
+ "detail:human-18": [
+  -137,
+  -51
+ ],
+ "detail:human-19": [
+  135,
+  -197
+ ],
+ "detail:human-20": [
+  66,
+  -83
+ ],
+ "detail:human-21": [
+  -104,
+  -54
+ ],
+ "detail:human-22": [
+  -37,
+  -151
+ ],
+ "detail:fm-1": [
+  -10,
+  357
+ ],
+ "detail:fm-2": [
+  15,
+  161
+ ],
+ "detail:fm-3": [
+  59,
+  276
+ ],
+ "detail:fm-4": [
+  -119,
+  200
+ ],
+ "detail:fm-5": [
+  49,
+  175
+ ],
+ "detail:fm-6": [
+  78,
+  309
+ ],
+ "detail:fm-7": [
+  -88,
+  217
+ ],
+ "detail:fm-8": [
+  26,
+  217
+ ],
+ "detail:fm-9": [
+  -74,
+  349
+ ],
+ "detail:fm-10": [
+  -3,
+  156
+ ],
+ "detail:fm-11": [
+  44,
+  240
+ ],
+ "detail:fm-12": [
+  29,
+  304
+ ],
+ "detail:fm-13": [
+  203,
+  276
+ ],
+ "detail:fm-14": [
+  76,
+  235
+ ],
+ "detail:fm-15": [
+  -59,
+  136
+ ],
+ "detail:fm-16": [
+  84,
+  295
+ ],
+ "detail:fm-17": [
+  -43,
+  271
+ ],
+ "detail:fm-18": [
+  47,
+  188
+ ],
+ "detail:fm-19": [
+  -3,
+  319
+ ],
+ "detail:fm-20": [
+  -24,
+  168
+ ],
+ "detail:fm-21": [
+  69,
+  251
+ ],
+ "survey:zhang_leveraging_2019": [
+  21,
+  -67
+ ],
+ "excl:reward-code": [
+  -900,
+  900
+ ],
+ "excl:fm-policy": [
+  -830,
+  900
+ ],
+ "survey:li_design_2024": [
+  -760,
+  900
+ ],
+ "work:ma_eureka_2024": [
+  -690,
+  900
+ ],
+ "work:xie_text2reward_2024": [
+  -620,
+  900
+ ],
+ "work:yu_language_2023": [
+  -550,
+  900
+ ],
+ "work:turcato_towards_2025": [
+  -900,
+  970
+ ],
+ "work:song_self-refined_2023": [
+  -830,
+  970
+ ],
+ "work:zhang_progress_2025": [
+  -760,
+  970
+ ],
+ "work:carta_grounding_2026": [
+  -690,
+  970
+ ],
+ "work:sikchi_rlzero_2024": [
+  -620,
+  970
+ ],
+ "work:luo_precise_2025": [
+  1500,
+  50
+ ],
+ "work:rlif_2024": [
+  700,
+  140
+ ],
+ "work:self_annotation_2023": [
+  800,
+  140
+ ],
+ "work:millan-arias_robust_2021": [
+  900,
+  140
+ ],
+ "work:cruz_agent_advising_2017": [
+  1000,
+  140
+ ],
+ "work:optimized_assistive_2016": [
+  1100,
+  140
+ ],
+ "work:gains_2026": [
+  1200,
+  140
+ ],
+ "work:large_reward_models_2026": [
+  1300,
+  140
+ ],
+ "work:offline_rl_vlm_f_2024": [
+  1400,
+  140
+ ],
+ "work:roboreward_2026": [
+  1500,
+  140
+ ],
+ "work:robometer_2026": [
+  700,
+  230
+ ],
+ "work:zhang_rewind_2025": [
+  800,
+  230
+ ],
+ "work:vlac_2025": [
+  900,
+  230
+ ],
+ "work:robo_dopamine_2026": [
+  1000,
+  230
+ ],
+ "work:sole_r1_2026": [
+  1100,
+  230
+ ],
+ "work:phirl_2026": [
+  1200,
+  230
+ ],
+ "work:cabi_reward_sketching_2020": [
+  1300,
+  230
+ ],
+ "work:sparq_2025": [
+  1400,
+  230
+ ],
+ "work:gear_2023": [
+  1500,
+  230
+ ],
+ "work:stdr_2026": [
+  700,
+  320
+ ],
+ "work:varp_2025": [
+  800,
+  320
+ ],
+ "work:roboclip_2023": [
+  900,
+  320
+ ],
+ "work:ohp_rl_2026": [
+  1000,
+  320
+ ],
+ "experiment:P002-1": [
+  417,
+  -233
+ ],
+ "setting:real-robot-training": [
+  1200,
+  320
+ ],
+ "experiment-task:P002-1": [
+  1300,
+  320
+ ],
+ "platform:physical-3-dof-arm": [
+  1400,
+  320
+ ],
+ "experiment:P009-1": [
+  -123,
+  8
+ ],
+ "experiment-task:P009-1": [
+  700,
+  410
+ ],
+ "platform:haru-tabletop-social-robot": [
+  800,
+  410
+ ],
+ "experiment:P014-1": [
+  -49,
+  83
+ ],
+ "experiment-task:P014-1": [
+  1000,
+  410
+ ],
+ "platform:gopigo3-mobile-robot": [
+  1100,
+  410
+ ],
+ "experiment:P021-1": [
+  128,
+  -42
+ ],
+ "experiment-task:P021-1": [
+  1300,
+  410
+ ],
+ "platform:physical-nao-humanoid": [
+  1400,
+  410
+ ],
+ "experiment:P040-1": [
+  107,
+  -400
+ ],
+ "experiment-task:P040-1": [
+  700,
+  500
+ ],
+ "platform:physical-turtlebot-kinect": [
+  800,
+  500
+ ],
+ "experiment:P063-1": [
+  1580,
+  -10
+ ],
+ "experiment-task:P063-1": [
+  1000,
+  500
+ ],
+ "platform:single-arm-and-dual-arm-robot-setups": [
+  1100,
+  500
+ ],
+ "experiment:RLIF-1": [
+  796,
+  167
+ ],
+ "experiment-task:RLIF-1": [
+  1300,
+  500
+ ],
+ "platform:7-dof-franka-research3": [
+  1400,
+  500
+ ],
+ "experiment:S001-2": [
+  -55,
+  -226
+ ],
+ "experiment-task:S001-2": [
+  700,
+  590
+ ],
+ "platform:physical-arm-shown-in-fig-2-brand-not-named-in-inspected-text": [
+  800,
+  590
+ ],
+ "experiment:S009-1": [
+  -335,
+  116
+ ],
+ "experiment-task:S009-1": [
+  1000,
+  590
+ ],
+ "platform:nico-upper-torso-humanoid": [
+  1100,
+  590
+ ],
+ "experiment:P043-1": [
+  56,
+  -226
+ ],
+ "setting:other-physical-learning": [
+  1300,
+  590
+ ],
+ "experiment-task:P043-1": [
+  1400,
+  590
+ ],
+ "platform:physical-vector-tabletop-robot": [
+  1500,
+  590
+ ],
+ "experiment:P045-1": [
+  317,
+  -206
+ ],
+ "experiment-task:P045-1": [
+  800,
+  -400
+ ],
+ "platform:physical-baxter": [
+  900,
+  -400
+ ],
+ "experiment:P084-1": [
+  -100,
+  -14
+ ],
+ "experiment-task:P084-1": [
+  1100,
+  -400
+ ],
+ "platform:physical-mds-nexi-mobile-robot": [
+  1200,
+  -400
+ ],
+ "experiment:P093-1": [
+  -285,
+  280
+ ],
+ "experiment-task:P093-1": [
+  1400,
+  -400
+ ],
+ "platform:icub-robot-head": [
+  1500,
+  -400
+ ],
+ "experiment:S002-2": [
+  -50,
+  -308
+ ],
+ "experiment-task:S002-2": [
+  800,
+  -310
+ ],
+ "platform:physical-franka-emika-panda": [
+  900,
+  -310
+ ],
+ "experiment:P046-1": [
+  -358,
+  58
+ ],
+ "experiment-task:P046-1": [
+  1100,
+  -310
+ ],
+ "platform:compi6-dof-arm": [
+  1200,
+  -310
+ ],
+ "experiment:P055-1": [
+  205,
+  -174
+ ],
+ "setting:physical-teaching-evaluation-limited": [
+  1400,
+  -310
+ ],
+ "experiment-task:P055-1": [
+  1500,
+  -310
+ ],
+ "platform:physical-kobo-manipulator": [
+  700,
+  -220
+ ],
+ "experiment:P041-1": [
+  449,
+  -102
+ ],
+ "experiment-task:P041-1": [
+  900,
+  -220
+ ],
+ "platform:physical-7-dof-arm": [
+  1000,
+  -220
+ ],
+ "experiment:P026-2": [
+  124,
+  224
+ ],
+ "setting:sim-to-real-transfer": [
+  1200,
+  -220
+ ],
+ "experiment-task:P026-2": [
+  1300,
+  -220
+ ],
+ "platform:franka-panda-trained-in-pybullet": [
+  1400,
+  -220
+ ],
+ "experiment:P074-1": [
+  893,
+  103
+ ],
+ "setting:feedback-evaluation-only": [
+  700,
+  -130
+ ],
+ "experiment-task:P074-1": [
+  800,
+  -130
+ ],
+ "platform:shutter4-dof-tabletop-robot": [
+  900,
+  -130
+ ],
+ "experiment:P079-1": [
+  -318,
+  -97
+ ],
+ "experiment-task:P079-1": [
+  1100,
+  -130
+ ],
+ "platform:physical7-dof-arm": [
+  1200,
+  -130
+ ],
+ "experiment:P086-2": [
+  -593,
+  -434
+ ],
+ "experiment-task:P086-2": [
+  1400,
+  -130
+ ],
+ "platform:physical-widowx250-6dof": [
+  1500,
+  -130
+ ],
+ "experiment:S001-3": [
+  -86,
+  -419
+ ],
+ "experiment-task:S001-3": [
+  800,
+  -40
+ ],
+ "platform:same-physical-task-recordings": [
+  900,
+  -40
+ ],
+ "experiment:P005-1": [
+  983,
+  84
+ ],
+ "setting:simulation": [
+  1100,
+  -40
+ ],
+ "experiment-task:P005-1": [
+  1200,
+  -40
+ ],
+ "experiment:P015-1": [
+  -92,
+  227
+ ],
+ "experiment-task:P015-1": [
+  1400,
+  -40
+ ],
+ "experiment:P016-1": [
+  189,
+  40
+ ],
+ "experiment-task:P016-1": [
+  700,
+  50
+ ],
+ "experiment:P018-1": [
+  305,
+  -343
+ ],
+ "experiment-task:P018-1": [
+  900,
+  50
+ ],
+ "experiment:P020-1": [
+  -262,
+  215
+ ],
+ "experiment-task:P020-1": [
+  1100,
+  50
+ ],
+ "experiment:P026-1": [
+  287,
+  235
+ ],
+ "experiment-task:P026-1": [
+  1300,
+  50
+ ],
+ "experiment:P044-1": [
+  285,
+  -360
+ ],
+ "experiment-task:P044-1": [
+  1500,
+  50
+ ],
+ "experiment:P060-1": [
+  163,
+  55
+ ],
+ "experiment-task:P060-1": [
+  800,
+  140
+ ],
+ "experiment:P060-2": [
+  148,
+  189
+ ],
+ "experiment-task:P060-2": [
+  1000,
+  140
+ ],
+ "experiment:P082-1": [
+  330,
+  -249
+ ],
+ "experiment-task:P082-1": [
+  1200,
+  140
+ ],
+ "experiment:P086-1": [
+  -428,
+  -412
+ ],
+ "experiment-task:P086-1": [
+  1400,
+  140
+ ],
+ "experiment:RLIF-2": [
+  664,
+  47
+ ],
+ "experiment-task:RLIF-2": [
+  700,
+  230
+ ],
+ "experiment:S001-1": [
+  -188,
+  -291
+ ],
+ "experiment-task:S001-1": [
+  900,
+  230
+ ],
+ "experiment:S002-1": [
+  64,
+  -243
+ ],
+ "experiment-task:S002-1": [
+  1100,
+  230
+ ],
+ "experiment:S008-1": [
+  185,
+  8
+ ],
+ "experiment-task:S008-1": [
+  1300,
+  230
+ ],
+ "experiment:P046-2": [
+  -277,
+  13
+ ],
+ "experiment-task:P046-2": [
+  1500,
+  230
+ ],
+ "experiment:P010-1": [
+  900,
+  133
+ ],
+ "experiment-task:P010-1": [
+  800,
+  320
+ ],
+ "experiment:P038-1": [
+  -588,
+  -269
+ ],
+ "experiment-task:P038-1": [
+  1000,
+  320
+ ],
+ "experiment:P045-2": [
+  314,
+  -188
+ ],
+ "experiment-task:P045-2": [
+  1200,
+  320
+ ],
+ "experiment:P056-1": [
+  455,
+  -76
+ ],
+ "experiment-task:P056-1": [
+  1400,
+  320
+ ],
+ "experiment:P083-1": [
+  235,
+  -223
+ ],
+ "experiment-task:P083-1": [
+  700,
+  410
+ ],
+ "experiment:P061-1": [
+  330,
+  -147
+ ],
+ "experiment-task:P061-1": [
+  900,
+  410
+ ],
+ "experiment:P059-1": [
+  1183,
+  196
+ ],
+ "experiment-task:P059-1": [
+  1100,
+  410
+ ],
+ "platform:pr2-arm-with-force-sensing": [
+  1200,
+  410
+ ],
+ "experiment:P002-control-rigs": [
+  400,
+  -36
+ ],
+ "experiment-task:P002-control-rigs": [
+  1400,
+  410
+ ],
+ "platform:physical-pendulum-and-wedge-rigs-simulated-cartpole-pendulum": [
+  1500,
+  410
+ ],
+ "experiment:S001-sim-DRPL": [
+  -168,
+  -253
+ ],
+ "experiment-task:S001-sim-DRPL": [
+  800,
+  500
+ ],
+ "experiment:WEB-GAINS-sim": [
+  1259,
+  221
+ ],
+ "experiment-task:WEB-GAINS-sim": [
+  1000,
+  500
+ ],
+ "experiment:WEB-GAINS-physical": [
+  1286,
+  89
+ ],
+ "experiment-task:WEB-GAINS-physical": [
+  1200,
+  500
+ ],
+ "platform:ur5-spoon-franka-emika-usb": [
+  1300,
+  500
+ ],
+ "experiment:P047-1": [
+  1393,
+  177
+ ],
+ "experiment-task:P047-1": [
+  1500,
+  500
+ ],
+ "experiment:P047-2": [
+  1345,
+  51
+ ],
+ "experiment-task:P047-2": [
+  800,
+  590
+ ],
+ "platform:two-physical-robot-platforms": [
+  900,
+  590
+ ],
+ "experiment:P089-1": [
+  0,
+  -7
+ ],
+ "experiment-task:P089-1": [
+  1100,
+  590
+ ],
+ "experiment:P030-1": [
+  -98,
+  209
+ ],
+ "experiment-task:P030-1": [
+  1300,
+  590
+ ],
+ "experiment:P081-1": [
+  -1000,
+  971
+ ],
+ "experiment-task:P081-1": [
+  1500,
+  590
+ ],
+ "experiment:P081-2": [
+  -907,
+  1070
+ ],
+ "experiment-task:P081-2": [
+  800,
+  -400
+ ],
+ "platform:physical-abb-yumi": [
+  900,
+  -400
+ ],
+ "experiment:P064-1": [
+  -844,
+  1025
+ ],
+ "experiment-task:P064-1": [
+  1100,
+  -400
+ ],
+ "experiment:P075-1": [
+  -783,
+  1058
+ ],
+ "experiment-task:P075-1": [
+  1300,
+  -400
+ ],
+ "experiment:P090-1": [
+  92,
+  169
+ ],
+ "experiment-task:P090-1": [
+  1500,
+  -400
+ ],
+ "experiment:P028-1": [
+  -113,
+  27
+ ],
+ "experiment-task:P028-1": [
+  800,
+  -310
+ ],
+ "experiment:P052-1": [
+  -165,
+  224
+ ],
+ "experiment-task:P052-1": [
+  1000,
+  -310
+ ],
+ "experiment:P008-1": [
+  -268,
+  45
+ ],
+ "experiment-task:P008-1": [
+  1200,
+  -310
+ ],
+ "experiment:P013-1": [
+  -33,
+  241
+ ],
+ "experiment-task:P013-1": [
+  1400,
+  -310
+ ],
+ "experiment:P013-2": [
+  -130,
+  147
+ ],
+ "experiment-task:P013-2": [
+  700,
+  -220
+ ],
+ "platform:physical-ur3": [
+  800,
+  -220
+ ],
+ "experiment:P085-1": [
+  48,
+  194
+ ],
+ "experiment-task:P085-1": [
+  1000,
+  -220
+ ],
+ "experiment:P085-2": [
+  -84,
+  166
+ ],
+ "experiment-task:P085-2": [
+  1200,
+  -220
+ ],
+ "platform:physical-ur-arm-workspace-with-a-top-down-camera": [
+  1300,
+  -220
+ ],
+ "experiment:P065-1": [
+  130,
+  219
+ ],
+ "experiment-task:P065-1": [
+  1500,
+  -220
+ ],
+ "experiment:P065-2": [
+  4,
+  267
+ ],
+ "experiment-task:P065-2": [
+  800,
+  -130
+ ],
+ "experiment:P029-1": [
+  158,
+  334
+ ],
+ "experiment-task:P029-1": [
+  1000,
+  -130
+ ],
+ "experiment:P058-1": [
+  235,
+  277
+ ],
+ "experiment-task:P058-1": [
+  1200,
+  -130
+ ],
+ "experiment:P057-1": [
+  281,
+  272
+ ],
+ "experiment-task:P057-1": [
+  1400,
+  -130
+ ],
+ "experiment:P022-1": [
+  -9,
+  121
+ ],
+ "setting:offline-rl-from-robot-data": [
+  700,
+  -40
+ ],
+ "experiment-task:P022-1": [
+  800,
+  -40
+ ],
+ "platform:7-dof-rethink-sawyer": [
+  900,
+  -40
+ ],
+ "experiment:P022-2": [
+  113,
+  278
+ ],
+ "experiment-task:P022-2": [
+  1100,
+  -40
+ ],
+ "experiment:P022-3": [
+  147,
+  147
+ ],
+ "experiment-task:P022-3": [
+  1300,
+  -40
+ ],
+ "experiment:WEB-OfflineRLVLMF-1": [
+  1361,
+  48
+ ],
+ "experiment-task:WEB-OfflineRLVLMF-1": [
+  1500,
+  -40
+ ],
+ "platform:sawyer": [
+  700,
+  50
+ ],
+ "experiment:WEB-OfflineRLVLMF-2": [
+  1449,
+  53
+ ],
+ "experiment-task:WEB-OfflineRLVLMF-2": [
+  900,
+  50
+ ],
+ "experiment:P095-1": [
+  1418,
+  83
+ ],
+ "experiment-task:P095-1": [
+  1100,
+  50
+ ],
+ "platform:widowx-250-6-dof-arm": [
+  1200,
+  50
+ ],
+ "experiment:P095-2": [
+  1495,
+  40
+ ],
+ "experiment-task:P095-2": [
+  1400,
+  50
+ ],
+ "experiment:P094-1": [
+  600,
+  226
+ ],
+ "experiment-task:P094-1": [
+  700,
+  140
+ ],
+ "platform:franka-panda-in-a-droid-setup-robotiq-gripper": [
+  800,
+  140
+ ],
+ "experiment:P094-2": [
+  642,
+  148
+ ],
+ "experiment-task:P094-2": [
+  1000,
+  140
+ ],
+ "platform:so-101": [
+  1100,
+  140
+ ],
+ "experiment:P094-3": [
+  729,
+  134
+ ],
+ "experiment-task:P094-3": [
+  1300,
+  140
+ ],
+ "experiment:P094-4": [
+  607,
+  192
+ ],
+ "experiment-task:P094-4": [
+  1500,
+  140
+ ],
+ "platform:droid-setup": [
+  700,
+  230
+ ],
+ "experiment:WEB-ReWiND-1": [
+  774,
+  134
+ ],
+ "experiment-task:WEB-ReWiND-1": [
+  900,
+  230
+ ],
+ "platform:koch-v1-1-bimanual-low-cost-arms": [
+  1000,
+  230
+ ],
+ "experiment:WEB-ReWiND-2": [
+  860,
+  150
+ ],
+ "experiment-task:WEB-ReWiND-2": [
+  1200,
+  230
+ ],
+ "experiment:WEB-VLAC-1": [
+  826,
+  163
+ ],
+ "experiment-task:WEB-VLAC-1": [
+  1400,
+  230
+ ],
+ "platform:agile-piper-arms": [
+  1500,
+  230
+ ],
+ "experiment:P072-1": [
+  1008,
+  130
+ ],
+ "experiment-task:P072-1": [
+  800,
+  320
+ ],
+ "platform:dual-franka-workcell-one-acting-arm-performs-the-evaluated-task": [
+  900,
+  320
+ ],
+ "experiment:P072-2": [
+  1084,
+  176
+ ],
+ "experiment-task:P072-2": [
+  1100,
+  320
+ ],
+ "experiment:WEB-ReWiND-OFFLINE": [
+  754,
+  141
+ ],
+ "experiment-task:WEB-ReWiND-OFFLINE": [
+  1300,
+  320
+ ],
+ "platform:koch-v1-1-bimanual-arms": [
+  1400,
+  320
+ ],
+ "experiment:WEB-SOLE-R1-physical": [
+  1142,
+  139
+ ],
+ "experiment-task:WEB-SOLE-R1-physical": [
+  700,
+  410
+ ],
+ "platform:franka-fr3-arms-acting-independently": [
+  800,
+  410
+ ],
+ "experiment:WEB-SOLE-R1-sim": [
+  1198,
+  208
+ ],
+ "experiment-task:WEB-SOLE-R1-sim": [
+  1000,
+  410
+ ],
+ "experiment:WEB-SOLE-R1-steering": [
+  1087,
+  131
+ ],
+ "experiment-task:WEB-SOLE-R1-steering": [
+  1200,
+  410
+ ],
+ "platform:robot-policy-steering-branch": [
+  1300,
+  410
+ ],
+ "experiment:WEB-PHIRL-human-sim": [
+  1271,
+  159
+ ],
+ "experiment-task:WEB-PHIRL-human-sim": [
+  1500,
+  410
+ ],
+ "experiment:WEB-PHIRL-hybrid-sim": [
+  1136,
+  154
+ ],
+ "experiment-task:WEB-PHIRL-hybrid-sim": [
+  800,
+  500
+ ],
+ "experiment:WEB-PHIRL-physical": [
+  1118,
+  287
+ ],
+ "setting:unclear": [
+  1000,
+  500
+ ],
+ "experiment-task:WEB-PHIRL-physical": [
+  1100,
+  500
+ ],
+ "experiment:WEB-RewardSketching-offline": [
+  1205,
+  200
+ ],
+ "experiment-task:WEB-RewardSketching-offline": [
+  1300,
+  500
+ ],
+ "platform:sawyer-with-robotiq-gripper": [
+  1400,
+  500
+ ],
+ "experiment:WEB-RewardSketching-online": [
+  1266,
+  136
+ ],
+ "experiment-task:WEB-RewardSketching-online": [
+  700,
+  590
+ ],
+ "platform:sawyer-with-safety-controller": [
+  800,
+  590
+ ],
+ "experiment:WEB-SPARQ-sim": [
+  1454,
+  146
+ ],
+ "experiment-task:WEB-SPARQ-sim": [
+  1000,
+  590
+ ],
+ "experiment:WEB-GEAR-physical": [
+  1421,
+  169
+ ],
+ "experiment-task:WEB-GEAR-physical": [
+  1200,
+  590
+ ],
+ "platform:turtlebot-franka": [
+  1300,
+  590
+ ],
+ "experiment:WEB-GEAR-sim": [
+  1500,
+  130
+ ],
+ "experiment-task:WEB-GEAR-sim": [
+  1500,
+  590
+ ],
+ "experiment:WEB-STDR-sim": [
+  600,
+  311
+ ],
+ "experiment-task:WEB-STDR-sim": [
+  800,
+  -400
+ ],
+ "experiment:WEB-STDR-physical-rating": [
+  683,
+  418
+ ],
+ "experiment-task:WEB-STDR-physical-rating": [
+  1000,
+  -400
+ ],
+ "platform:franka-realsense": [
+  1100,
+  -400
+ ],
+ "experiment:WEB-VARP-vlm-sim": [
+  711,
+  366
+ ],
+ "experiment-task:WEB-VARP-vlm-sim": [
+  1300,
+  -400
+ ],
+ "experiment:WEB-VARP-oracle-controls": [
+  838,
+  412
+ ],
+ "experiment-task:WEB-VARP-oracle-controls": [
+  1500,
+  -400
+ ],
+ "experiment:WEB-RoboCLIP-initial-sim": [
+  995,
+  290
+ ],
+ "experiment-task:WEB-RoboCLIP-initial-sim": [
+  800,
+  -310
+ ],
+ "experiment:WEB-RoboCLIP-task-reward-adaptation": [
+  879,
+  222
+ ],
+ "experiment-task:WEB-RoboCLIP-task-reward-adaptation": [
+  1000,
+  -310
+ ],
+ "experiment:WEB-RoboCLIP-demonstration-adaptation": [
+  801,
+  333
+ ],
+ "experiment-task:WEB-RoboCLIP-demonstration-adaptation": [
+  1200,
+  -310
+ ],
+ "experiment:WEB-OHP-RL-physical": [
+  1004,
+  420
+ ],
+ "experiment-task:WEB-OHP-RL-physical": [
+  1400,
+  -310
+ ],
+ "platform:franka-arm": [
+  1500,
+  -310
+ ],
+ "teacher:mixed": [
+  700,
+  -220
+ ],
+ "model:large-reward-model-qwen3-vl": [
+  900,
+  960
+ ],
+ "model:gpt-4o": [
+  1000,
+  960
+ ],
+ "model:simcse": [
+  1100,
+  960
+ ],
+ "model:qwen2-vl": [
+  1200,
+  960
+ ],
+ "model:roboreward-8b": [
+  1300,
+  960
+ ],
+ "model:qwen2-5-vl-reward-model": [
+  800,
+  1050
+ ],
+ "model:robometer": [
+  900,
+  1050
+ ],
+ "model:rewind": [
+  1000,
+  1050
+ ],
+ "model:vlac-8b": [
+  1100,
+  1050
+ ],
+ "model:robo-dopamine-2-0-reward-model": [
+  1200,
+  1050
+ ],
+ "model:sole-r1": [
+  1300,
+  1050
+ ],
+ "model:gemma-3-12b": [
+  800,
+  1140
+ ],
+ "model:stdr": [
+  900,
+  1140
+ ],
+ "model:s3d-howto100m": [
+  1000,
+  1140
+ ]
+}
